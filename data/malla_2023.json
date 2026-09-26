@@ -1,0 +1,3040 @@
+[
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 1,
+    "codigo": "INF-111",
+    "nombre": "PROGRAMACIÓN I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 2,
+    "codigo": "INF-121",
+    "nombre": "PROGRAMACIÓN II",
+    "prerequisitos": "INF-111"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 1,
+    "codigo": "INF-112",
+    "nombre": "FUNDAMENTOS DIGITALES",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 2,
+    "codigo": "INF-122",
+    "nombre": "PROGRAMACIÓN WEB II",
+    "prerequisitos": "INF-113"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 1,
+    "codigo": "INF-113",
+    "nombre": "PROGRAMACIÓN WEB I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 2,
+    "codigo": "INF-123",
+    "nombre": "ELECTRÓNICA GENERAL I",
+    "prerequisitos": "INF-112"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 1,
+    "codigo": "INF-114",
+    "nombre": "ÁLGEBRA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 2,
+    "codigo": "INF-124",
+    "nombre": "ESTADÍSTICA I",
+    "prerequisitos": "INF-114 INF-117"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 1,
+    "codigo": "INF-115",
+    "nombre": "CÁLCULO I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 2,
+    "codigo": "INF-125",
+    "nombre": "ÁLGEBRA LINEAL",
+    "prerequisitos": "INF-114"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 1,
+    "codigo": "INF-117",
+    "nombre": "MATEMÁTICA DISCRETA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 2,
+    "codigo": "INF-126",
+    "nombre": "CÁLCULO II",
+    "prerequisitos": "INF-115"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 3,
+    "codigo": "INF-131",
+    "nombre": "PROGRAMACIÓN III",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 4,
+    "codigo": "INF-241",
+    "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS I",
+    "prerequisitos": "INF-132 INF-133"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 3,
+    "codigo": "INF-132",
+    "nombre": "BASE DE DATOS I",
+    "prerequisitos": "INF-121 INF-122"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 4,
+    "codigo": "INF-242",
+    "nombre": "REDES I",
+    "prerequisitos": "INF-134 INF-135"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 3,
+    "codigo": "INF-133",
+    "nombre": "PROGRAMACIÓN WEB III",
+    "prerequisitos": "INF-111 INF-122"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 4,
+    "codigo": "INF-243",
+    "nombre": "INVESTIGACIÓN OPERATIVA I",
+    "prerequisitos": "INF-134"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 3,
+    "codigo": "INF-134",
+    "nombre": "ESTADÍSTICA II",
+    "prerequisitos": "INF-124"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 4,
+    "codigo": "COM-244",
+    "nombre": "RECONOCIMIENTO DE PATRONES",
+    "prerequisitos": "INF-131"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 3,
+    "codigo": "INF-135",
+    "nombre": "SISTEMAS OPERATIVOS",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 4,
+    "codigo": "COM-245",
+    "nombre": "LÓGICA PARA LA CIENCIA DE LA COMPUTACIÓN",
+    "prerequisitos": "INF-125"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 3,
+    "codigo": "TRA-136",
+    "nombre": "METODOLOGÍA DE LA INVESTIGACIÓN",
+    "prerequisitos": "INF-124 INF-125"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 4,
+    "codigo": "INF-247",
+    "nombre": "CÁLCULO III",
+    "prerequisitos": "INF-126"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "INF-251",
+    "nombre": "INGENIERÍA DE SOFTWARE I",
+    "prerequisitos": "INF-241"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "COM-261",
+    "nombre": "LENGUAJES FORMALES Y AUTÓMATAS",
+    "prerequisitos": "COM-245"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "COM-252",
+    "nombre": "INTELIGENCIA ARTIFICIAL",
+    "prerequisitos": "INF-125 INF-134"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "COM-262",
+    "nombre": "COMPILADORES",
+    "prerequisitos": "INF-131 INF-135"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "COM-253",
+    "nombre": "CRIPTOGRAFÍA I",
+    "prerequisitos": "INF-131 INF-125 INF-134"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "COM-263",
+    "nombre": "COMPUTACIÓN PARALELA",
+    "prerequisitos": "COM-244"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "COM-254",
+    "nombre": "MÉTODOS NUMÉRICOS I",
+    "prerequisitos": "INF-247"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-265",
+    "nombre": "SEGURIDAD DE LA INFORMACIÓN",
+    "prerequisitos": "INF-242 COM-253"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "TRA-256",
+    "nombre": "LEGISLACIÓN INFORMÁTICA Y ÉTICA",
+    "prerequisitos": "TERCER SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-266",
+    "nombre": "TALLER DE PROYECTO",
+    "prerequisitos": "QUINTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "TSI-251",
+    "nombre": "PROCESAMIENTO DE IMAGEN DIGITAL",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "TCS-251",
+    "nombre": "CALIDAD DE SOFTWARE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "TSI-261",
+    "nombre": "APRENDIZAJE AUTOMÁTICO (MACHINE\nLEARNING)",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "TCS-261",
+    "nombre": "INGENIERÍA DE SOFTWARE II",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 7,
+    "codigo": "COM-371",
+    "nombre": "SIMULACIÓN DE SISTEMAS",
+    "prerequisitos": "COM-254"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 8,
+    "codigo": "COM-381",
+    "nombre": "INTERACCIÓN HUMANO-COMPUTADOR",
+    "prerequisitos": "CUARTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 7,
+    "codigo": "COM-372",
+    "nombre": "ARQUITECTURA ORIENTADA A SERVICIOS",
+    "prerequisitos": "INF-251"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 8,
+    "codigo": "COM-382",
+    "nombre": "WEB SEMÁNTICA",
+    "prerequisitos": "CUARTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 7,
+    "codigo": "TRA-374",
+    "nombre": "PRÁCTICA PROFESIONAL",
+    "prerequisitos": "SEXTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 8,
+    "codigo": "INF-384",
+    "nombre": "TALLER DE GRADUACIÓN I",
+    "prerequisitos": "SÉPTIMO SEMESTRE\nVENCIDO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 9,
+    "codigo": "INF-391",
+    "nombre": "TALLER DE GRADUACIÓN II",
+    "prerequisitos": "OCTAVO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 9,
+    "codigo": "COM-311",
+    "nombre": "SISTEMAS ESTOCÁSTICOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 8,
+    "codigo": "INF-333",
+    "nombre": "REDES II",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 9,
+    "codigo": "COM-312",
+    "nombre": "PROGRAMACIÓN LÓGICA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 8,
+    "codigo": "COM-320",
+    "nombre": "ESPECIFICACIÓN FORMAL Y VERIFICACIÓN",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 9,
+    "codigo": "COM-313",
+    "nombre": "SISTEMAS EXPERTOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 8,
+    "codigo": "COM-321",
+    "nombre": "SISTEMAS INTELIGENTES",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 9,
+    "codigo": "INF-314",
+    "nombre": "INGLÉS TÉCNICO",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 8,
+    "codigo": "COM-322",
+    "nombre": "BASE DE DATOS II",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 9,
+    "codigo": "INF-315",
+    "nombre": "PREPARACIÓN Y EVALUACIÓN DE PROYECTOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 8,
+    "codigo": "COM-323",
+    "nombre": "COMPUTABILIDAD Y COMPLEJIDAD ALGORÍTMICA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 9,
+    "codigo": "COM-316",
+    "nombre": "PROCESAMIENTO DEL LENGUAJE NATURAL",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 8,
+    "codigo": "INF-324",
+    "nombre": "APRENDIZAJE PROFUNDO (DEEP LEARNING)",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 9,
+    "codigo": "COM-317",
+    "nombre": "GEOMETRÍA COMPUTACIONAL",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 8,
+    "codigo": "INF-331",
+    "nombre": "INVESTIGACIÓN OPERATIVA II",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 9,
+    "codigo": "INF-318",
+    "nombre": "COMPUTACIÓN EN LA NUBE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 8,
+    "codigo": "INF-336",
+    "nombre": "VISIÓN ARTIFICIAL Y MANEJO DE IMÁGENES",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 1,
+    "codigo": "INF-111",
+    "nombre": "PROGRAMACIÓN I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 2,
+    "codigo": "INF-121",
+    "nombre": "PROGRAMACIÓN II",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 1,
+    "codigo": "INF-112",
+    "nombre": "FUNDAMENTOS DIGITALES",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 2,
+    "codigo": "INF-122",
+    "nombre": "PROGRAMACIÓN  WEB II",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 1,
+    "codigo": "INF-113",
+    "nombre": "PROGRAMACIÓN WEB I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 2,
+    "codigo": "INF-123",
+    "nombre": "ELECTRÓNICA GENERAL I",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 1,
+    "codigo": "INF-114",
+    "nombre": "ÁLGEBRA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 2,
+    "codigo": "INF-124",
+    "nombre": "ESTADÍSTICA I",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 1,
+    "codigo": "INF-115",
+    "nombre": "CÁLCULO I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 2,
+    "codigo": "INF-125",
+    "nombre": "ÁLGEBRA LINEAL",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 1,
+    "codigo": "INF-116",
+    "nombre": "FÍSICA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 2,
+    "codigo": "INF-126",
+    "nombre": "CÁLCULO  II",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 3,
+    "codigo": "INF-131",
+    "nombre": "PROGRAMACIÓN III",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 4,
+    "codigo": "INF-241",
+    "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS I",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 3,
+    "codigo": "INF-132",
+    "nombre": "BASE DE DATOS I",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 4,
+    "codigo": "INF-242",
+    "nombre": "REDES I",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 3,
+    "codigo": "INF-133",
+    "nombre": "PROGRAMACIÓN WEB III",
+    "prerequisitos": "INF-111 INF-122"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 4,
+    "codigo": "INF-243",
+    "nombre": "INVESTIGACIÓN OPERATIVA I",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 3,
+    "codigo": "INF-134",
+    "nombre": "ESTADÍSTICA II",
+    "prerequisitos": "INF-124"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 4,
+    "codigo": "INF-244",
+    "nombre": "INTRODUCCIÓN A LA ROBÓTICA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 3,
+    "codigo": "INF-135",
+    "nombre": "SISTEMAS OPERATIVOS",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 4,
+    "codigo": "INF-245",
+    "nombre": "PROGRAMACIÓN DE DISPOSITIVOS MÓVILES I",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 3,
+    "codigo": "TRA-136",
+    "nombre": "METODOLOGÍA DE LA INVESTIGACIÓN",
+    "prerequisitos": "INF-124 INF-125"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 4,
+    "codigo": "INF-246",
+    "nombre": "FUNDAMENTOS DE DISEÑO Y ANIMACIÓN",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 5,
+    "codigo": "INF-251",
+    "nombre": "INGENIERÍA DE SOFTWARE I",
+    "prerequisitos": "INF-241"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 6,
+    "codigo": "INF-261",
+    "nombre": "INGENIERÍA DE SOFTWARE II",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 5,
+    "codigo": "INF-252",
+    "nombre": "BASE DE DATOS II",
+    "prerequisitos": "INF-132"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 6,
+    "codigo": "INF-262",
+    "nombre": "BASE DE DATOS III",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 5,
+    "codigo": "INF-253",
+    "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS II",
+    "prerequisitos": "INF-241"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 6,
+    "codigo": "INF-263",
+    "nombre": "DESARROLLO DE APLICACIONES MULTIMEDIA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 5,
+    "codigo": "INF-254",
+    "nombre": "PROGRAMACIÓN DE DISPOSITIVOS MÓVILES II",
+    "prerequisitos": "INF-245"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 6,
+    "codigo": "INF-264",
+    "nombre": "EMPRENDIMIENTO E INNOVACIÓN TECNOLÓGICA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 5,
+    "codigo": "TRA-256",
+    "nombre": "LEGISLACIÓN INFORMÁTICA Y ÉTICA",
+    "prerequisitos": "TERCER SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 6,
+    "codigo": "INF-266",
+    "nombre": "TALLER DE PROYECTO",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 5,
+    "codigo": "TVD-251",
+    "nombre": "ELECTIVA I. PROGRAMACIÓN GRÁFICA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 6,
+    "codigo": "TAW-251",
+    "nombre": "ELECTIVA I. DESARROLLO WEB BACKEND",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 5,
+    "codigo": "TVD-261",
+    "nombre": "ELECTIVA II. ANIMACIÓN DIGITAL 2D Y 3D",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 6,
+    "codigo": "TAW-261",
+    "nombre": "ELECTIVA II. INGENIERÍA WEB",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 5,
+    "codigo": "TIE-251",
+    "nombre": "ELECTIVA I. ADMINISTRACIÓN DE ENTORNOS VIRTUALES DE APRENDIZAJE Y CURSOS ABIERTOS\nMASIVOS EN LÍNEA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 6,
+    "codigo": "TAM-251",
+    "nombre": "ELECTIVA I. SISTEMAS EMBEBIDOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 5,
+    "codigo": "TIE-261",
+    "nombre": "ELECTIVA II. DESARROLLO DE SOFTWARE EDUCATIVO",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 6,
+    "codigo": "TAM-261",
+    "nombre": "ELECTIVA II. DESARROLLO DE APLICACIONES MÓVILES  MULTIPLATAFORMA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 7,
+    "codigo": "INF-371",
+    "nombre": "SEGURIDAD DE LA INFORMACIÓN",
+    "prerequisitos": "INF-242"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-381",
+    "nombre": "SIMULACIÓN DE SISTEMAS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 7,
+    "codigo": "INF-372",
+    "nombre": "INTELIGENCIA ARTIFICIAL",
+    "prerequisitos": "INF-262"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-382",
+    "nombre": "INGENIERÍA DE SOFTWARE III",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 7,
+    "codigo": "INF-373",
+    "nombre": "MÉTODOS NUMÉRICOS I",
+    "prerequisitos": "INF-126"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-384",
+    "nombre": "TALLER DE GRADUACIÓN I",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 7,
+    "codigo": "TRA-374",
+    "nombre": "PRÁCTICA PROFESIONAL",
+    "prerequisitos": "SEXTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 9,
+    "codigo": "INF-391",
+    "nombre": "TALLER DE GRADUACIÓN II",
+    "prerequisitos": "OCTAVO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 9,
+    "codigo": "INF-311",
+    "nombre": "MINERÍA DE DATOS (DATA MINING)",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-323",
+    "nombre": "APRENDIZAJE AUTOMÁTICO (MACHINE LEARNING)",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 9,
+    "codigo": "INF-312",
+    "nombre": "BIOINFORMÁTICA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-324",
+    "nombre": "APRENDIZAJE PROFUNDO (DEEP LEARNING)",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 9,
+    "codigo": "INF-313",
+    "nombre": "REALIDAD AUMENTADA Y VIRTUAL",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-325",
+    "nombre": "DERECHO INFORMÁTICO",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 9,
+    "codigo": "INF-314",
+    "nombre": "INGLÉS TÉCNICO",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-326",
+    "nombre": "NEGOCIACIONES Y TOMA DE DECISIONES",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 9,
+    "codigo": "INF-315",
+    "nombre": "PREPARACIÓN Y EVALUACIÓN DE PROYECTOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-327",
+    "nombre": "INTELIGENCIA DE NEGOCIOS (BUSSINES INTELLIGENCE)",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 9,
+    "codigo": "INF-316",
+    "nombre": "INFORMÁTICA FORENSE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-328",
+    "nombre": "VISIÓN POR COMPUTADORA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 9,
+    "codigo": "INF-317",
+    "nombre": "INTERNET DE LAS COSAS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-329",
+    "nombre": "PROCESAMIENTO DIGITAL DE IMÁGENES",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 9,
+    "codigo": "INF-318",
+    "nombre": "COMPUTACIÓN EN LA NUBE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-330",
+    "nombre": "INFORMÁTICA MÉDICA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 9,
+    "codigo": "INF-319",
+    "nombre": "PROGRAMACIÓN A BAJO NIVEL",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-331",
+    "nombre": "INVESTIGACIÓN OPERATIVA II",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 9,
+    "codigo": "INF-320",
+    "nombre": "AUDITORÍA DE SISTEMAS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-332",
+    "nombre": "HACKING ÉTICO I (ÉTICA Y VULNERABILIDAD DE SISTEMAS)",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 9,
+    "codigo": "INF-321",
+    "nombre": "CÁLCULO III",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-333",
+    "nombre": "REDES II",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 9,
+    "codigo": "INF-322",
+    "nombre": "MACRODATOS Y ANALÍTICA DE DATOS (BIG DATA)",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "semestre": 8,
+    "codigo": "INF-334",
+    "nombre": "DIRECCIÓN DE PROYECTOS INFORMÁTICOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 1,
+    "codigo": "INF-111",
+    "nombre": "PROGRAMACIÓN I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 2,
+    "codigo": "INF-121",
+    "nombre": "PROGRAMACIÓN II",
+    "prerequisitos": "INF-111"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 1,
+    "codigo": "INF-112",
+    "nombre": "FUNDAMENTOS DIGITALES",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 2,
+    "codigo": "INF-122",
+    "nombre": "PROGRAMACIÓN WEB II",
+    "prerequisitos": "INF-113"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 1,
+    "codigo": "INF-113",
+    "nombre": "PROGRAMACIÓN WEB I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 2,
+    "codigo": "INF-123",
+    "nombre": "ELECTRÓNICA GENERAL I",
+    "prerequisitos": "INF-112 INF-116"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 1,
+    "codigo": "INF-114",
+    "nombre": "ÁLGEBRA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 2,
+    "codigo": "INF-124",
+    "nombre": "ESTADÍSTICA I",
+    "prerequisitos": "INF-114"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 1,
+    "codigo": "INF-115",
+    "nombre": "CÁLCULO I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 2,
+    "codigo": "INF-125",
+    "nombre": "ÁLGEBRA LINEAL",
+    "prerequisitos": "INF-114"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 1,
+    "codigo": "INF-116",
+    "nombre": "FÍSICA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 2,
+    "codigo": "INF-126",
+    "nombre": "CÁLCULO II",
+    "prerequisitos": "INF-115"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 3,
+    "codigo": "INF-131",
+    "nombre": "PROGRAMACIÓN III",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 4,
+    "codigo": "INF-241",
+    "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS I",
+    "prerequisitos": "INF-132"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 3,
+    "codigo": "INF-132",
+    "nombre": "BASE DE DATOS I",
+    "prerequisitos": "INF-121 INF-122"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 4,
+    "codigo": "INF-242",
+    "nombre": "REDES I",
+    "prerequisitos": "IID-135"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 3,
+    "codigo": "INF-133",
+    "nombre": "PROGRAMACIÓN WEB III",
+    "prerequisitos": "INF-111 INF-122"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 4,
+    "codigo": "INF-243",
+    "nombre": "INVESTIGACIÓN OPERATIVA I",
+    "prerequisitos": "INF-134"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 3,
+    "codigo": "INF-134",
+    "nombre": "ESTADÍSTICA II",
+    "prerequisitos": "INF-124"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 4,
+    "codigo": "INF-244",
+    "nombre": "INTRODUCCIÓN A LA ROBÓTICA",
+    "prerequisitos": "IID-135"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 3,
+    "codigo": "IID-135",
+    "nombre": "ELECTRÓNICA GENERAL II",
+    "prerequisitos": "INF-123"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 4,
+    "codigo": "INF-245",
+    "nombre": "PROGRAMACIÓN DE DISPOSITIVOS MÓVILES I",
+    "prerequisitos": "INF-131"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 3,
+    "codigo": "TRA-136",
+    "nombre": "METODOLOGÍA DE LA INVESTIGACIÓN",
+    "prerequisitos": "INF-124 INF-125"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 4,
+    "codigo": "IID-246",
+    "nombre": "ELECTRÓNICA INDUSTRIAL",
+    "prerequisitos": "IID-135"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 4,
+    "codigo": "IID-247",
+    "nombre": "CÁLCULO III",
+    "prerequisitos": "INF-126"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 5,
+    "codigo": "IID-251",
+    "nombre": "SISTEMAS DE CONTROL",
+    "prerequisitos": "INF-242"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 6,
+    "codigo": "IID-261",
+    "nombre": "SIMULACIÓN DE SISTEMAS",
+    "prerequisitos": "IID-251"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 5,
+    "codigo": "IID-252",
+    "nombre": "MICROCONTROLADORES",
+    "prerequisitos": "INF-244"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 6,
+    "codigo": "IID-262",
+    "nombre": "ROBÓTICA INDUSTRIAL",
+    "prerequisitos": "IID-252"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 5,
+    "codigo": "IID-253",
+    "nombre": "APLICACIONES INFORMÁTICAS INDUSTRIALES",
+    "prerequisitos": "IID-246"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 6,
+    "codigo": "IID-263",
+    "nombre": "INTERNET DE LAS COSAS",
+    "prerequisitos": "IID-254"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 5,
+    "codigo": "IID-254",
+    "nombre": "CONTROLADORES LÓGICO PROGRAMABLES",
+    "prerequisitos": "IID-246"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 6,
+    "codigo": "IID-264",
+    "nombre": "INGENIERÍA DE SOFTWARE I",
+    "prerequisitos": "INF-241"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 5,
+    "codigo": "TRA-256",
+    "nombre": "LEGISLACIÓN INFORMÁTICA Y ÉTICA",
+    "prerequisitos": "TERCER SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 6,
+    "codigo": "IID-265",
+    "nombre": "REDES INDUSTRIALES",
+    "prerequisitos": "IID-251"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 6,
+    "codigo": "INF-266",
+    "nombre": "TALLER DE PROYECTO",
+    "prerequisitos": "QUINTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 5,
+    "codigo": "TAR-251",
+    "nombre": "MONITOREO Y CONTROL DE SISTEMAS INDUSTRIALES.",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 6,
+    "codigo": "TIOT-251",
+    "nombre": "SISTEMAS EMBEBIDOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 5,
+    "codigo": "TAR-261",
+    "nombre": "SISTEMAS DOMÓTICOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 6,
+    "codigo": "TIOT-261",
+    "nombre": "DESARROLLO IOT",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 7,
+    "codigo": "IID-371",
+    "nombre": "GESTIÓN DE PROYECTOS INDUSTRIALES",
+    "prerequisitos": "IID-264"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 8,
+    "codigo": "IID-381",
+    "nombre": "AUTOMATIZACIÓN DE SISTEMAS Y PROCESOS EN INSTALACIONES INDUSTRIALES",
+    "prerequisitos": "IID-372"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 7,
+    "codigo": "IID-372",
+    "nombre": "AUTOMATIZACIÓN INDUSTRIAL",
+    "prerequisitos": "IID-262"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 8,
+    "codigo": "IID-382",
+    "nombre": "GESTIÓN DE LA SEGURIDAD",
+    "prerequisitos": "IID-371"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 7,
+    "codigo": "TRA-374",
+    "nombre": "PRÁCTICA PROFESIONAL",
+    "prerequisitos": "SEXTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 8,
+    "codigo": "INF-384",
+    "nombre": "TALLER DE GRADUACIÓN I",
+    "prerequisitos": "SÉPTIMO SEMESTRE\nVENCIDO"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 9,
+    "codigo": "INF-391",
+    "nombre": "TALLER DE GRADUACIÓN II",
+    "prerequisitos": "OCTAVO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 9,
+    "codigo": "IID-311",
+    "nombre": "PROGRAMACIÓN DE DISPOSITIVOS MÓVILES II",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 8,
+    "codigo": "IID-317",
+    "nombre": "INSTRUMENTACIÓN DE PROCESOS PARA LA INDUSTRIA MINERA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 9,
+    "codigo": "IID-312",
+    "nombre": "COMUNICACIONES POR SATÉLITE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 8,
+    "codigo": "INF-318",
+    "nombre": "COMPUTACIÓN EN LA NUBE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 9,
+    "codigo": "IID-313",
+    "nombre": "SISTEMAS AVANZADOS DE COMUNICACIONES",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 8,
+    "codigo": "INF-319",
+    "nombre": "PROGRAMACIÓN A BAJO NIVEL",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 9,
+    "codigo": "INF-314",
+    "nombre": "INGLÉS TÉCNICO",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 8,
+    "codigo": "IID-320",
+    "nombre": "SISTEMAS HIDRÁULICOS Y NEUMÁTICOS DE POTENCIA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 9,
+    "codigo": "INF-315",
+    "nombre": "PREPARACIÓN Y EVALUACIÓN DE PROYECTOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 8,
+    "codigo": "INF-335",
+    "nombre": "INTELIGENCIA ARTIFICIAL",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "semestre": 9,
+    "codigo": "IID-316",
+    "nombre": "LENGUAJES FORMALES Y AUTÓMATAS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 1,
+    "codigo": "INF-111",
+    "nombre": "PROGRAMACIÓN I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 2,
+    "codigo": "INF-121",
+    "nombre": "PROGRAMACIÓN II",
+    "prerequisitos": "INF-111"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 1,
+    "codigo": "INF-112",
+    "nombre": "FUNDAMENTOS DIGITALES",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 2,
+    "codigo": "INF-122",
+    "nombre": "PROGRAMACIÓN WEB II",
+    "prerequisitos": "INF-113"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 1,
+    "codigo": "INF-113",
+    "nombre": "PROGRAMACIÓN WEB I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 2,
+    "codigo": "INF-123",
+    "nombre": "ELECTRÓNICA GENERAL I",
+    "prerequisitos": "INF-112 INF-116"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 1,
+    "codigo": "INF-114",
+    "nombre": "ÁLGEBRA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 2,
+    "codigo": "INF-124",
+    "nombre": "ESTADÍSTICA I",
+    "prerequisitos": "INF-114"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 1,
+    "codigo": "INF-115",
+    "nombre": "CÁLCULO I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 2,
+    "codigo": "INF-125",
+    "nombre": "ÁLGEBRA LINEAL",
+    "prerequisitos": "INF-114"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 1,
+    "codigo": "INF-116",
+    "nombre": "FÍSICA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 2,
+    "codigo": "INF-126",
+    "nombre": "CÁLCULO II",
+    "prerequisitos": "INF-115"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 3,
+    "codigo": "INF-131",
+    "nombre": "PROGRAMACIÓN III",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 4,
+    "codigo": "INF-241",
+    "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS I",
+    "prerequisitos": "INF-132"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 3,
+    "codigo": "INF-132",
+    "nombre": "BASE DE DATOS I",
+    "prerequisitos": "INF-121 INF-122"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 4,
+    "codigo": "INF-242",
+    "nombre": "REDES I",
+    "prerequisitos": "INF-135 INF-123"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 3,
+    "codigo": "INF-133",
+    "nombre": "PROGRAMACIÓN WEB III",
+    "prerequisitos": "INF-111 INF-122"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 4,
+    "codigo": "INF-243",
+    "nombre": "INVESTIGACIÓN OPERATIVA I",
+    "prerequisitos": "INF-134"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 3,
+    "codigo": "INF-134",
+    "nombre": "ESTADÍSTICA II",
+    "prerequisitos": "INF-124"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 4,
+    "codigo": "INF-244",
+    "nombre": "BASE DE DATOS II",
+    "prerequisitos": "INF-132"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 3,
+    "codigo": "INF-135",
+    "nombre": "SISTEMAS OPERATIVOS",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 4,
+    "codigo": "SIS-245",
+    "nombre": "SISTEMAS DE INFORMACIÓN",
+    "prerequisitos": "INF-135"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 3,
+    "codigo": "TRA-136",
+    "nombre": "METODOLOGÍA DE LA INVESTIGACIÓN",
+    "prerequisitos": "INF-124 INF-125"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 4,
+    "codigo": "SIS-246",
+    "nombre": "INGENIERÍA DE SISTEMAS",
+    "prerequisitos": "INF-131"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 5,
+    "codigo": "INF-251",
+    "nombre": "INGENIERÍA DE SOFTWARE I",
+    "prerequisitos": "INF-241"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-261",
+    "nombre": "INGENIERÍA DE SOFTWARE II",
+    "prerequisitos": "INF-251"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 5,
+    "codigo": "SEG-252",
+    "nombre": "REDES II",
+    "prerequisitos": "INF-242"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "SIS-262",
+    "nombre": "DINÁMICA DE SISTEMAS",
+    "prerequisitos": "SIS-246"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 5,
+    "codigo": "SIS-253",
+    "nombre": "PREPARACIÓN Y EVALUACIÓN DE PROYECTOS",
+    "prerequisitos": "INF-243 SIS-245"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "SIS-263",
+    "nombre": "SISTEMAS DE GESTIÓN EMPRESARIAL",
+    "prerequisitos": "SIS-253"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 5,
+    "codigo": "COM-254",
+    "nombre": "MÉTODOS NUMÉRICOS I",
+    "prerequisitos": "INF-126"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-264",
+    "nombre": "EMPRENDIMIENTO E INNOVACIÓN TECNOLÓGICA",
+    "prerequisitos": "TRA-256"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 5,
+    "codigo": "SIS-255",
+    "nombre": "COMERCIO ELECTRÓNICO Y MARKETING DIGITAL",
+    "prerequisitos": "INF-133"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-265",
+    "nombre": "SEGURIDAD DE LA INFORMACIÓN",
+    "prerequisitos": "SEG-252"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 5,
+    "codigo": "TRA-256",
+    "nombre": "LEGISLACIÓN INFORMÁTICA Y ÉTICA",
+    "prerequisitos": "TERCER SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-266",
+    "nombre": "TALLER DE PROYECTO",
+    "prerequisitos": "QUINTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 7,
+    "codigo": "SIS-371",
+    "nombre": "SISTEMAS DISTRIBUIDOS",
+    "prerequisitos": "QUINTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "INF-381",
+    "nombre": "SIMULACIÓN DE SISTEMAS",
+    "prerequisitos": "COM-254"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 7,
+    "codigo": "SIS-372",
+    "nombre": "COMPUTACIÓN EN LA NUBE",
+    "prerequisitos": "INF-265"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "SIS-382",
+    "nombre": "AUDITORÍA DE SISTEMAS",
+    "prerequisitos": "SIS-372"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 7,
+    "codigo": "SIS-373",
+    "nombre": "ORGANIZACIÓN Y MÉTODOS",
+    "prerequisitos": "SIS-263"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "INF-384",
+    "nombre": "TALLER DE GRADUACIÓN I",
+    "prerequisitos": "SÉPTIMO SEMESTRE\nVENCIDO"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 7,
+    "codigo": "TRA-374",
+    "nombre": "PRÁCTICA PROFESIONAL",
+    "prerequisitos": "SEXTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "INF-391",
+    "nombre": "TALLER DE GRADUACIÓN II",
+    "prerequisitos": "OCTAVO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "INF-311",
+    "nombre": "MINERÍA DE DATOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "INF-321",
+    "nombre": "CÁLCULO III",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "INF-312",
+    "nombre": "BIOINFORMÁTICA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "INF-322",
+    "nombre": "MACRODATOS Y ANALÍTICA DE DATOS (BIG DATA)",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "SIS-313",
+    "nombre": "DATAWAREHOUSE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "INF-323",
+    "nombre": "APRENDIZAJE AUTOMÁTICO (MACHINE LEARNING)",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "INF-314",
+    "nombre": "INGLÉS TÉCNICO",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "SIS-324",
+    "nombre": "PROGRAMACIÓN DISTRIBUIDA Y PARALELA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "SIS-315",
+    "nombre": "TEORÍA GENERAL DE SISTEMAS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "SIS-325",
+    "nombre": "SISTEMAS CONTABLES",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "INF-316",
+    "nombre": "INFORMÁTICA FORENSE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "INF-326",
+    "nombre": "NEGOCIACIONES Y TOMA DE DECISIONES",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "INF-317",
+    "nombre": "INTERNET DE LAS COSAS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "INF-327",
+    "nombre": "INTELIGENCIA DE NEGOCIOS (BUSSINES INTELLIGENCE)",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "SIS-318",
+    "nombre": "CIBERSEGURIDAD",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "SIS-328",
+    "nombre": "SISTEMAS ECONÓMICOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "INF-319",
+    "nombre": "PROGRAMACIÓN A BAJO NIVEL",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "INF-335",
+    "nombre": "INTELIGENCIA ARTIFICIAL",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "SIS-320",
+    "nombre": "SISTEMAS DE INFORMACIÓN GEOGRÁFICA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "INF-336",
+    "nombre": "VISIÓN ARTIFICIAL Y MANEJO DE IMÁGENES",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 1,
+    "codigo": "INF-111",
+    "nombre": "PROGRAMACIÓN I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 2,
+    "codigo": "INF-121",
+    "nombre": "PROGRAMACIÓN II",
+    "prerequisitos": "INF-111"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 1,
+    "codigo": "INF-112",
+    "nombre": "FUNDAMENTOS DIGITALES",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 2,
+    "codigo": "INF-122",
+    "nombre": "PROGRAMACIÓN WEB II",
+    "prerequisitos": "INF-113"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 1,
+    "codigo": "INF-113",
+    "nombre": "PROGRAMACIÓN WEB I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 2,
+    "codigo": "INF-123",
+    "nombre": "ELECTRÓNICA GENERAL I",
+    "prerequisitos": "INF-112"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 1,
+    "codigo": "INF-114",
+    "nombre": "ÁLGEBRA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 2,
+    "codigo": "INF-124",
+    "nombre": "ESTADÍSTICA I",
+    "prerequisitos": "INF-114 INF-117"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 1,
+    "codigo": "INF-115",
+    "nombre": "CÁLCULO I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 2,
+    "codigo": "INF-125",
+    "nombre": "ÁLGEBRA LINEAL",
+    "prerequisitos": "INF-114"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 1,
+    "codigo": "INF-117",
+    "nombre": "MATEMÁTICA DISCRETA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 2,
+    "codigo": "INF-126",
+    "nombre": "CÁLCULO II",
+    "prerequisitos": "INF-115"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 3,
+    "codigo": "INF-131",
+    "nombre": "PROGRAMACIÓN  III",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 4,
+    "codigo": "DAT-241",
+    "nombre": "PROGRAMACIÓN DISTRIBUIDA Y PARALELA",
+    "prerequisitos": "INF-131"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 3,
+    "codigo": "INF-132",
+    "nombre": "BASE DE DATOS I",
+    "prerequisitos": "INF-121 INF-122"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 4,
+    "codigo": "DAT-242",
+    "nombre": "MÉTODOS NUMÉRICOS I",
+    "prerequisitos": "DAT-135"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 3,
+    "codigo": "INF-133",
+    "nombre": "PROGRAMACIÓN WEB III",
+    "prerequisitos": "INF-111 INF-122"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 4,
+    "codigo": "INF-243",
+    "nombre": "INVESTIGACIÓN OPERATIVA I",
+    "prerequisitos": "INF-134"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 3,
+    "codigo": "INF-134",
+    "nombre": "ESTADÍSTICA II",
+    "prerequisitos": "INF-124"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 4,
+    "codigo": "INF-244",
+    "nombre": "BASE DE DATOS II",
+    "prerequisitos": "INF-132"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 3,
+    "codigo": "DAT-135",
+    "nombre": "CÁLCULO III",
+    "prerequisitos": "INF-126"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 4,
+    "codigo": "DAT-245",
+    "nombre": "INTELIGENCIA ARTIFICIAL",
+    "prerequisitos": "INF-123 INF-125"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 3,
+    "codigo": "TRA-136",
+    "nombre": "METODOLOGÍA DE LA INVESTIGACIÓN",
+    "prerequisitos": "INF-124 INF-125"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 4,
+    "codigo": "DAT-246",
+    "nombre": "MODELACIÓN ESTADÍSTICA",
+    "prerequisitos": "INF-134"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 5,
+    "codigo": "DAT-251",
+    "nombre": "BASE DE DATOS III",
+    "prerequisitos": "INF-244"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 6,
+    "codigo": "DAT-261",
+    "nombre": "PROCESAMIENTO DEL LENGUAJE NATURAL",
+    "prerequisitos": "DAT-251"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 5,
+    "codigo": "DAT-252",
+    "nombre": "MÉTODOS NUMÉRICOS II",
+    "prerequisitos": "DAT-242"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 6,
+    "codigo": "DAT-262",
+    "nombre": "PROCESOS ESTOCÁSTICOS Y ANÁLISIS DE SERIES DE TIEMPO",
+    "prerequisitos": "INF-132 DAT-135"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 5,
+    "codigo": "DAT-253",
+    "nombre": "MINERÍA DE DATOS (DATA MINING)",
+    "prerequisitos": "DAT-246"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 6,
+    "codigo": "DAT-263",
+    "nombre": "ANÁLISIS DE DATOS",
+    "prerequisitos": "DAT-253"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 5,
+    "codigo": "DAT-254",
+    "nombre": "INVESTIGACIÓN OPERATIVA II",
+    "prerequisitos": "INF-243"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 6,
+    "codigo": "DAT-264",
+    "nombre": "APRENDIZAJE PROFUNDO (DEEP LEARNING)",
+    "prerequisitos": "DAT-255"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 5,
+    "codigo": "DAT-255",
+    "nombre": "APRENDIZAJE AUTOMÁTICO (MACHINE LEARNING)",
+    "prerequisitos": "DAT-246"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 6,
+    "codigo": "INF-266",
+    "nombre": "TALLER DE PROYECTO",
+    "prerequisitos": "QUINTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 5,
+    "codigo": "TRA-256",
+    "nombre": "LEGISLACIÓN INFORMÁTICA Y ÉTICA",
+    "prerequisitos": "TERCER SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 7,
+    "codigo": "DAT-371",
+    "nombre": "INTELIGENCIA DE NEGOCIOS (BUSSINES INTELLIGENCE)",
+    "prerequisitos": "DAT-254 DAT-264"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 8,
+    "codigo": "DAT-381",
+    "nombre": "MACRODATOS Y ANALÍTICA DE DATOS (BIG DATA)",
+    "prerequisitos": "DAT-371"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 7,
+    "codigo": "SIS-372",
+    "nombre": "COMPUTACIÓN EN LA NUBE",
+    "prerequisitos": "DAT-261"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 8,
+    "codigo": "DAT-382",
+    "nombre": "VISUALIZACIÓN DE DATOS",
+    "prerequisitos": "DAT-263"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 7,
+    "codigo": "TRA-374",
+    "nombre": "PRÁCTICA PROFESIONAL",
+    "prerequisitos": "SEXTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 8,
+    "codigo": "INF-384",
+    "nombre": "TALLER DE GRADUACIÓN I",
+    "prerequisitos": "SÉPTIMO  SEMESTRE\nVENCIDO"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 9,
+    "codigo": "INF-391",
+    "nombre": "TALLER DE GRADUACIÓN II",
+    "prerequisitos": "OCTAVO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 9,
+    "codigo": "DAT-311",
+    "nombre": "CÁLCULO IV",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 8,
+    "codigo": "DAT-318",
+    "nombre": "SIMULACIÓN DE SISTEMAS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 9,
+    "codigo": "DAT-312",
+    "nombre": "MODELOS GENERATIVOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 8,
+    "codigo": "DAT-319",
+    "nombre": "PROGRAMACIÓN DE DISPOSITIVOS MÓVILES I",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 9,
+    "codigo": "DAT-313",
+    "nombre": "COMERCIO ELECTRÓNICO Y MARKETING DIGITAL",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 8,
+    "codigo": "INF-320",
+    "nombre": "AUDITORÍA DE SISTEMAS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 9,
+    "codigo": "INF-314",
+    "nombre": "INGLÉS TÉCNICO",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 8,
+    "codigo": "DAT-321",
+    "nombre": "SEGURIDAD DE LA INFORMACIÓN",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 9,
+    "codigo": "INF-315",
+    "nombre": "PREPARACIÓN Y EVALUACIÓN DE PROYECTOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 8,
+    "codigo": "INF-325",
+    "nombre": "DERECHO INFORMÁTICO",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 9,
+    "codigo": "INF-316",
+    "nombre": "INFORMÁTICA FORENSE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 8,
+    "codigo": "INF-336",
+    "nombre": "VISIÓN ARTIFICIAL Y MANEJO DE IMÁGENES",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 9,
+    "codigo": "INF-317",
+    "nombre": "INTERNET DE LAS COSAS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "semestre": 8,
+    "codigo": "INF-337",
+    "nombre": "EMPRENDIMIENTO E INNOVACIÓN TECNOLÓGICA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 1,
+    "codigo": "INF-111",
+    "nombre": "PROGRAMACIÓN I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 2,
+    "codigo": "INF-121",
+    "nombre": "PROGRAMACIÓN II",
+    "prerequisitos": "INF-111"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 1,
+    "codigo": "INF-112",
+    "nombre": "FUNDAMENTOS DIGITALES",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 2,
+    "codigo": "INF-122",
+    "nombre": "PROGRAMACIÓN WEB II",
+    "prerequisitos": "INF-113"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 1,
+    "codigo": "INF-113",
+    "nombre": "PROGRAMACIÓN  WEB I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 2,
+    "codigo": "INF-123",
+    "nombre": "ELECTRÓNICA GENERAL I",
+    "prerequisitos": "INF-112 INF-116"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 1,
+    "codigo": "INF-114",
+    "nombre": "ÁLGEBRA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 2,
+    "codigo": "INF-124",
+    "nombre": "ESTADÍSTICA I",
+    "prerequisitos": "INF-114"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 1,
+    "codigo": "INF-115",
+    "nombre": "CÁLCULO I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 2,
+    "codigo": "INF-125",
+    "nombre": "ÁLGEBRA LINEAL",
+    "prerequisitos": "INF-114"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 1,
+    "codigo": "INF-116",
+    "nombre": "FÍSICA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 2,
+    "codigo": "INF-126",
+    "nombre": "CÁLCULO II",
+    "prerequisitos": "INF-115"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 3,
+    "codigo": "INF-131",
+    "nombre": "PROGRAMACIÓN  III",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 4,
+    "codigo": "INF-241",
+    "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS I",
+    "prerequisitos": "INF-132"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 3,
+    "codigo": "INF-132",
+    "nombre": "BASE DE DATOS I",
+    "prerequisitos": "INF-121 INF-122"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 4,
+    "codigo": "INF-242",
+    "nombre": "REDES I",
+    "prerequisitos": "TIC-135"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 3,
+    "codigo": "INF-133",
+    "nombre": "PROGRAMACIÓN WEB III",
+    "prerequisitos": "INF-111 INF-122"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 4,
+    "codigo": "INF-243",
+    "nombre": "INVESTIGACIÓN OPERATIVA I",
+    "prerequisitos": "INF-134"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 3,
+    "codigo": "INF-134",
+    "nombre": "ESTADÍSTICA II",
+    "prerequisitos": "INF-124"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 4,
+    "codigo": "INF-244",
+    "nombre": "BASE DE DATOS II",
+    "prerequisitos": "INF-132"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 3,
+    "codigo": "TIC-135",
+    "nombre": "INTRODUCCIÓN A LAS REDES Y TELECOMUNICACIONES",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 4,
+    "codigo": "INF-245",
+    "nombre": "PROGRAMACIÓN DE DISPOSITIVOS MÓVILES I",
+    "prerequisitos": "INF-131"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 3,
+    "codigo": "TRA-136",
+    "nombre": "METODOLOGÍA DE LA INVESTIGACIÓN",
+    "prerequisitos": "INF-124 INF-125"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 4,
+    "codigo": "TIC-246",
+    "nombre": "SISTEMAS OPERATIVOS",
+    "prerequisitos": "INF-131"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 4,
+    "codigo": "TIC-247",
+    "nombre": "LABORATORIO DE REDES",
+    "prerequisitos": "TIC-135"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "TIC-251",
+    "nombre": "APLICACIONES Y SERVICIOS MULTIMEDIA",
+    "prerequisitos": "INF-242"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "TIC-261",
+    "nombre": "CENTRO DE DATOS (DATA CENTER)",
+    "prerequisitos": "TIC-255"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "COM-252",
+    "nombre": "INTELIGENCIA ARTIFICIAL",
+    "prerequisitos": "INF-245"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "TIC-262",
+    "nombre": "SISTEMAS DE GESTIÓN DE RED",
+    "prerequisitos": "COM-252"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "TIC-253",
+    "nombre": "DIRECCIÓN DE PROYECTOS INFORMÁTICOS",
+    "prerequisitos": "INF-242"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "TIC-263",
+    "nombre": "REDES DE COMUNICACIÓN I",
+    "prerequisitos": "TIC-253"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "TIC-254",
+    "nombre": "REDES INALÁMBRICAS",
+    "prerequisitos": "INF-242"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "INF-265",
+    "nombre": "SEGURIDAD DE LA INFORMACIÓN",
+    "prerequisitos": "TIC-254"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "TIC-255",
+    "nombre": "APLICACIONES Y SERVICIOS TIC",
+    "prerequisitos": "INF-242"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "INF-266",
+    "nombre": "TALLER DE PROYECTO",
+    "prerequisitos": "QUINTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "TRA-256",
+    "nombre": "LEGISLACIÓN INFORMÁTICA Y ÉTICA",
+    "prerequisitos": "TERCER SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "TRC-251",
+    "nombre": "TEORÍA DE LA INFORMACIÓN Y LA CODIFICACIÓN",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "TAT-251",
+    "nombre": "SISTEMAS MÓVILES, MULTIMEDIA Y DIFUSIÓN",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "TRC-261",
+    "nombre": "REDES INDUSTRIALES",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "TAT-261",
+    "nombre": "APLICACIONES Y SERVICIOS DISTRIBUIDOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 7,
+    "codigo": "TIC-371",
+    "nombre": "INGENIERÍA DE SOFTWARE I",
+    "prerequisitos": "INF-241  TIC-261"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "TIC-381",
+    "nombre": "ADMINISTRACIÓN DE CENTRO DE DATOS Y DE RED",
+    "prerequisitos": "TIC-261"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 7,
+    "codigo": "TIC-372",
+    "nombre": "SEGURIDAD DE REDES I",
+    "prerequisitos": "INF-265"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "TIC-382",
+    "nombre": "SEGURIDAD DE REDES II",
+    "prerequisitos": "TIC-372"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 7,
+    "codigo": "TIC-373",
+    "nombre": "REDES DE COMUNICACIÓN II",
+    "prerequisitos": "TIC-263"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "TIC-383",
+    "nombre": "REDES DE COMUNICACIÓN III",
+    "prerequisitos": "TIC-373"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 7,
+    "codigo": "TRA-374",
+    "nombre": "PRÁCTICA PROFESIONAL",
+    "prerequisitos": "SEXTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "INF-384",
+    "nombre": "TALLER DE GRADUACIÓN I",
+    "prerequisitos": "SÉPTIMO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "INF-391",
+    "nombre": "TALLER DE GRADUACIÓN II",
+    "prerequisitos": "OCTAVO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "TIC-311",
+    "nombre": "SISTEMAS EMBEBIDOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "INF-318",
+    "nombre": "COMPUTACIÓN EN LA NUBE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "TIC-312",
+    "nombre": "ADMINISTRACIÓN DE SERVIDORES",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "TIC-319",
+    "nombre": "SISTEMAS AVANZADOS DE COMUNICACIONES",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "TIC-313",
+    "nombre": "GESTIÓN DE LA SEGURIDAD",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "INF-320",
+    "nombre": "AUDITORÍA DE SISTEMAS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "INF-314",
+    "nombre": "INGLÉS TÉCNICO",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "INF-321",
+    "nombre": "CÁLCULO III",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "INF-315",
+    "nombre": "PREPARACIÓN Y EVALUACIÓN DE PROYECTOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "TIC-322",
+    "nombre": "INGENIERÍA DE SISTEMAS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "TIC-316",
+    "nombre": "COMUNICACIONES POR SATÉLITE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "TIC-323",
+    "nombre": "SERVICIOS EN LA NUBE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "INF-317",
+    "nombre": "INTERNET DE LAS COSAS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "INF-337",
+    "nombre": "EMPRENDIMIENTO E INNOVACIÓN TECNOLÓGICA",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 1,
+    "codigo": "INF-111",
+    "nombre": "PROGRAMACIÓN I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 2,
+    "codigo": "INF-121",
+    "nombre": "PROGRAMACIÓN II",
+    "prerequisitos": "INF-111"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 1,
+    "codigo": "INF-112",
+    "nombre": "FUNDAMENTOS DIGITALES",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 2,
+    "codigo": "INF-122",
+    "nombre": "PROGRAMACIÓN WEB II",
+    "prerequisitos": "INF-113"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 1,
+    "codigo": "INF-113",
+    "nombre": "PROGRAMACIÓN WEB I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 2,
+    "codigo": "INF-123",
+    "nombre": "ELECTRÓNICA GENERAL I",
+    "prerequisitos": "INF-112 INF-116"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 1,
+    "codigo": "INF-114",
+    "nombre": "ÁLGEBRA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 2,
+    "codigo": "INF-124",
+    "nombre": "ESTADÍSTICA I",
+    "prerequisitos": "INF-114"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 1,
+    "codigo": "INF-115",
+    "nombre": "CÁLCULO I",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 2,
+    "codigo": "INF-125",
+    "nombre": "ÁLGEBRA LINEAL",
+    "prerequisitos": "INF-114"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 1,
+    "codigo": "INF-116",
+    "nombre": "FÍSICA",
+    "prerequisitos": "MODALIDAD DE ADMISIÓN"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 2,
+    "codigo": "INF-126",
+    "nombre": "CÁLCULO II",
+    "prerequisitos": "INF-115"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 3,
+    "codigo": "INF-131",
+    "nombre": "PROGRAMACIÓN III",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 4,
+    "codigo": "INF-241",
+    "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS I",
+    "prerequisitos": "INF-131 INF-132"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 3,
+    "codigo": "INF-132",
+    "nombre": "BASE DE DATOS I",
+    "prerequisitos": "INF-121 INF-122"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 4,
+    "codigo": "INF-242",
+    "nombre": "REDES I",
+    "prerequisitos": "INF-135"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 3,
+    "codigo": "INF-133",
+    "nombre": "PROGRAMACIÓN WEB III",
+    "prerequisitos": "INF-111 INF-122"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 4,
+    "codigo": "INF-243",
+    "nombre": "INVESTIGACIÓN OPERATIVA I",
+    "prerequisitos": "INF-134"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 3,
+    "codigo": "INF-134",
+    "nombre": "ESTADÍSTICA II",
+    "prerequisitos": "INF-124"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 4,
+    "codigo": "SEG-244",
+    "nombre": "SEGURIDAD DE LA INFORMACIÓN",
+    "prerequisitos": "INF-135"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 3,
+    "codigo": "INF-135",
+    "nombre": "SISTEMAS OPERATIVOS",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 4,
+    "codigo": "INF-245",
+    "nombre": "PROGRAMACIÓN DE DISPOSITIVOS MÓVILES I",
+    "prerequisitos": "INF-131 INF-133"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 3,
+    "codigo": "TRA-136",
+    "nombre": "METODOLOGÍA DE LA INVESTIGACIÓN",
+    "prerequisitos": "INF-124 INF-125"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 4,
+    "codigo": "SEG-246",
+    "nombre": "CRIPTOGRAFÍA I",
+    "prerequisitos": "INF-125 INF-134"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "INF-251",
+    "nombre": "INGENIERÍA DE SOFTWARE I",
+    "prerequisitos": "INF-241"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "SEG-261",
+    "nombre": "HACKING ÉTICO I (ÉTICA Y VULNERABILIDAD DE SISTEMAS)",
+    "prerequisitos": "SEG-253"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "SEG-252",
+    "nombre": "REDES II",
+    "prerequisitos": "INF-242"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "SEG-262",
+    "nombre": "SEGURIDAD DE REDES I",
+    "prerequisitos": "SEG-252"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "SEG-253",
+    "nombre": "SEGURIDAD EN BASE DE DATOS",
+    "prerequisitos": "INF-132 SEG-244"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "SEG-263",
+    "nombre": "SOFTWARE MALICIOSO Y AMENAZAS DIRIGIDAS",
+    "prerequisitos": "SEG-254"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "SEG-254",
+    "nombre": "CRIPTOGRAFÍA II",
+    "prerequisitos": "SEG-246"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "SEG-264",
+    "nombre": "REDES INALÁMBRICAS",
+    "prerequisitos": "SEG-252"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "TRA-256",
+    "nombre": "LEGISLACIÓN INFORMÁTICA Y ÉTICA",
+    "prerequisitos": "TERCER SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "INF-266",
+    "nombre": "TALLER DE PROYECTO",
+    "prerequisitos": "QUINTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "TCP-251",
+    "nombre": "CONFIABILIDAD DE SISTEMAS TOLERANTES A FALLOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "TSS-251",
+    "nombre": "ADMINISTRACIÓN DE REDES Y SERVICIOS DE INFRAESTRUCTURA TI",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 5,
+    "codigo": "TCP-261",
+    "nombre": "METODOLOGÍAS DE DESARROLLO SEGURO DE SOFTWARE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 6,
+    "codigo": "TSS-261",
+    "nombre": "COMPUTACIÓN EN LA NUBE",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 7,
+    "codigo": "SEG-371",
+    "nombre": "GESTIÓN DE INCIDENTES Y CONTINUIDAD DEL NEGOCIO",
+    "prerequisitos": "SEG-261"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "SEG-381",
+    "nombre": "GESTIÓN DE RIESGOS EN SEGURIDAD DE LA INFORMACIÓN",
+    "prerequisitos": "SEG-371"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 7,
+    "codigo": "SEG-372",
+    "nombre": "SEGURIDAD DE REDES II",
+    "prerequisitos": "SEG-262"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "SIS-382",
+    "nombre": "AUDITORÍA  DE SISTEMAS",
+    "prerequisitos": "SEG-371"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 7,
+    "codigo": "SEG-373",
+    "nombre": "INFORMÁTICA FORENSE",
+    "prerequisitos": "SEG-263"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "SEG-383",
+    "nombre": "GESTIÓN DE ACTIVOS DE INFORMACIÓN",
+    "prerequisitos": "SEG-371"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 7,
+    "codigo": "TRA-374",
+    "nombre": "PRÁCTICA PROFESIONAL",
+    "prerequisitos": "SEXTO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "INF-384",
+    "nombre": "TALLER DE GRADUACIÓN I",
+    "prerequisitos": "SÉPTIMO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "INF-391",
+    "nombre": "TALLER DE GRADUACIÓN II",
+    "prerequisitos": "OCTAVO SEMESTRE VENCIDO"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "SEG-311",
+    "nombre": "REDES DE COMUNICACIÓN I",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "SEG-317",
+    "nombre": "ADMINISTRACIÓN DE CENTROS DE OPERACIÓN DE RED",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "SEG-312",
+    "nombre": "REDES DE COMUNICACIÓN II",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "SEG-318",
+    "nombre": "GOBIERNO Y GESTIÓN DE SEGURIDAD DE LA INFORMACIÓN",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "SEG-313",
+    "nombre": "ARQUITECTURA ORIENTADA A SERVICIOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "INF-323",
+    "nombre": "APRENDIZAJE AUTOMÁTICO (MACHINE LEARNING)",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "INF-314",
+    "nombre": "INGLÉS TÉCNICO",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "INF-325",
+    "nombre": "DERECHO INFORMÁTICO",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "INF-315",
+    "nombre": "PREPARACIÓN Y EVALUACIÓN DE PROYECTOS",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 8,
+    "codigo": "INF-335",
+    "nombre": "INTELIGENCIA ARTIFICIAL",
+    "prerequisitos": ""
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "semestre": 9,
+    "codigo": "SEG-316",
+    "nombre": "HACKING ÉTICO II",
+    "prerequisitos": ""
+  }
+]

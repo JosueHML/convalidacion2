@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Convalidaciones — UMSA</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.0.4/tesseract.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.7.0/jspdf.plugin.autotable.min.js"></script>
+<script>
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+  tailwind.config = { darkMode: 'class' };
+</script>
+<style>
+  :root {
+    --indigo: #4338ca;
+    --indigo-light: #6366f1;
+    --purple: #7c3aed;
+    --emerald: #047857;
+    --amber: #f59e0b;
+  }
+
+  * { -webkit-font-smoothing: antialiased; }
+  body {
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: radial-gradient(ellipse at top, #eef2ff 0%, #f8fafc 50%, #ffffff 100%);
+    min-height: 100vh;
+  }
+  .dark body {
+    background: radial-gradient(ellipse at top, #1e1b4b 0%, #0f172a 60%, #020617 100%);
+  }
+
+  /* ══════════════════ ANIMACIONES ══════════════════ */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes pop {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  @keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+  }
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4); }
+    50% { box-shadow: 0 0 0 12px rgba(99, 102, 241, 0); }
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .anim-fade-up { animation: fadeInUp 0.5s ease-out both; }
+  .anim-fade { animation: fadeIn 0.4s ease-out both; }
+  .anim-pop { animation: pop 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) both; }
+  .anim-float { animation: float 3s ease-in-out infinite; }
+  .anim-glow { animation: pulseGlow 2s ease-in-out infinite; }
+
+  /* ══════════════════ HEADER ══════════════════ */
+  .header-gradient {
+    background: linear-gradient(135deg, #1e1b4b 0%, #4338ca 40%, #7c3aed 70%, #a855f7 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+  }
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* ══════════════════ CARDS ══════════════════ */
+  .card {
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4338ca, #7c3aed, #ec4899, #f59e0b);
+    background-size: 200% 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .card:hover::before { opacity: 1; animation: gradientShift 3s ease infinite; }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 25px 50px -12px rgba(67, 56, 202, 0.25);
+  }
+
+  /* ══════════════════ TABS ══════════════════ */
+  .tab-btn {
+    position: relative;
+    transition: all 0.25s ease;
+  }
+  .tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 50%;
+    width: 0; height: 3px;
+    background: linear-gradient(90deg, #4338ca, #7c3aed);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  .tab-active::after { width: 60%; }
+  .tab-active {
+    color: var(--indigo);
+    font-weight: 700;
+    background: linear-gradient(180deg, transparent 60%, rgba(99, 102, 241, 0.08) 100%);
+  }
+  .dark .tab-active {
+    color: #a5b4fc;
+    background: linear-gradient(180deg, transparent 60%, rgba(165, 180, 252, 0.1) 100%);
+  }
+
+  /* ══════════════════ DROP ZONE ══════════════════ */
+  .drop-zone {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+    border: 3px dashed #c7d2fe;
+  }
+  .drop-zone:hover {
+    border-color: var(--indigo);
+    background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+    transform: scale(1.01);
+  }
+  .drop-zone.dragover {
+    border-color: var(--indigo);
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+    transform: scale(1.03);
+    box-shadow: 0 0 0 8px rgba(99, 102, 241, 0.1);
+  }
+
+  /* ══════════════════ SPINNER ══════════════════ */
+  .spinner {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 0.7s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* ══════════════════ COLUMNAS PLANES ══════════════════ */
+  .col-1998 {
+    background: linear-gradient(135deg, #4338ca 0%, #6366f1 100%);
+    color: white;
+    position: relative;
+  }
+  .col-2023 {
+    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+    color: white;
+    position: relative;
+  }
+  .col-2025 {
+    background: linear-gradient(135deg, #047857 0%, #10b981 100%);
+    color: white;
+    position: relative;
+  }
+  .col-1998::after, .col-2023::after, .col-2025::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  /* ══════════════════ BOTONES ══════════════════ */
+  .btn-primary {
+    background: linear-gradient(135deg, #4338ca 0%, #7c3aed 100%);
+    background-size: 200% 200%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px -3px rgba(67, 56, 202, 0.4);
+  }
+  .btn-primary:hover {
+    background-position: 100% 0;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px -5px rgba(124, 58, 237, 0.5);
+  }
+  .btn-success {
+    background: linear-gradient(135deg, #047857 0%, #10b981 100%);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px -3px rgba(4, 120, 87, 0.4);
+  }
+  .btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px -5px rgba(16, 185, 129, 0.5);
+  }
+
+  /* ══════════════════ BADGES ══════════════════ */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 10px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .badge-success { background: linear-gradient(135deg, #d1fae5, #a7f3d0); color: #065f46; }
+  .badge-warn { background: linear-gradient(135deg, #fef3c7, #fde68a); color: #92400e; }
+  .badge-error { background: linear-gradient(135deg, #fee2e2, #fecaca); color: #991b1b; }
+  .badge-info { background: linear-gradient(135deg, #e0e7ff, #c7d2fe); color: #3730a3; }
+
+  /* ══════════════════ FILAS MATERIAS ══════════════════ */
+  .row-materia {
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+  }
+  .row-materia:hover {
+    background: linear-gradient(90deg, #f8fafc 0%, #eef2ff 100%);
+    border-left-color: var(--indigo);
+  }
+  .dark .row-materia:hover {
+    background: linear-gradient(90deg, #1e293b 0%, #1e1b4b 100%);
+  }
+  .row-materia.selected {
+    background: linear-gradient(90deg, #eef2ff 0%, #e0e7ff 100%);
+    border-left-color: var(--indigo);
+  }
+  .dark .row-materia.selected {
+    background: linear-gradient(90deg, #1e1b4b 0%, #312e81 100%);
+  }
+
+  /* ══════════════════ CHECKBOX ══════════════════ */
+  .checkbox-materia {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    background: white;
+  }
+  .checkbox-materia:hover { border-color: var(--indigo); transform: scale(1.1); }
+  .checkbox-materia:checked {
+    background: linear-gradient(135deg, #4338ca, #7c3aed);
+    border-color: var(--indigo);
+    animation: pop 0.3s ease;
+  }
+  .checkbox-materia:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  /* ══════════════════ STATS ══════════════════ */
+  .stat-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(248,250,252,0.9));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+  }
+  .dark .stat-card {
+    background: linear-gradient(135deg, rgba(30,41,59,0.9), rgba(15,23,42,0.9));
+    border-color: rgba(51,65,85,0.8);
+  }
+  .stat-card:hover { transform: translateY(-3px); box-shadow: 0 15px 30px -10px rgba(67,56,202,0.2); }
+
+  /* ══════════════════ STICKY HEADER ══════════════════ */
+  .sticky-header { position: sticky; top: 0; z-index: 10; box-shadow: 0 4px 6px -2px rgba(0,0,0,0.05); }
+
+  /* ══════════════════ SCROLL ══════════════════ */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #c7d2fe, #a5b4fc);
+    border-radius: 6px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #a5b4fc, #818cf8); background-clip: padding-box; border: 2px solid transparent; }
+
+  /* ══════════════════ METODO BTN ══════════════════ */
+  .metodo-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .metodo-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #4338ca20, #7c3aed20);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .metodo-btn:hover {
+    transform: translateY(-4px);
+    border-color: var(--indigo);
+    box-shadow: 0 20px 40px -12px rgba(67, 56, 202, 0.35);
+  }
+  .metodo-btn:hover::before { opacity: 1; }
+
+  /* ══════════════════ FONDO DECORATIVO ══════════════════ */
+  .bg-blob {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.35;
+    z-index: -1;
+    pointer-events: none;
+  }
+  .blob-1 { top: -100px; right: -100px; width: 400px; height: 400px; background: linear-gradient(135deg, #a5b4fc, #c4b5fd); }
+  .blob-2 { bottom: -150px; left: -100px; width: 500px; height: 500px; background: linear-gradient(135deg, #c7d2fe, #ddd6fe); }
+  .blob-3 { top: 40%; left: 40%; width: 300px; height: 300px; background: linear-gradient(135deg, #f0abfc, #e0e7ff); }
+
+  .dark .blob-1 { background: linear-gradient(135deg, #4338ca, #7c3aed); }
+  .dark .blob-2 { background: linear-gradient(135deg, #4f46e5, #7c3aed); }
+  .dark .blob-3 { background: linear-gradient(135deg, #6d28d9, #4338ca); }
+</style>
+</head>
+<body class="min-h-screen text-slate-800 dark:text-slate-100">
+
+<!-- Fondos decorativos -->
+<div class="bg-blob blob-1"></div>
+<div class="bg-blob blob-2"></div>
+<div class="bg-blob blob-3"></div>
+
+<!-- ═══════════════════════════════════════════════════════
+     HEADER
+     ═══════════════════════════════════════════════════════ -->
+<header class="header-gradient text-white shadow-2xl sticky top-0 z-40">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-3">
+    <img src="logos/umsa.jpeg" alt="UMSA"
+         class="w-16 h-16 rounded-2xl bg-white/95 p-1.5 object-contain shadow-xl anim-float"
+         onerror="this.style.display='none'">
+    <div class="flex-1 text-center">
+      <div class="text-[10px] uppercase tracking-[0.25em] opacity-90 font-medium">Universidad Mayor de San Andrés</div>
+      <h1 class="text-xl sm:text-3xl font-black tracking-tight bg-gradient-to-r from-white via-indigo-100 to-white bg-clip-text text-transparent drop-shadow">
+        Sistema de Convalidaciones
+      </h1>
+      <div class="text-[11px] opacity-80 mt-0.5">Facultad de Ciencias Puras y Naturales — Carrera de Informática</div>
+    </div>
+    <img src="logos/ki.jpg" alt="Informática"
+         class="w-16 h-16 rounded-2xl bg-white/95 p-1.5 object-contain shadow-xl anim-float"
+         style="animation-delay: 1.5s"
+         onerror="this.style.display='none'">
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════
+     BARRA DE ESTADÍSTICAS
+     ═══════════════════════════════════════════════════════ -->
+<div class="bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border-b border-white/40 dark:border-slate-700/50 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 py-4 grid grid-cols-3 gap-3">
+    <div class="stat-card text-center py-3">
+      <div id="stat-seleccionadas" class="text-3xl font-black bg-gradient-to-r from-indigo-600 to-indigo-800 bg-clip-text text-transparent">0</div>
+      <div class="text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-widest font-semibold mt-1">Seleccionadas</div>
+    </div>
+    <div class="stat-card text-center py-3">
+      <div id="stat-convalidadas" class="text-3xl font-black bg-gradient-to-r from-emerald-600 to-emerald-800 bg-clip-text text-transparent">0</div>
+      <div class="text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-widest font-semibold mt-1">Convalidadas</div>
+    </div>
+    <div class="stat-card text-center py-3">
+      <div id="stat-pendientes" class="text-3xl font-black bg-gradient-to-r from-rose-500 to-rose-700 bg-clip-text text-transparent">0</div>
+      <div class="text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-widest font-semibold mt-1">Pendientes</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     TABS
+     ═══════════════════════════════════════════════════════ -->
+<nav class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm border-b border-slate-200/50 dark:border-slate-700/50">
+  <div class="max-w-7xl mx-auto flex overflow-x-auto">
+    <button data-tab="estudiante" class="tab-btn px-6 py-4 text-slate-600 dark:text-slate-300 whitespace-nowrap">
+      📄 Datos del Estudiante
+    </button>
+    <button data-tab="convalidadas" class="tab-btn px-6 py-4 text-slate-600 dark:text-slate-300 whitespace-nowrap">
+      ✅ Convalidadas
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════
+     MAIN
+     ═══════════════════════════════════════════════════════ -->
+<main class="max-w-7xl mx-auto px-4 py-8 relative z-10">
+
+<section id="tab-estudiante" class="tab-content anim-fade">
+
+  <!-- ══════════════ CARD 1: DATOS ESTUDIANTE ══════════════ -->
+  <div class="card bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm shadow-xl p-6 mb-6 border border-white/60 dark:border-slate-700/60 anim-fade-up">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-black text-lg shadow-lg">01</div>
+      <div>
+        <div class="text-xs font-bold text-indigo-700 dark:text-indigo-400 uppercase tracking-[0.15em]">Datos del estudiante</div>
+        <h2 class="text-2xl font-black text-slate-800 dark:text-white">Prepara tu consulta</h2>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+      <div>
+        <label class="block text-sm font-bold mb-2 text-slate-700 dark:text-slate-300">👤 Nombre completo</label>
+        <input type="text" id="nombre-estudiante" placeholder="Ej: Juan Pérez Mamani"
+               class="w-full border-2 border-slate-200 rounded-xl p-3.5 dark:bg-slate-700/50 dark:border-slate-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:outline-none transition-all">
+      </div>
+      <div>
+        <label class="block text-sm font-bold mb-2 text-slate-700 dark:text-slate-300">🆔 Cédula</label>
+        <input type="text" id="cedula-estudiante" placeholder="Ej: 1234567 LP"
+               class="w-full border-2 border-slate-200 rounded-xl p-3.5 dark:bg-slate-700/50 dark:border-slate-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:outline-none transition-all">
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div>
+        <label class="block text-sm font-bold text-indigo-800 dark:text-indigo-300 mb-2">🎓 Mención 1998 (plan antiguo)</label>
+        <select id="mencion-1998"
+                class="w-full border-2 border-indigo-300 bg-indigo-50/50 rounded-xl p-3.5 font-semibold dark:bg-slate-700/50 dark:border-indigo-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:outline-none transition-all"></select>
+      </div>
+      <div>
+        <label class="block text-sm font-bold text-emerald-800 dark:text-emerald-300 mb-2">🎯 Mención 2023 Ajustado (plan nuevo)</label>
+        <select id="mencion-2023"
+                class="w-full border-2 border-emerald-300 bg-emerald-50/50 rounded-xl p-3.5 font-semibold dark:bg-slate-700/50 dark:border-emerald-600 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100 dark:focus:ring-emerald-900/50 focus:outline-none transition-all"></select>
+      </div>
+    </div>
+
+    <div class="mt-6 flex justify-end">
+      <button id="btn-nueva-consulta"
+              class="text-sm text-rose-600 hover:text-rose-800 font-bold transition-all hover:scale-105">🗑️ Limpiar todo / Nueva consulta</button>
+    </div>
+  </div>
+
+  <!-- ══════════════ CARD 2: MÉTODO ══════════════ -->
+  <div class="card bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm shadow-xl p-6 mb-6 border border-white/60 dark:border-slate-700/60 anim-fade-up" style="animation-delay: 0.1s">
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white font-black text-lg shadow-lg">02</div>
+      <div>
+        <div class="text-xs font-bold text-purple-700 dark:text-purple-400 uppercase tracking-[0.15em]">Método de ingreso</div>
+        <h2 class="text-2xl font-black text-slate-800 dark:text-white">¿Cómo quieres cargar tus materias?</h2>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div id="metodo-archivo"
+           class="metodo-btn border-2 border-slate-200 dark:border-slate-600 bg-white/50 dark:bg-slate-700/30 p-6 cursor-pointer relative z-10">
+        <div class="text-4xl mb-3">📤</div>
+        <div class="font-black text-lg text-slate-800 dark:text-white">Subir archivo</div>
+        <div class="text-sm text-slate-500 dark:text-slate-400 mt-2">PDF, Word, Excel o imagen (OCR en navegador)</div>
+      </div>
+      <div id="metodo-manual"
+           class="metodo-btn border-2 border-slate-200 dark:border-slate-600 bg-white/50 dark:bg-slate-700/30 p-6 cursor-pointer relative z-10">
+        <div class="text-4xl mb-3">☑️</div>
+        <div class="font-black text-lg text-slate-800 dark:text-white">Marcar manualmente</div>
+        <div class="text-sm text-slate-500 dark:text-slate-400 mt-2">Selecciona tus materias aprobadas</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ ZONA ARCHIVO ══════════════ -->
+  <div id="zona-archivo" class="card bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm shadow-xl p-6 mb-6 border border-white/60 dark:border-slate-700/60 hidden anim-fade-up">
+    <div id="drop-zone" class="drop-zone rounded-2xl p-12 text-center cursor-pointer">
+      <div class="text-6xl mb-4 anim-float">📄</div>
+      <p class="text-slate-700 dark:text-slate-300 font-bold text-lg">Arrastra tu archivo aquí</p>
+      <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">o haz clic para seleccionar</p>
+      <p class="text-xs text-slate-400 mt-3 font-mono">PDF · DOCX · XLSX · PNG · JPG</p>
+      <input type="file" id="file-input" class="hidden" accept=".pdf,.docx,.xlsx,.xls,.png,.jpg,.jpeg">
+    </div>
+    <div id="file-name" class="mt-4 text-sm font-semibold text-slate-700 dark:text-slate-300"></div>
+    <button id="btn-procesar-archivo"
+            class="btn-primary mt-4 w-full text-white px-6 py-4 rounded-xl font-bold shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled>
+      <span id="spinner-archivo" class="spinner hidden"></span> ▶ Procesar archivo
+    </button>
+    <div id="progreso" class="mt-4 hidden text-sm text-slate-700 dark:text-slate-300 bg-indigo-50 dark:bg-slate-900 rounded-xl p-4 border border-indigo-100 dark:border-slate-700 font-mono"></div>
+  </div>
+
+  <!-- ══════════════ PANEL MATERIAS ══════════════ -->
+  <div id="panel-materias" class="card bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm shadow-xl overflow-hidden mb-6 border border-white/60 dark:border-slate-700/60 anim-fade-up" style="animation-delay: 0.2s">
+    <div class="p-6 border-b border-slate-100 dark:border-slate-700">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white font-black text-lg shadow-lg">03</div>
+        <div>
+          <div class="text-xs font-bold text-emerald-700 dark:text-emerald-400 uppercase tracking-[0.15em]">Materias</div>
+          <h2 class="text-xl font-black text-slate-800 dark:text-white">Selecciona tus materias aprobadas (1998)</h2>
+          <p class="text-sm text-slate-500 mt-1">Las columnas se llenan automáticamente.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-3 mb-4">
+        <div class="stat-card px-5 py-3 text-center flex-1">
+          <div id="contador-seleccionadas" class="text-3xl font-black bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">0</div>
+          <div class="text-[10px] uppercase tracking-widest text-slate-500 font-semibold">seleccionadas</div>
+        </div>
+        <div class="stat-card px-5 py-3 text-center flex-1">
+          <div id="contador-convalidadas" class="text-3xl font-black bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">0</div>
+          <div class="text-[10px] uppercase tracking-widest text-slate-500 font-semibold">convalidadas</div>
+        </div>
+      </div>
+
+      <div class="flex justify-between items-center flex-wrap gap-3">
+        <input type="text" id="buscador" placeholder="🔍 Buscar por código o nombre..."
+               class="w-full md:w-2/3 border-2 border-slate-200 rounded-xl p-3.5 dark:bg-slate-700/50 dark:border-slate-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:outline-none transition-all">
+        <button id="btn-limpiar"
+                class="text-indigo-700 dark:text-indigo-400 font-bold hover:underline px-3 py-2 transition-all hover:scale-105">Limpiar selección</button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 sticky-header">
+      <div class="col-1998 p-4">
+        <div class="text-[10px] uppercase opacity-90 tracking-widest font-semibold">Plan</div>
+        <div class="text-xl font-black">1998</div>
+      </div>
+      <div class="col-2023 p-4">
+        <div class="text-[10px] uppercase opacity-90 tracking-widest font-semibold">Plan</div>
+        <div class="text-xl font-black">2023</div>
+      </div>
+      <div class="col-2025 p-4">
+        <div class="text-[10px] uppercase opacity-90 tracking-widest font-semibold">Plan</div>
+        <div class="text-xl font-black">2023 Ajustado</div>
+      </div>
+    </div>
+
+    <div id="lista-materias" class="divide-y divide-slate-100 dark:divide-slate-700 max-h-[700px] overflow-auto"></div>
+  </div>
+
+  <!-- ══════════════ PANEL ELECTIVAS ══════════════ -->
+  <div id="panel-electivas" class="card bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 shadow-xl p-6 mb-6 border-2 border-amber-300 dark:border-amber-700 hidden anim-fade-up">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-white font-black text-lg shadow-lg">04</div>
+      <div>
+        <div class="text-xs font-bold text-amber-700 dark:text-amber-400 uppercase tracking-[0.15em]">Electivas</div>
+        <h2 class="text-2xl font-black text-slate-800 dark:text-white">🎯 Elige tus materias electivas</h2>
+      </div>
+    </div>
+    <div id="lista-electivas" class="space-y-3"></div>
+  </div>
+
+  <!-- ══════════════ BOTONES EXPORTACIÓN ══════════════ -->
+  <div class="flex gap-3 mb-6 flex-wrap">
+    <button id="btn-pdf-completo"
+            class="btn-primary text-white px-6 py-3.5 rounded-xl font-bold shadow-lg hidden">
+      📥 PDF completo
+    </button>
+    <button id="btn-excel-completo"
+            class="btn-success text-white px-6 py-3.5 rounded-xl font-bold shadow-lg hidden">
+      📊 Excel completo
+    </button>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     TAB CONVALIDADAS
+     ═══════════════════════════════════════════════════════ -->
+<section id="tab-convalidadas" class="tab-content hidden">
+  <div id="info-estudiante-convalidadas"></div>
+  <div class="flex gap-3 mb-6 flex-wrap">
+    <button id="btn-pdf"
+            class="btn-success text-white px-6 py-3.5 rounded-xl font-bold shadow-lg hidden">
+      📥 PDF convalidadas
+    </button>
+    <button id="btn-excel"
+            class="bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white px-6 py-3.5 rounded-xl font-bold shadow-lg hidden transition-all hover:-translate-y-0.5">
+      📊 Excel convalidadas
+    </button>
+  </div>
+  <div id="resumen-convalidadas" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 hidden"></div>
+  <div id="vista-convalidadas" class="card bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm shadow-xl overflow-hidden hidden border border-white/60 dark:border-slate-700/60">
+    <div class="p-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white">
+      <h3 class="font-black text-lg">✅ Materias Convalidadas</h3>
+    </div>
+    <div class="p-4"><div id="tabla-convalidadas"></div></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-gradient-to-r from-slate-800 via-slate-900 to-slate-800 dark:from-slate-950 dark:via-black dark:to-slate-950 text-slate-300 text-center py-8 mt-12 text-xs relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-r from-indigo-900/20 via-transparent to-purple-900/20"></div>
+  <div class="max-w-7xl mx-auto px-4 relative z-10">
+    <div class="font-black text-base mb-1 bg-gradient-to-r from-indigo-300 via-purple-300 to-emerald-300 bg-clip-text text-transparent">Sistema de Convalidaciones UMSA</div>
+    <div class="opacity-70">Carrera de Informática © 2026 — Universidad Mayor de San Andrés</div>
+  </div>
+</footer>
+
+<script src="js/lector.js"></script>
+<script src="js/motor.js"></script>
+<script src="js/generador_pdf.js"></script>
+<script src="js/generador_excel.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
