@@ -1,0 +1,1199 @@
+[
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 1,
+    "codigo": "INF-111",
+    "nombre": "INTRODUCCIÓN A LA INFORMÁTICA",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 1,
+    "codigo": "LAB-111",
+    "nombre": "LABORATORIO DE INF-111",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 1,
+    "codigo": "INF-112",
+    "nombre": "ORGANIZACIÓN DE COMPUTADORAS",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 1,
+    "codigo": "INF-113",
+    "nombre": "LABORATORIO DE COMPUTACIÓN",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 1,
+    "codigo": "MAT-114",
+    "nombre": "MATEMÁTICA DISCRETA I",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 1,
+    "codigo": "MAT-115",
+    "nombre": "ANÁLISIS MATEMÁTICO I",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 1,
+    "codigo": "LIN-116",
+    "nombre": "GRAMÁTICA ESPAÑOLA",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 2,
+    "codigo": "INF-121",
+    "nombre": "ALGORITMOS Y PROGRAMACIÓN",
+    "prerequisitos": "INF-111"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 2,
+    "codigo": "LAB-121",
+    "nombre": "LABORATORIO DE INF-121",
+    "prerequisitos": "LAB-111"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 2,
+    "codigo": "FIS-122",
+    "nombre": "FÍSICA I",
+    "prerequisitos": "INF-112"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 2,
+    "codigo": "LAB-122",
+    "nombre": "LABORATORIO DE FÍSICA I",
+    "prerequisitos": "INF-112"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 2,
+    "codigo": "MAT-123",
+    "nombre": "MATEMÁTICA DISCRETA II",
+    "prerequisitos": "MAT-114"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 2,
+    "codigo": "MAT-124",
+    "nombre": "ÁLGEBRA LINEAL",
+    "prerequisitos": "LIN-116"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 2,
+    "codigo": "MAT-125",
+    "nombre": "ANÁLISIS MATEMÁTICO II",
+    "prerequisitos": "MAT-115"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 3,
+    "codigo": "INF-131",
+    "nombre": "ESTRUCTURA DE DATOS Y ALGORITMOS",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 3,
+    "codigo": "LAB-131",
+    "nombre": "LABORATORIO DE INF-131",
+    "prerequisitos": "LAB-121"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 3,
+    "codigo": "FIS-132",
+    "nombre": "FÍSICA II",
+    "prerequisitos": "FIS-122"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 3,
+    "codigo": "LAB-132",
+    "nombre": "LABORATORIO DE FÍSICA II",
+    "prerequisitos": "LAB-122"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 3,
+    "codigo": "EST-133",
+    "nombre": "ESTADÍSTICA I",
+    "prerequisitos": "MAT-123"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 3,
+    "codigo": "MAT-134",
+    "nombre": "ANÁLISIS MATEMÁTICO III",
+    "prerequisitos": "MAT-125"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 3,
+    "codigo": "LIN-135",
+    "nombre": "IDIOMA I",
+    "prerequisitos": "LIN-116"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 4,
+    "codigo": "INF-141",
+    "nombre": "SISTEMAS DE GESTIÓN",
+    "prerequisitos": "INF-131"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 4,
+    "codigo": "INF-142",
+    "nombre": "FUNDAMENTOS DIGITALES",
+    "prerequisitos": "FIS-132"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 4,
+    "codigo": "INF-143",
+    "nombre": "TALLER DE PROGRAMACIÓN",
+    "prerequisitos": "LAB-131, INF-113"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 4,
+    "codigo": "INF-144",
+    "nombre": "LÓGICA PARA LA CIENCIA DE LA COMPUTACIÓN",
+    "prerequisitos": "EST-133"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 4,
+    "codigo": "EST-145",
+    "nombre": "ESTADÍSTICA II",
+    "prerequisitos": "EST-133"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 5,
+    "codigo": "INF-151",
+    "nombre": "SISTEMAS OPERATIVOS",
+    "prerequisitos": "INF-143"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 5,
+    "codigo": "INF-152",
+    "nombre": "SISTEMAS DE INFORMACIÓN GERENCIAL",
+    "prerequisitos": "INF-141"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 5,
+    "codigo": "INF-153",
+    "nombre": "ASSEMBLER",
+    "prerequisitos": "LAB-132, INF-142"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 5,
+    "codigo": "INF-154",
+    "nombre": "LENGUAJES FORMALES Y AUTÓMATAS",
+    "prerequisitos": "INF-144"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 5,
+    "codigo": "EST-155",
+    "nombre": "INVESTIGACIÓN DE OPERACIONES I",
+    "prerequisitos": "EST-145"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 5,
+    "codigo": "MAT-156",
+    "nombre": "ANÁLISIS NUMÉRICO",
+    "prerequisitos": "MAT-134"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 5,
+    "codigo": "INF-166",
+    "nombre": "INFORMÁTICA Y SOCIEDAD",
+    "prerequisitos": "LIN-135, INF-141"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-161",
+    "nombre": "DISEÑO Y ADMINISTRACIÓN DE BASE DE DATOS",
+    "prerequisitos": "INF-151"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-162",
+    "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS DE INFORMACIÓN",
+    "prerequisitos": "INF-152"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-163",
+    "nombre": "INGENIERÍA DE SOFTWARE",
+    "prerequisitos": "INF-151"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-164",
+    "nombre": "TEORÍA DE LA INFORMACIÓN Y CODIFICACIÓN",
+    "prerequisitos": "EST-145"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "EST-165",
+    "nombre": "INVESTIGACIÓN DE OPERACIONES II",
+    "prerequisitos": "EST-155"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 7,
+    "codigo": "INF-271",
+    "nombre": "TEORÍA DE SISTEMAS Y MODELOS",
+    "prerequisitos": "INF-161"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 7,
+    "codigo": "INF-272",
+    "nombre": "TALLER DE BASE DE DATOS",
+    "prerequisitos": "INF-162"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 7,
+    "codigo": "INF-273",
+    "nombre": "TELEMÁTICA",
+    "prerequisitos": "INF-164"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 7,
+    "codigo": "LAB-273",
+    "nombre": "LABORATORIO DE INF-273",
+    "prerequisitos": "INF-164"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "INF-281",
+    "nombre": "TALLER DE SISTEMAS DE INFORMACIÓN",
+    "prerequisitos": "INF-162"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 8,
+    "codigo": "INF-282",
+    "nombre": "ESPECIFICACIONES FORMALES Y VERIFICACIÓN",
+    "prerequisitos": "INF-154, EST-165"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "INF-391",
+    "nombre": "SIMULACIÓN DE SISTEMAS",
+    "prerequisitos": "INF-281"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "INF-398",
+    "nombre": "TALLER DE LICENCIATURA I",
+    "prerequisitos": "INF-271, INF-281, INF-282"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 9,
+    "codigo": "INF-399",
+    "nombre": "TALLER DE LICENCIATURA II",
+    "prerequisitos": "INF-391"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-311",
+    "nombre": "PROTOCOLOS DE COMUNICACIÓN",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-312",
+    "nombre": "ADMINISTRACIÓN DE UNIDADES DE PROCESAMIENTO DE DATOS",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-314",
+    "nombre": "AUDITORÍA INFORMÁTICA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-315",
+    "nombre": "PLANIFICACIÓN Y SEGURIDAD DE LOS SISTEMAS INFORMÁTICOS",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-316",
+    "nombre": "SISTEMAS DE INFORMACIÓN GERENCIAL II",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-317",
+    "nombre": "SISTEMAS EN TIEMPO REAL Y DISTRIBUIDOS",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-319",
+    "nombre": "PROGRAMACIÓN FUNCIONAL",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-320",
+    "nombre": "PROGRAMACIÓN LÓGICA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-321",
+    "nombre": "PROGRAMACIÓN PARALELA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-322",
+    "nombre": "PROGRAMACIÓN DISTRIBUIDA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-323",
+    "nombre": "PROGRAMACIÓN GRÁFICA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-324",
+    "nombre": "PROGRAMACIÓN MULTIMEDIAL",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-325",
+    "nombre": "PROGRAMACIÓN VIRTUAL",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-327",
+    "nombre": "SISTEMAS DE CONTROL AUTOMÁTICO",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-328",
+    "nombre": "COMPARACIÓN DE LENGUAJES",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-329",
+    "nombre": "IDIOMAS II",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-330",
+    "nombre": "HARDWARE I",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-331",
+    "nombre": "ORGANIZACIÓN Y MÉTODOS DE INFORMACIÓN",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-332",
+    "nombre": "ECONOMÍA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-333",
+    "nombre": "PREPARACIÓN Y EVALUACIÓN DE PROYECTOS I",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-334",
+    "nombre": "PREPARACIÓN Y EVALUACIÓN DE PROYECTOS II",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-335",
+    "nombre": "MUESTREO",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-336",
+    "nombre": "TEORÍA GENERAL DE SISTEMAS",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-337",
+    "nombre": "HARDWARE II",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-338",
+    "nombre": "MICROPROCESADORES",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-339",
+    "nombre": "ORGANIZACIÓN DE COMPUTADORAS",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-340",
+    "nombre": "ARQUITECTURA DE COMPUTADORAS Y PROCESAMIENTO EN PARALELO",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-351",
+    "nombre": "SISTEMAS EXPERTOS",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "INF-354",
+    "nombre": "INTELIGENCIA ARTIFICIAL",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "MAT-391",
+    "nombre": "SEMINARIO II",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "MAT-398",
+    "nombre": "DISEÑO DE COMPILADORES",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "CPA-201",
+    "nombre": "SISTEMAS CONTABLES",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "MAT-144",
+    "nombre": "ESTADÍSTICA DESCRIPTIVA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "semestre": 6,
+    "codigo": "ECO-241",
+    "nombre": "SISTEMAS ECONÓMICOS II",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 1,
+    "codigo": "INF-111",
+    "nombre": "INTRODUCCIÓN A LA INFORMÁTICA",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 1,
+    "codigo": "LAB-111",
+    "nombre": "LABORATORIO DE INF-111",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 1,
+    "codigo": "INF-112",
+    "nombre": "ORGANIZACIÓN DE COMPUTADORAS",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 1,
+    "codigo": "INF-113",
+    "nombre": "LABORATORIO DE COMPUTACIÓN",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 1,
+    "codigo": "MAT-114",
+    "nombre": "MATEMÁTICA DISCRETA I",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 1,
+    "codigo": "MAT-115",
+    "nombre": "ANÁLISIS MATEMÁTICO I",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 1,
+    "codigo": "LIN-116",
+    "nombre": "GRAMÁTICA ESPAÑOLA",
+    "prerequisitos": "NINGUNO"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 2,
+    "codigo": "INF-121",
+    "nombre": "ALGORITMOS Y PROGRAMACIÓN",
+    "prerequisitos": "INF-111"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 2,
+    "codigo": "LAB-121",
+    "nombre": "LABORATORIO DE INF-121",
+    "prerequisitos": "LAB-111"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 2,
+    "codigo": "FIS-122",
+    "nombre": "FÍSICA I",
+    "prerequisitos": "INF-112"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 2,
+    "codigo": "LAB-122",
+    "nombre": "LABORATORIO DE FÍSICA I",
+    "prerequisitos": "INF-112"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 2,
+    "codigo": "MAT-123",
+    "nombre": "MATEMÁTICA DISCRETA II",
+    "prerequisitos": "MAT-114"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 2,
+    "codigo": "MAT-124",
+    "nombre": "ÁLGEBRA LINEAL",
+    "prerequisitos": "LIN-116"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 2,
+    "codigo": "MAT-125",
+    "nombre": "ANÁLISIS MATEMÁTICO II",
+    "prerequisitos": "MAT-115"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 3,
+    "codigo": "INF-131",
+    "nombre": "ESTRUCTURA DE DATOS Y ALGORITMOS",
+    "prerequisitos": "INF-121"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 3,
+    "codigo": "LAB-131",
+    "nombre": "LABORATORIO DE INF-131",
+    "prerequisitos": "LAB-121"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 3,
+    "codigo": "FIS-132",
+    "nombre": "FÍSICA II",
+    "prerequisitos": "FIS-122"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 3,
+    "codigo": "LAB-132",
+    "nombre": "LABORATORIO DE FÍSICA II",
+    "prerequisitos": "LAB-122"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 3,
+    "codigo": "EST-133",
+    "nombre": "ESTADÍSTICA I",
+    "prerequisitos": "MAT-123"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 3,
+    "codigo": "MAT-134",
+    "nombre": "ANÁLISIS MATEMÁTICO III",
+    "prerequisitos": "MAT-125"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 3,
+    "codigo": "LIN-135",
+    "nombre": "IDIOMA I",
+    "prerequisitos": "LIN-116"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 4,
+    "codigo": "INF-141",
+    "nombre": "SISTEMAS DE GESTIÓN",
+    "prerequisitos": "INF-131"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 4,
+    "codigo": "INF-142",
+    "nombre": "FUNDAMENTOS DIGITALES",
+    "prerequisitos": "FIS-132"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 4,
+    "codigo": "INF-143",
+    "nombre": "TALLER DE PROGRAMACIÓN",
+    "prerequisitos": "LAB-131, INF-113"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 4,
+    "codigo": "INF-144",
+    "nombre": "LÓGICA PARA LA CIENCIA DE LA COMPUTACIÓN",
+    "prerequisitos": "EST-133"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 4,
+    "codigo": "EST-145",
+    "nombre": "ESTADÍSTICA II",
+    "prerequisitos": "EST-133"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "INF-151",
+    "nombre": "SISTEMAS OPERATIVOS",
+    "prerequisitos": "INF-143"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "INF-152",
+    "nombre": "SISTEMAS DE INFORMACIÓN GERENCIAL",
+    "prerequisitos": "INF-141"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "INF-153",
+    "nombre": "ASSEMBLER",
+    "prerequisitos": "LAB-132, INF-142"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "INF-154",
+    "nombre": "LENGUAJES FORMALES Y AUTÓMATAS",
+    "prerequisitos": "INF-144"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "EST-155",
+    "nombre": "INVESTIGACIÓN DE OPERACIONES I",
+    "prerequisitos": "EST-145"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "MAT-156",
+    "nombre": "ANÁLISIS NUMÉRICO",
+    "prerequisitos": "MAT-134"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 5,
+    "codigo": "INF-166",
+    "nombre": "INFORMÁTICA Y SOCIEDAD",
+    "prerequisitos": "LIN-135, INF-141"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-161",
+    "nombre": "DISEÑO Y ADMINISTRACIÓN DE BASE DE DATOS",
+    "prerequisitos": "INF-151"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-162",
+    "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS DE INFORMACIÓN",
+    "prerequisitos": "INF-152"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-163",
+    "nombre": "INGENIERÍA DE SOFTWARE",
+    "prerequisitos": "INF-151"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-164",
+    "nombre": "TEORÍA DE LA INFORMACIÓN Y CODIFICACIÓN",
+    "prerequisitos": "EST-145"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "EST-165",
+    "nombre": "INVESTIGACIÓN DE OPERACIONES II",
+    "prerequisitos": "EST-155"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 7,
+    "codigo": "INF-271",
+    "nombre": "TEORÍA DE SISTEMAS Y MODELOS",
+    "prerequisitos": "INF-161"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 7,
+    "codigo": "INF-272",
+    "nombre": "TALLER DE BASE DE DATOS",
+    "prerequisitos": "INF-162"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 7,
+    "codigo": "INF-273",
+    "nombre": "TELEMÁTICA",
+    "prerequisitos": "INF-164"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 7,
+    "codigo": "LAB-273",
+    "nombre": "LABORATORIO DE INF-273",
+    "prerequisitos": "INF-164"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 8,
+    "codigo": "INF-281",
+    "nombre": "TALLER DE SISTEMAS DE INFORMACIÓN",
+    "prerequisitos": "INF-162"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 8,
+    "codigo": "INF-282",
+    "nombre": "ESPECIFICACIONES FORMALES Y VERIFICACIÓN",
+    "prerequisitos": "INF-154, EST-165"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 9,
+    "codigo": "INF-391",
+    "nombre": "SIMULACIÓN DE SISTEMAS",
+    "prerequisitos": "INF-281"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 9,
+    "codigo": "INF-398",
+    "nombre": "TALLER DE LICENCIATURA I",
+    "prerequisitos": "INF-271, INF-281, INF-282"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 9,
+    "codigo": "INF-399",
+    "nombre": "TALLER DE LICENCIATURA II",
+    "prerequisitos": "INF-391"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-311",
+    "nombre": "PROTOCOLOS DE COMUNICACIÓN",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-312",
+    "nombre": "ADMINISTRACIÓN DE UNIDADES DE PROCESAMIENTO DE DATOS",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-314",
+    "nombre": "AUDITORÍA INFORMÁTICA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-315",
+    "nombre": "PLANIFICACIÓN Y SEGURIDAD DE LOS SISTEMAS INFORMÁTICOS",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-316",
+    "nombre": "SISTEMAS DE INFORMACIÓN GERENCIAL II",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-317",
+    "nombre": "SISTEMAS EN TIEMPO REAL Y DISTRIBUIDOS",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-319",
+    "nombre": "PROGRAMACIÓN FUNCIONAL",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-320",
+    "nombre": "PROGRAMACIÓN LÓGICA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-321",
+    "nombre": "PROGRAMACIÓN PARALELA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-322",
+    "nombre": "PROGRAMACIÓN DISTRIBUIDA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-323",
+    "nombre": "PROGRAMACIÓN GRÁFICA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-324",
+    "nombre": "PROGRAMACIÓN MULTIMEDIAL",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-325",
+    "nombre": "PROGRAMACIÓN VIRTUAL",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-327",
+    "nombre": "SISTEMAS DE CONTROL AUTOMÁTICO",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-328",
+    "nombre": "COMPARACIÓN DE LENGUAJES",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-329",
+    "nombre": "IDIOMAS II",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-330",
+    "nombre": "HARDWARE I",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-331",
+    "nombre": "ORGANIZACIÓN Y MÉTODOS DE INFORMACIÓN",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-332",
+    "nombre": "ECONOMÍA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-333",
+    "nombre": "PREPARACIÓN Y EVALUACIÓN DE PROYECTOS I",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-334",
+    "nombre": "PREPARACIÓN Y EVALUACIÓN DE PROYECTOS II",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-335",
+    "nombre": "MUESTREO",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-336",
+    "nombre": "TEORÍA GENERAL DE SISTEMAS",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-337",
+    "nombre": "HARDWARE II",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-338",
+    "nombre": "MICROPROCESADORES",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-339",
+    "nombre": "ORGANIZACIÓN DE COMPUTADORAS",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-340",
+    "nombre": "ARQUITECTURA DE COMPUTADORAS Y PROCESAMIENTO EN PARALELO",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-351",
+    "nombre": "SISTEMAS EXPERTOS",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-354",
+    "nombre": "INTELIGENCIA ARTIFICIAL",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-355",
+    "nombre": "LENGUAJES NATURALES Y FORMALES",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-359",
+    "nombre": "COMPILADORES Y TRADUCTORES",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-360",
+    "nombre": "COMPUTABILIDAD Y COMPLEJIDAD ALGORÍTMICA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-361",
+    "nombre": "DISEÑO Y ANÁLISIS DE ALGORITMOS I",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-363",
+    "nombre": "MODELOS LINEALES",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-364",
+    "nombre": "DISEÑO EXPERIMENTAL",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-365",
+    "nombre": "SIMULACIÓN Y MODELADO",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-367",
+    "nombre": "INVESTIGACIÓN OPERATIVA III",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "INF-369",
+    "nombre": "PROCESOS ESTOCÁSTICOS",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "MAT-391",
+    "nombre": "SEMINARIO II",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "MAT-398",
+    "nombre": "DISEÑO DE COMPILADORES",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "CPA-201",
+    "nombre": "SISTEMAS CONTABLES",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "MAT-144",
+    "nombre": "ESTADÍSTICA DESCRIPTIVA",
+    "prerequisitos": "ELECTIVA"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "semestre": 6,
+    "codigo": "ECO-241",
+    "nombre": "SISTEMAS ECONÓMICOS II",
+    "prerequisitos": "ELECTIVA"
+  }
+]

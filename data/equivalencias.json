@@ -1,0 +1,5098 @@
+[
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "LAB-111",
+    "nombre_1998": "LABORATORIO DE INF-111",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-112",
+    "nombre_1998": "ORGANIZACION DE COMPUTADORAS",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-113",
+    "nombre_1998": "LABORATORIO DE COMPUTACION",
+    "cod_2023aj": "INF-113",
+    "nombre_2023aj": "Programación Web I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "MAT-114",
+    "nombre_1998": "MATEMATICA DISCRETA I",
+    "cod_2023aj": "INF-114",
+    "nombre_2023aj": "Álgebra",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "MAT-115",
+    "nombre_1998": "ANALISIS MATEMATICO I",
+    "cod_2023aj": "INF-115",
+    "nombre_2023aj": "Cálculo I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "LIN-116",
+    "nombre_1998": "GRAMATICA ESPAÑOLA",
+    "cod_2023aj": "TRA-136",
+    "nombre_2023aj": "Metodología de la investigación",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-121",
+    "nombre_1998": "ALGORITMOS Y PROGRAMACION",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "LAB-121",
+    "nombre_1998": "LABORATORIO DE INF-121",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "FIS-122",
+    "nombre_1998": "FISICA I",
+    "cod_2023aj": "INF-116",
+    "nombre_2023aj": "Física",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "LAB-122",
+    "nombre_1998": "LABORATORIO DE FISICA I",
+    "cod_2023aj": "INF-116",
+    "nombre_2023aj": "Física",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "MAT-123",
+    "nombre_1998": "MATEMATICA DISCRETA II",
+    "cod_2023aj": "IID-311",
+    "nombre_2023aj": "Programación de Dispositivos Móviles II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "MAT-124",
+    "nombre_1998": "ALGEBRA LINEAL",
+    "cod_2023aj": "INF-125",
+    "nombre_2023aj": "Álgebra Lineal",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "MAT-125",
+    "nombre_1998": "ANALISIS MATEMATICO II",
+    "cod_2023aj": "INF-126",
+    "nombre_2023aj": "Cálculo II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-131",
+    "nombre_1998": "ESTRUCTURA DE DATOS Y ALGORITMOS",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "LAB-131",
+    "nombre_1998": "LABORATORIO DE INF-131",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "FIS-132",
+    "nombre_1998": "FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "LAB-132",
+    "nombre_1998": "LABORATORIO FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "EST-133",
+    "nombre_1998": "ESTADISTICA I",
+    "cod_2023aj": "INF-124",
+    "nombre_2023aj": "Estadística I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "MAT-134",
+    "nombre_1998": "ANALISIS MATEMATICO III",
+    "cod_2023aj": "IID-247",
+    "nombre_2023aj": "Cálculo III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "LIN-135",
+    "nombre_1998": "IDIOMA I",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-141",
+    "nombre_1998": "SISTEMAS DE GESTIÓN",
+    "cod_2023aj": "IID-312",
+    "nombre_2023aj": "Comunicaciones por Satélite",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-142",
+    "nombre_1998": "FUNDAMENTOS DIGITALES",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-143",
+    "nombre_1998": "TALLER DE PROGRAMACION",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-144",
+    "nombre_1998": "LOGICA PARA LA CIENCIA DE LA COMPUTACION",
+    "cod_2023aj": "IID-313",
+    "nombre_2023aj": "Sistemas Avanzados de Comunicaciones",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "EST-145",
+    "nombre_1998": "ESTADISTICA II",
+    "cod_2023aj": "INF-134",
+    "nombre_2023aj": "Estadística II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-151",
+    "nombre_1998": "SISTEMAS OPERATIVOS",
+    "cod_2023aj": "IID-317",
+    "nombre_2023aj": "Instrumentación de Procesos para la Industria Minera",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-152",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL",
+    "cod_2023aj": "INF-318",
+    "nombre_2023aj": "Computación en la Nube",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-153",
+    "nombre_1998": "ASSEMBLER",
+    "cod_2023aj": "INF-319",
+    "nombre_2023aj": "Programación a bajo nivel",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-154",
+    "nombre_1998": "LENGUAJES FORMALES Y AUTOMATAS",
+    "cod_2023aj": "IID-316",
+    "nombre_2023aj": "Leng. formales y autómatas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "EST-155",
+    "nombre_1998": "INVESTIGACIÓN DE OPERACIONES I",
+    "cod_2023aj": "INF-243",
+    "nombre_2023aj": "Investigación Operativa I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "MAT-156",
+    "nombre_1998": "ANALISIS NUMERICO",
+    "cod_2023aj": "IID-320",
+    "nombre_2023aj": "Sistemas Hidráulicos y Neumáticos de Potencia",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-161",
+    "nombre_1998": "DISEÑO Y ADMINISTRACIÓN DE BASE DE DATOS",
+    "cod_2023aj": "INF-132",
+    "nombre_2023aj": "Base de datos I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-162",
+    "nombre_1998": "ANALISIS Y DISEÑO DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-241",
+    "nombre_2023aj": "Análisis y diseño de sistemas I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-163",
+    "nombre_1998": "INGENIERIA DE SOFTWARE",
+    "cod_2023aj": "IID-264",
+    "nombre_2023aj": "Ingeniería de software I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-164",
+    "nombre_1998": "TEORIA DE LA INFORMACION Y CODIFICACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "EST-165",
+    "nombre_1998": "INVESTIGACION DE OPERACIONES II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-166",
+    "nombre_1998": "INFORMATICA Y SOCIEDAD",
+    "cod_2023aj": "TRA-256",
+    "nombre_2023aj": "Legislación Informática y ética",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-271",
+    "nombre_1998": "TEORIA DE SISTEMAS Y MODELOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-272",
+    "nombre_1998": "TALLER DE BASE DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-273",
+    "nombre_1998": "TELEMATICA",
+    "cod_2023aj": "INF-242",
+    "nombre_2023aj": "Redes I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "LAB-273",
+    "nombre_1998": "LABORATORIO DE INF-273",
+    "cod_2023aj": "INF-242",
+    "nombre_2023aj": "Redes I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-281",
+    "nombre_1998": "TALLER DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-266",
+    "nombre_2023aj": "Taller de Proyecto",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-282",
+    "nombre_1998": "ESPECIFICACIONES FORMALES Y VERIFICACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-391",
+    "nombre_1998": "SIMULACION DE SISTEMAS",
+    "cod_2023aj": "IID-261",
+    "nombre_2023aj": "Simulación de sistemas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-398",
+    "nombre_1998": "TALLER DE LICENCIATURA I",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-399",
+    "nombre_1998": "TALLER DE LICENCIATURA II",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "MAT-144",
+    "nombre_1998": "ESTADISTICA DESCRIPTIVA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "CPA-201",
+    "nombre_1998": "SISTEMAS CONTABLES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "MAT-223",
+    "nombre_1998": "SISTEMAS DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "MAT-236",
+    "nombre_1998": "ESTRUCTURA DE LA INFORMACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "ECO-241",
+    "nombre_1998": "SISTEMAS ECONOMICOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-312",
+    "nombre_1998": "ADMINISTRACION DE UNIDADES DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-314",
+    "nombre_1998": "AUDITORIA INFORMATICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-315",
+    "nombre_1998": "PLANIFICACION Y SEGURIDAD DE LOS SISTEMAS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-316",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-320",
+    "nombre_1998": "PROGRAMACION LOGICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-323",
+    "nombre_1998": "PROGRAMACION GRAFICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-324",
+    "nombre_1998": "PROGRAMACION MULTIMEDIAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-325",
+    "nombre_1998": "PROGRAMACION VIRTUAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-327",
+    "nombre_1998": "SISTEMAS DE CONTROL AUTOMATICO",
+    "cod_2023aj": "IID-251",
+    "nombre_2023aj": "Sistemas de control",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-328",
+    "nombre_1998": "COMPARACION DE LENGUAJES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-329",
+    "nombre_1998": "IDIOMAS II",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-330",
+    "nombre_1998": "HARDWARE I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-331",
+    "nombre_1998": "ORGANIZACION Y METODOS DE INFORMACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-332",
+    "nombre_1998": "ECONOMIA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-333",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS I",
+    "cod_2023aj": "INF-315",
+    "nombre_2023aj": "Preparación y evaluación de proyectos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-335",
+    "nombre_1998": "MUESTREO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-336",
+    "nombre_1998": "TEORIA GENERAL DE SISTEMAS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-338",
+    "nombre_1998": "MICROPROCESADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-351",
+    "nombre_1998": "SISTEMAS EXPERTOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-354",
+    "nombre_1998": "INTELIGENCIA ARTIFICIAL",
+    "cod_2023aj": "INF-335",
+    "nombre_2023aj": "Inteligencia Artificial",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-359",
+    "nombre_1998": "COMPILADORES Y TRADUCTORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-360",
+    "nombre_1998": "COMPUTABILIDAD Y COMPLEJIDAD ALGORITMICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-363",
+    "nombre_1998": "MODELOS LINEALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-364",
+    "nombre_1998": "DISENO EXPERIMENTAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-365",
+    "nombre_1998": "SIMULACION Y MODELAJE",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-367",
+    "nombre_1998": "INVESTIGACION OPERATIVA III",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-369",
+    "nombre_1998": "PROCESOS ESTOCASTICOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-317",
+    "nombre_1998": "SISTEMAS EN TIEMPO REAL Y DISTRIBUIDO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-340",
+    "nombre_1998": "ARQUITECTURA DE COMPUTADORAS Y PROCESAMIENTO EN PARALELO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-319",
+    "nombre_1998": "PROGRAMACION FUNCIONAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "MAT-391",
+    "nombre_1998": "SEMINARIO II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-355",
+    "nombre_1998": "LENGUAJES NATURALES Y FORMALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-361",
+    "nombre_1998": "DISEÑO Y ANALISIS DE ALGORITMOS I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-334",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-311",
+    "nombre_1998": "PROTOCOLOS DE COMUNICACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "MAT-398",
+    "nombre_1998": "DISEÑO DECOMPILADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-357",
+    "nombre_1998": "ROBÓTICA",
+    "cod_2023aj": "INF-244",
+    "nombre_2023aj": "Introducción a la robótica",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-322",
+    "nombre_1998": "PROGRAMACION DISTRIBUIDA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-358",
+    "nombre_1998": "TEORIA DEL CAOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "LAB-111",
+    "nombre_1998": "LABORATORIO DE INF-111",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-112",
+    "nombre_1998": "ORGANIZACION DE COMPUTADORAS",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-113",
+    "nombre_1998": "LABORATORIO DE COMPUTACION",
+    "cod_2023aj": "INF-113",
+    "nombre_2023aj": "Programación Web I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "MAT-114",
+    "nombre_1998": "MATEMATICA DISCRETA I",
+    "cod_2023aj": "INF-114",
+    "nombre_2023aj": "Álgebra",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "MAT-115",
+    "nombre_1998": "ANALISIS MATEMATICO I",
+    "cod_2023aj": "INF-115",
+    "nombre_2023aj": "Cálculo I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "LIN-116",
+    "nombre_1998": "GRAMATICA ESPAÑOLA",
+    "cod_2023aj": "TRA-136",
+    "nombre_2023aj": "Metodología de la investigación",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-121",
+    "nombre_1998": "ALGORITMOS Y PROGRAMACION",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "LAB-121",
+    "nombre_1998": "LABORATORIO DE INF-121",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "FIS-122",
+    "nombre_1998": "FISICA I",
+    "cod_2023aj": "INF-116",
+    "nombre_2023aj": "Física",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "LAB-122",
+    "nombre_1998": "LABORATORIO DE FISICA I",
+    "cod_2023aj": "INF-116",
+    "nombre_2023aj": "Física",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "MAT-123",
+    "nombre_1998": "MATEMATICA DISCRETA II",
+    "cod_2023aj": "INF-313",
+    "nombre_2023aj": "Realidad Aumentada y Virtual",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "MAT-124",
+    "nombre_1998": "ALGEBRA LINEAL",
+    "cod_2023aj": "INF-125",
+    "nombre_2023aj": "Álgebra Lineal",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "MAT-125",
+    "nombre_1998": "ANALISIS MATEMATICO II",
+    "cod_2023aj": "INF-126",
+    "nombre_2023aj": "Cálculo II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-131",
+    "nombre_1998": "ESTRUCTURA DE DATOS Y ALGORITMOS",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "LAB-131",
+    "nombre_1998": "LABORATORIO DE INF-131",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "FIS-132",
+    "nombre_1998": "FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "LAB-132",
+    "nombre_1998": "LABORATORIO FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "EST-133",
+    "nombre_1998": "ESTADISTICA I",
+    "cod_2023aj": "INF-124",
+    "nombre_2023aj": "Estadística I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "MAT-134",
+    "nombre_1998": "ANALISIS MATEMATICO III",
+    "cod_2023aj": "INF-321",
+    "nombre_2023aj": "Cálculo III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "LIN-135",
+    "nombre_1998": "IDIOMA I",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-141",
+    "nombre_1998": "SISTEMAS DE GESTIÓN",
+    "cod_2023aj": "INF-317",
+    "nombre_2023aj": "Internet de las Cosas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-142",
+    "nombre_1998": "FUNDAMENTOS DIGITALES",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-143",
+    "nombre_1998": "TALLER DE PROGRAMACION",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-144",
+    "nombre_1998": "LOGICA PARA LA CIENCIA DE LA COMPUTACION",
+    "cod_2023aj": "INF-319",
+    "nombre_2023aj": "Programación a Bajo Nivel",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "EST-145",
+    "nombre_1998": "ESTADISTICA II",
+    "cod_2023aj": "INF-134",
+    "nombre_2023aj": "Estadística II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-151",
+    "nombre_1998": "SISTEMAS OPERATIVOS",
+    "cod_2023aj": "INF-135",
+    "nombre_2023aj": "Sistemas Operativos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-152",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL",
+    "cod_2023aj": "INF-322",
+    "nombre_2023aj": "Macrodatos y Analítica de Datos (Big Data)",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-153",
+    "nombre_1998": "ASSEMBLER",
+    "cod_2023aj": "INF-319",
+    "nombre_2023aj": "Programación a bajo nivel",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-154",
+    "nombre_1998": "LENGUAJES FORMALES Y AUTOMATAS",
+    "cod_2023aj": "INF-324",
+    "nombre_2023aj": "Aprendizaje Profundo (Deep Learning)",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "EST-155",
+    "nombre_1998": "INVESTIGACION DE OPERACIONES I",
+    "cod_2023aj": "INF-243",
+    "nombre_2023aj": "Investigación Operativa I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "MAT-156",
+    "nombre_1998": "ANALISIS NUMERICO",
+    "cod_2023aj": "INF-373",
+    "nombre_2023aj": "Métodos numéricos I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-161",
+    "nombre_1998": "DISEÑO Y ADMINISTRACIÓN DE BASE DE DATOS",
+    "cod_2023aj": "INF-132",
+    "nombre_2023aj": "Base de datos I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-162",
+    "nombre_1998": "ANALISIS Y DISEÑO DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-241",
+    "nombre_2023aj": "Análisis y diseño de sistemas I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-163",
+    "nombre_1998": "INGENIERIA DE SOFTWARE",
+    "cod_2023aj": "INF-251",
+    "nombre_2023aj": "Ingeniería de software I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-164",
+    "nombre_1998": "TEORIA DE LA INFORMACION Y CODIFICACION",
+    "cod_2023aj": "INF-326",
+    "nombre_2023aj": "Negociaciones y Toma de Decisiones",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "EST-165",
+    "nombre_1998": "INVESTIGACION DE OPERACIONES II",
+    "cod_2023aj": "INF-331",
+    "nombre_2023aj": "Investigación Operativa II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-166",
+    "nombre_1998": "INFORMATICA Y SOCIEDAD",
+    "cod_2023aj": "TRA-256",
+    "nombre_2023aj": "Legislación Informática y ética",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-271",
+    "nombre_1998": "TEORIA DE SISTEMAS Y MODELOS",
+    "cod_2023aj": "INF-328",
+    "nombre_2023aj": "Visión por Computadora",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-272",
+    "nombre_1998": "TALLER DE BASE DE DATOS",
+    "cod_2023aj": "INF-252",
+    "nombre_2023aj": "Base de datos II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-273",
+    "nombre_1998": "TELEMATICA",
+    "cod_2023aj": "INF-242",
+    "nombre_2023aj": "Redes I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "LAB-273",
+    "nombre_1998": "LABORATORIO DE INF-273",
+    "cod_2023aj": "INF-242",
+    "nombre_2023aj": "Redes I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-281",
+    "nombre_1998": "TALLER DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-266",
+    "nombre_2023aj": "Taller de Proyecto",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-282",
+    "nombre_1998": "ESPECIFICACIONES FORMALES Y VERIFICACION",
+    "cod_2023aj": "INF-329",
+    "nombre_2023aj": "Procesamiento Digital de Imágenes",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-391",
+    "nombre_1998": "SIMULACION DE SISTEMAS",
+    "cod_2023aj": "INF-381",
+    "nombre_2023aj": "Simulación de sistemas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-398",
+    "nombre_1998": "TALLER DE LICENCIATURA I",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-399",
+    "nombre_1998": "TALLER DE LICENCIATURA II",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "MAT-144",
+    "nombre_1998": "ESTADISTICA DESCRIPTIVA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "CPA-201",
+    "nombre_1998": "SISTEMAS CONTABLES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "MAT-223",
+    "nombre_1998": "SISTEMAS DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "MAT-236",
+    "nombre_1998": "ESTRUCTURA DE LA INFORMACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "ECO-241",
+    "nombre_1998": "SISTEMAS ECONOMICOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-312",
+    "nombre_1998": "ADMINISTRACION DE UNIDADES DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-314",
+    "nombre_1998": "AUDITORIA INFORMATICA",
+    "cod_2023aj": "INF-320",
+    "nombre_2023aj": "Auditoría de sistemas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-315",
+    "nombre_1998": "PLANIFICACION Y SEGURIDAD DE LOS SISTEMAS",
+    "cod_2023aj": "INF-371",
+    "nombre_2023aj": "Seguridad de la información",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-316",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL II",
+    "cod_2023aj": "INF-334",
+    "nombre_2023aj": "Dirección de proyectos informáticos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-320",
+    "nombre_1998": "PROGRAMACION LOGICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-323",
+    "nombre_1998": "PROGRAMACION GRAFICA",
+    "cod_2023aj": "TVD-251",
+    "nombre_2023aj": "Programación gráfica",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-324",
+    "nombre_1998": "PROGRAMACION MULTIMEDIAL",
+    "cod_2023aj": "INF-263",
+    "nombre_2023aj": "Desarrollo de app multimedia",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-325",
+    "nombre_1998": "PROGRAMACION VIRTUAL",
+    "cod_2023aj": "INF-313",
+    "nombre_2023aj": "Realidad aumentada y virtual",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-327",
+    "nombre_1998": "SISTEMAS DE CONTROL AUTOMATICO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-328",
+    "nombre_1998": "COMPARACION DE LENGUAJES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-329",
+    "nombre_1998": "IDIOMAS II",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-330",
+    "nombre_1998": "HARDWARE I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-331",
+    "nombre_1998": "ORGANIZACION Y METODOS DE INFORMACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-332",
+    "nombre_1998": "ECONOMIA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-333",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS I",
+    "cod_2023aj": "INF-315",
+    "nombre_2023aj": "Preparación y evaluación de proyectos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-335",
+    "nombre_1998": "MUESTREO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-336",
+    "nombre_1998": "TEORIA GENERAL DE SISTEMAS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-338",
+    "nombre_1998": "MICROPROCESADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-351",
+    "nombre_1998": "SISTEMAS EXPERTOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-354",
+    "nombre_1998": "INTELIGENCIA ARTIFICIAL",
+    "cod_2023aj": "INF-372",
+    "nombre_2023aj": "Inteligencia Artificial",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-359",
+    "nombre_1998": "COMPILADORES Y TRADUCTORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-360",
+    "nombre_1998": "COMPUTABILIDAD Y COMPLEJIDAD ALGORITMICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-363",
+    "nombre_1998": "MODELOS LINEALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-364",
+    "nombre_1998": "DISENO EXPERIMENTAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-365",
+    "nombre_1998": "SIMULACION Y MODELAJE",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-367",
+    "nombre_1998": "INVESTIGACION OPERATIVA III",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-369",
+    "nombre_1998": "PROCESOS ESTOCASTICOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-317",
+    "nombre_1998": "SISTEMAS EN TIEMPO REAL Y DISTRIBUIDO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-340",
+    "nombre_1998": "ARQUITECTURA DE COMPUTADORAS Y PROCESAMIENTO EN PARALELO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-319",
+    "nombre_1998": "PROGRAMACION FUNCIONAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "MAT-391",
+    "nombre_1998": "SEMINARIO II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-355",
+    "nombre_1998": "LENGUAJES NATURALES Y FORMALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-361",
+    "nombre_1998": "DISEÑO Y ANALISIS DE ALGORITMOS I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-334",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-311",
+    "nombre_1998": "PROTOCOLOS DE COMUNICACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "MAT-398",
+    "nombre_1998": "DISEÑO DECOMPILADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-357",
+    "nombre_1998": "ROBÓTICA",
+    "cod_2023aj": "INF-244",
+    "nombre_2023aj": "Introducción a la robótica",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-322",
+    "nombre_1998": "PROGRAMACION DISTRIBUIDA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-358",
+    "nombre_1998": "TEORIA DEL CAOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "LAB-111",
+    "nombre_1998": "LABORATORIO DE INF-111",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-112",
+    "nombre_1998": "ORGANIZACION DE COMPUTADORAS",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-113",
+    "nombre_1998": "LABORATORIO DE COMPUTACION",
+    "cod_2023aj": "INF-113",
+    "nombre_2023aj": "Programación Web I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "MAT-114",
+    "nombre_1998": "MATEMATICA DISCRETA I",
+    "cod_2023aj": "INF-114",
+    "nombre_2023aj": "Álgebra",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "MAT-115",
+    "nombre_1998": "ANALISIS MATEMATICO I",
+    "cod_2023aj": "INF-115",
+    "nombre_2023aj": "Cálculo I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "LIN-116",
+    "nombre_1998": "GRAMATICA ESPAÑOLA",
+    "cod_2023aj": "TRA-136",
+    "nombre_2023aj": "Metodología de la investigación",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-121",
+    "nombre_1998": "ALGORITMOS Y PROGRAMACION",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "LAB-121",
+    "nombre_1998": "LABORATORIO DE INF-121",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "FIS-122",
+    "nombre_1998": "FISICA I",
+    "cod_2023aj": "DAT-311",
+    "nombre_2023aj": "Cálculo  IV",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "LAB-122",
+    "nombre_1998": "LABORATORIO DE FISICA I",
+    "cod_2023aj": "DAT-312",
+    "nombre_2023aj": "Modelos Generativos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "MAT-123",
+    "nombre_1998": "MATEMATICA DISCRETA II",
+    "cod_2023aj": "INF-117",
+    "nombre_2023aj": "Matemática discreta",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "MAT-124",
+    "nombre_1998": "ALGEBRA LINEAL",
+    "cod_2023aj": "INF-125",
+    "nombre_2023aj": "Álgebra Lineal",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "MAT-125",
+    "nombre_1998": "ANALISIS MATEMATICO II",
+    "cod_2023aj": "INF-126",
+    "nombre_2023aj": "Cálculo II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-131",
+    "nombre_1998": "ESTRUCTURA DE DATOS Y ALGORITMOS",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "LAB-131",
+    "nombre_1998": "LABORATORIO DE INF-131",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "FIS-132",
+    "nombre_1998": "FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "LAB-132",
+    "nombre_1998": "LABORATORIO FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "EST-133",
+    "nombre_1998": "ESTADISTICA I",
+    "cod_2023aj": "INF-134",
+    "nombre_2023aj": "Estadística I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "MAT-134",
+    "nombre_1998": "ANALISIS MATEMATICO III",
+    "cod_2023aj": "DAT-135",
+    "nombre_2023aj": "Cálculo III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "LIN-135",
+    "nombre_1998": "IDIOMA I",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-141",
+    "nombre_1998": "SISTEMAS DE GESTIÓN",
+    "cod_2023aj": "DAT-313",
+    "nombre_2023aj": "Comercio Electrónico y Marketing Digital",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-142",
+    "nombre_1998": "FUNDAMENTOS DIGITALES",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-143",
+    "nombre_1998": "TALLER DE PROGRAMACION",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-144",
+    "nombre_1998": "LOGICA PARA LA CIENCIA DE LA COMPUTACION",
+    "cod_2023aj": "INF-316",
+    "nombre_2023aj": "Informática Forense",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "EST-145",
+    "nombre_1998": "ESTADISTICA II",
+    "cod_2023aj": "INF-134",
+    "nombre_2023aj": "Estadística II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-151",
+    "nombre_1998": "SISTEMAS OPERATIVOS",
+    "cod_2023aj": "INF-317",
+    "nombre_2023aj": "Internet de las Cosas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-152",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL",
+    "cod_2023aj": "DAT-319",
+    "nombre_2023aj": "Programación de Dispositivos Móviles I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-153",
+    "nombre_1998": "ASSEMBLER",
+    "cod_2023aj": "DAT-321",
+    "nombre_2023aj": "Seguridad de la Información",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-154",
+    "nombre_1998": "LENGUAJES FORMALES Y AUTOMATAS",
+    "cod_2023aj": "INF-325",
+    "nombre_2023aj": "Derecho Informático",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "EST-155",
+    "nombre_1998": "INVESTIGACIÓN DE OPERACIONES I",
+    "cod_2023aj": "INF-243",
+    "nombre_2023aj": "Investigación Operativa I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "MAT-156",
+    "nombre_1998": "ANALISIS NUMERICO",
+    "cod_2023aj": "DAT-242",
+    "nombre_2023aj": "Métodos numéricos I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-161",
+    "nombre_1998": "DISEÑO Y ADMINISTRACIÓN DE BASE DE DATOS",
+    "cod_2023aj": "INF-132",
+    "nombre_2023aj": "Base de datos I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-162",
+    "nombre_1998": "ANALISIS Y DISEÑO DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-336",
+    "nombre_2023aj": "Visión Artificial y Manejo de Imágenes",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-163",
+    "nombre_1998": "INGENIERIA DE SOFTWARE",
+    "cod_2023aj": "INF-337",
+    "nombre_2023aj": "Emprendimiento e Innovación Tecnológica",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-164",
+    "nombre_1998": "TEORIA DE LA INFORMACION Y CODIFICACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "EST-165",
+    "nombre_1998": "INVESTIGACION DE OPERACIONES II",
+    "cod_2023aj": "DAT-254",
+    "nombre_2023aj": "Investigación Operativa II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-166",
+    "nombre_1998": "INFORMATICA Y SOCIEDAD",
+    "cod_2023aj": "TRA-256",
+    "nombre_2023aj": "Legislación Informática y ética",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-271",
+    "nombre_1998": "TEORIA DE SISTEMAS Y MODELOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-272",
+    "nombre_1998": "TALLER DE BASE DE DATOS",
+    "cod_2023aj": "INF-244",
+    "nombre_2023aj": "Base de datos II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-273",
+    "nombre_1998": "TELEMATICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "LAB-273",
+    "nombre_1998": "LABORATORIO DE INF-273",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-281",
+    "nombre_1998": "TALLER DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-266",
+    "nombre_2023aj": "Taller de Proyecto",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-282",
+    "nombre_1998": "ESPECIFICACIONES FORMALES Y VERIFICACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-391",
+    "nombre_1998": "SIMULACION DE SISTEMAS",
+    "cod_2023aj": "DAT-318",
+    "nombre_2023aj": "Simulación de sistemas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-398",
+    "nombre_1998": "TALLER DE LICENCIATURA I",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-399",
+    "nombre_1998": "TALLER DE LICENCIATURA II",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "MAT-144",
+    "nombre_1998": "ESTADISTICA DESCRIPTIVA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "CPA-201",
+    "nombre_1998": "SISTEMAS CONTABLES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "MAT-223",
+    "nombre_1998": "SISTEMAS DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "MAT-236",
+    "nombre_1998": "ESTRUCTURA DE LA INFORMACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "ECO-241",
+    "nombre_1998": "SISTEMAS ECONOMICOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-312",
+    "nombre_1998": "ADMINISTRACION DE UNIDADES DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-314",
+    "nombre_1998": "AUDITORIA INFORMATICA",
+    "cod_2023aj": "INF-320",
+    "nombre_2023aj": "Auditoría de sistemas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-315",
+    "nombre_1998": "PLANIFICACION Y SEGURIDAD DE LOS SISTEMAS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-316",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-320",
+    "nombre_1998": "PROGRAMACION LOGICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-323",
+    "nombre_1998": "PROGRAMACION GRAFICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-324",
+    "nombre_1998": "PROGRAMACION MULTIMEDIAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-325",
+    "nombre_1998": "PROGRAMACION VIRTUAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-327",
+    "nombre_1998": "SISTEMAS DE CONTROL AUTOMATICO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-328",
+    "nombre_1998": "COMPARACION DE LENGUAJES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-329",
+    "nombre_1998": "IDIOMAS II",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-330",
+    "nombre_1998": "HARDWARE I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-331",
+    "nombre_1998": "ORGANIZACION Y METODOS DE INFORMACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-332",
+    "nombre_1998": "ECONOMIA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-333",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS I",
+    "cod_2023aj": "INF-315",
+    "nombre_2023aj": "Preparación y evaluación de proyectos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-335",
+    "nombre_1998": "MUESTREO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-336",
+    "nombre_1998": "TEORIA GENERAL DE SISTEMAS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-338",
+    "nombre_1998": "MICROPROCESADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-351",
+    "nombre_1998": "SISTEMAS EXPERTOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-354",
+    "nombre_1998": "INTELIGENCIA ARTIFICIAL",
+    "cod_2023aj": "DAT-245",
+    "nombre_2023aj": "Inteligencia Artificial",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-359",
+    "nombre_1998": "COMPILADORES Y TRADUCTORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-360",
+    "nombre_1998": "COMPUTABILIDAD Y COMPLEJIDAD ALGORITMICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-363",
+    "nombre_1998": "MODELOS LINEALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-364",
+    "nombre_1998": "DISENO EXPERIMENTAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-365",
+    "nombre_1998": "SIMULACION Y MODELAJE",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-367",
+    "nombre_1998": "INVESTIGACION OPERATIVA III",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-369",
+    "nombre_1998": "PROCESOS ESTOCASTICOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-317",
+    "nombre_1998": "SISTEMAS EN TIEMPO REAL Y DISTRIBUIDO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-340",
+    "nombre_1998": "ARQUITECTURA DE COMPUTADORAS Y PROCESAMIENTO EN PARALELO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-319",
+    "nombre_1998": "PROGRAMACION FUNCIONAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "MAT-391",
+    "nombre_1998": "SEMINARIO II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-355",
+    "nombre_1998": "LENGUAJES NATURALES Y FORMALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-361",
+    "nombre_1998": "DISEÑO Y ANALISIS DE ALGORITMOS I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-334",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-311",
+    "nombre_1998": "PROTOCOLOS DE COMUNICACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "MAT-398",
+    "nombre_1998": "DISEÑO DECOMPILADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-357",
+    "nombre_1998": "ROBÓTICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-322",
+    "nombre_1998": "PROGRAMACION DISTRIBUIDA",
+    "cod_2023aj": "DAT-241",
+    "nombre_2023aj": "Programación distribuida y paralela",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-358",
+    "nombre_1998": "TEORIA DEL CAOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "LAB-111",
+    "nombre_1998": "LABORATORIO DE INF-111",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-112",
+    "nombre_1998": "ORGANIZACION DE COMPUTADORAS",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-113",
+    "nombre_1998": "LABORATORIO DE COMPUTACION",
+    "cod_2023aj": "INF-113",
+    "nombre_2023aj": "Programación Web I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "MAT-114",
+    "nombre_1998": "MATEMATICA DISCRETA I",
+    "cod_2023aj": "INF-114",
+    "nombre_2023aj": "Álgebra",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "MAT-115",
+    "nombre_1998": "ANALISIS MATEMATICO I",
+    "cod_2023aj": "INF-115",
+    "nombre_2023aj": "Cálculo I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "LIN-116",
+    "nombre_1998": "GRAMATICA ESPAÑOLA",
+    "cod_2023aj": "TRA-136",
+    "nombre_2023aj": "Metodología de la investigación",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-121",
+    "nombre_1998": "ALGORITMOS Y PROGRAMACION",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "LAB-121",
+    "nombre_1998": "LABORATORIO DE INF-121",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "FIS-122",
+    "nombre_1998": "FISICA I",
+    "cod_2023aj": "INF-116",
+    "nombre_2023aj": "Física",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "LAB-122",
+    "nombre_1998": "LABORATORIO DE FISICA I",
+    "cod_2023aj": "INF-116",
+    "nombre_2023aj": "Física",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "MAT-123",
+    "nombre_1998": "MATEMATICA DISCRETA II",
+    "cod_2023aj": "INF-319",
+    "nombre_2023aj": "Programación a bajo nivel",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "MAT-124",
+    "nombre_1998": "ALGEBRA LINEAL",
+    "cod_2023aj": "INF-125",
+    "nombre_2023aj": "Álgebra Lineal",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "MAT-125",
+    "nombre_1998": "ANALISIS MATEMATICO II",
+    "cod_2023aj": "INF-126",
+    "nombre_2023aj": "Cálculo II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-131",
+    "nombre_1998": "ESTRUCTURA DE DATOS Y ALGORITMOS",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "LAB-131",
+    "nombre_1998": "LABORATORIO DE INF-131",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "FIS-132",
+    "nombre_1998": "FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "LAB-132",
+    "nombre_1998": "LABORATORIO FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "EST-133",
+    "nombre_1998": "ESTADISTICA I",
+    "cod_2023aj": "INF-124",
+    "nombre_2023aj": "Estadística I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "MAT-134",
+    "nombre_1998": "ANALISIS MATEMATICO III",
+    "cod_2023aj": "INF-321",
+    "nombre_2023aj": "Cálculo III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "LIN-135",
+    "nombre_1998": "IDIOMA I",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-141",
+    "nombre_1998": "SISTEMAS DE GESTIÓN",
+    "cod_2023aj": "SIS-263",
+    "nombre_2023aj": "Sistemas de gestión empresarial",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-142",
+    "nombre_1998": "FUNDAMENTOS DIGITALES",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-143",
+    "nombre_1998": "TALLER DE PROGRAMACION",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-144",
+    "nombre_1998": "LOGICA PARA LA CIENCIA DE LA COMPUTACION",
+    "cod_2023aj": "SIS-313",
+    "nombre_2023aj": "Datawarehouse",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "EST-145",
+    "nombre_1998": "ESTADISTICA II",
+    "cod_2023aj": "INF-134",
+    "nombre_2023aj": "Estadística II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-151",
+    "nombre_1998": "SISTEMAS OPERATIVOS",
+    "cod_2023aj": "INF-135",
+    "nombre_2023aj": "Sistemas Operativos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-152",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL",
+    "cod_2023aj": "SIS-245",
+    "nombre_2023aj": "Sistemas de información",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-153",
+    "nombre_1998": "ASSEMBLER",
+    "cod_2023aj": "INF-319",
+    "nombre_2023aj": "Programación a bajo nivel",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-154",
+    "nombre_1998": "LENGUAJES FORMALES Y AUTOMATAS",
+    "cod_2023aj": "INF-317",
+    "nombre_2023aj": "Internet de las Cosas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "EST-155",
+    "nombre_1998": "INVESTIGACIÓN DE OPERACIONES I",
+    "cod_2023aj": "INF-243",
+    "nombre_2023aj": "Investigación Operativa I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "MAT-156",
+    "nombre_1998": "ANALISIS NUMERICO",
+    "cod_2023aj": "COM-254",
+    "nombre_2023aj": "Métodos numéricos I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-161",
+    "nombre_1998": "DISEÑO Y ADMINISTRACIÓN DE BASE DE DATOS",
+    "cod_2023aj": "INF-132",
+    "nombre_2023aj": "Base de datos I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-162",
+    "nombre_1998": "ANALISIS Y DISEÑO DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-241",
+    "nombre_2023aj": "Análisis y diseño de sistemas I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-163",
+    "nombre_1998": "INGENIERIA DE SOFTWARE",
+    "cod_2023aj": "INF-251",
+    "nombre_2023aj": "Ingeniería de software I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-164",
+    "nombre_1998": "TEORIA DE LA INFORMACION Y CODIFICACION",
+    "cod_2023aj": "SIS-320",
+    "nombre_2023aj": "Sistemas de Información Geográfica",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "EST-165",
+    "nombre_1998": "INVESTIGACION DE OPERACIONES II",
+    "cod_2023aj": "INF-322",
+    "nombre_2023aj": "Macrodatos y Analítica de Datos (Big Data)",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-166",
+    "nombre_1998": "INFORMATICA Y SOCIEDAD",
+    "cod_2023aj": "TRA-256",
+    "nombre_2023aj": "Legislación Informática y ética",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-271",
+    "nombre_1998": "TEORIA DE SISTEMAS Y MODELOS",
+    "cod_2023aj": "SIS-262",
+    "nombre_2023aj": "Dinámica de sistemas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-272",
+    "nombre_1998": "TALLER DE BASE DE DATOS",
+    "cod_2023aj": "INF-244",
+    "nombre_2023aj": "Base de datos II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-273",
+    "nombre_1998": "TELEMATICA",
+    "cod_2023aj": "INF-242",
+    "nombre_2023aj": "Redes I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "LAB-273",
+    "nombre_1998": "LABORATORIO DE INF-273",
+    "cod_2023aj": "INF-242",
+    "nombre_2023aj": "Redes I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-281",
+    "nombre_1998": "TALLER DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-266",
+    "nombre_2023aj": "Taller de Proyecto",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-282",
+    "nombre_1998": "ESPECIFICACIONES FORMALES Y VERIFICACION",
+    "cod_2023aj": "INF-326",
+    "nombre_2023aj": "Negociaciones y Toma de Decisiones",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-391",
+    "nombre_1998": "SIMULACION DE SISTEMAS",
+    "cod_2023aj": "INF-381",
+    "nombre_2023aj": "Simulación de sistemas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-398",
+    "nombre_1998": "TALLER DE LICENCIATURA I",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-399",
+    "nombre_1998": "TALLER DE LICENCIATURA II",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "MAT-144",
+    "nombre_1998": "ESTADISTICA DESCRIPTIVA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "CPA-201",
+    "nombre_1998": "SISTEMAS CONTABLES",
+    "cod_2023aj": "SIS-325",
+    "nombre_2023aj": "Sistemas contables",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "MAT-223",
+    "nombre_1998": "SISTEMAS DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "MAT-236",
+    "nombre_1998": "ESTRUCTURA DE LA INFORMACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "ECO-241",
+    "nombre_1998": "SISTEMAS ECONOMICOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-312",
+    "nombre_1998": "ADMINISTRACION DE UNIDADES DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-314",
+    "nombre_1998": "AUDITORIA INFORMATICA",
+    "cod_2023aj": "SIS-382",
+    "nombre_2023aj": "Auditoría de sistemas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-315",
+    "nombre_1998": "PLANIFICACION Y SEGURIDAD DE LOS SISTEMAS",
+    "cod_2023aj": "INF-265",
+    "nombre_2023aj": "Seguridad de la información",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-316",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-320",
+    "nombre_1998": "PROGRAMACION LOGICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-323",
+    "nombre_1998": "PROGRAMACION GRAFICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-324",
+    "nombre_1998": "PROGRAMACION MULTIMEDIAL",
+    "cod_2023aj": "INF-133",
+    "nombre_2023aj": "Programación Web III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-325",
+    "nombre_1998": "PROGRAMACION VIRTUAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-327",
+    "nombre_1998": "SISTEMAS DE CONTROL AUTOMATICO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-328",
+    "nombre_1998": "COMPARACION DE LENGUAJES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-329",
+    "nombre_1998": "IDIOMAS II",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-330",
+    "nombre_1998": "HARDWARE I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-331",
+    "nombre_1998": "ORGANIZACION Y METODOS DE INFORMACION",
+    "cod_2023aj": "SIS-373",
+    "nombre_2023aj": "Organización y métodos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-332",
+    "nombre_1998": "ECONOMIA",
+    "cod_2023aj": "SIS-328",
+    "nombre_2023aj": "Sistemas económicos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-333",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS I",
+    "cod_2023aj": "SIS-253",
+    "nombre_2023aj": "Preparación y evaluación de proyectos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-335",
+    "nombre_1998": "MUESTREO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-336",
+    "nombre_1998": "TEORIA GENERAL DE SISTEMAS",
+    "cod_2023aj": "SIS-315",
+    "nombre_2023aj": "Teoría General de Sistemas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-338",
+    "nombre_1998": "MICROPROCESADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-351",
+    "nombre_1998": "SISTEMAS EXPERTOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-354",
+    "nombre_1998": "INTELIGENCIA ARTIFICIAL",
+    "cod_2023aj": "INF-335",
+    "nombre_2023aj": "Inteligencia Artificial",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-359",
+    "nombre_1998": "COMPILADORES Y TRADUCTORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-360",
+    "nombre_1998": "COMPUTABILIDAD Y COMPLEJIDAD ALGORITMICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-363",
+    "nombre_1998": "MODELOS LINEALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-364",
+    "nombre_1998": "DISENO EXPERIMENTAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-365",
+    "nombre_1998": "SIMULACION Y MODELAJE",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-367",
+    "nombre_1998": "INVESTIGACION OPERATIVA III",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-369",
+    "nombre_1998": "PROCESOS ESTOCASTICOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-317",
+    "nombre_1998": "SISTEMAS EN TIEMPO REAL Y DISTRIBUIDO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-340",
+    "nombre_1998": "ARQUITECTURA DE COMPUTADORAS Y PROCESAMIENTO EN PARALELO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-319",
+    "nombre_1998": "PROGRAMACION FUNCIONAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "MAT-391",
+    "nombre_1998": "SEMINARIO II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-355",
+    "nombre_1998": "LENGUAJES NATURALES Y FORMALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-361",
+    "nombre_1998": "DISEÑO Y ANALISIS DE ALGORITMOS I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-334",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-311",
+    "nombre_1998": "PROTOCOLOS DE COMUNICACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "MAT-398",
+    "nombre_1998": "DISEÑO DECOMPILADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-357",
+    "nombre_1998": "ROBÓTICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-322",
+    "nombre_1998": "PROGRAMACION DISTRIBUIDA",
+    "cod_2023aj": "SIS-324",
+    "nombre_2023aj": "Programación distribuida y paralela",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-358",
+    "nombre_1998": "TEORIA DEL CAOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "LAB-111",
+    "nombre_1998": "LABORATORIO DE INF-111",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-112",
+    "nombre_1998": "ORGANIZACION DE COMPUTADORAS",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-113",
+    "nombre_1998": "LABORATORIO DE COMPUTACION",
+    "cod_2023aj": "INF-113",
+    "nombre_2023aj": "Programación Web I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "MAT-114",
+    "nombre_1998": "MATEMATICA DISCRETA I",
+    "cod_2023aj": "INF-114",
+    "nombre_2023aj": "Álgebra",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "MAT-115",
+    "nombre_1998": "ANALISIS MATEMATICO I",
+    "cod_2023aj": "INF-115",
+    "nombre_2023aj": "Cálculo I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "LIN-116",
+    "nombre_1998": "GRAMATICA ESPAÑOLA",
+    "cod_2023aj": "TRA-136",
+    "nombre_2023aj": "Metodología de la investigación",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-121",
+    "nombre_1998": "ALGORITMOS Y PROGRAMACION",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "LAB-121",
+    "nombre_1998": "LABORATORIO DE INF-121",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "FIS-122",
+    "nombre_1998": "FISICA I",
+    "cod_2023aj": "INF-116",
+    "nombre_2023aj": "Física",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "LAB-122",
+    "nombre_1998": "LABORATORIO DE FISICA I",
+    "cod_2023aj": "INF-116",
+    "nombre_2023aj": "Física",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "MAT-123",
+    "nombre_1998": "MATEMATICA DISCRETA II",
+    "cod_2023aj": "TIC-311",
+    "nombre_2023aj": "Sistemas Embebidos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "MAT-124",
+    "nombre_1998": "ALGEBRA LINEAL",
+    "cod_2023aj": "INF-125",
+    "nombre_2023aj": "Álgebra Lineal",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "MAT-125",
+    "nombre_1998": "ANALISIS MATEMATICO II",
+    "cod_2023aj": "INF-126",
+    "nombre_2023aj": "Cálculo II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-131",
+    "nombre_1998": "ESTRUCTURA DE DATOS Y ALGORITMOS",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "LAB-131",
+    "nombre_1998": "LABORATORIO DE INF-131",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "FIS-132",
+    "nombre_1998": "FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "LAB-132",
+    "nombre_1998": "LABORATORIO FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "EST-133",
+    "nombre_1998": "ESTADISTICA I",
+    "cod_2023aj": "INF-124",
+    "nombre_2023aj": "Estadística I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "MAT-134",
+    "nombre_1998": "ANALISIS MATEMATICO III",
+    "cod_2023aj": "INF-321",
+    "nombre_2023aj": "Cálculo III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "LIN-135",
+    "nombre_1998": "IDIOMA I",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-141",
+    "nombre_1998": "SISTEMAS DE GESTIÓN",
+    "cod_2023aj": "TIC-312",
+    "nombre_2023aj": "Administración de Servidores",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-142",
+    "nombre_1998": "FUNDAMENTOS DIGITALES",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-143",
+    "nombre_1998": "TALLER DE PROGRAMACION",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-144",
+    "nombre_1998": "LOGICA PARA LA CIENCIA DE LA COMPUTACION",
+    "cod_2023aj": "TIC-313",
+    "nombre_2023aj": "Gestión de la Seguridad",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "EST-145",
+    "nombre_1998": "ESTADISTICA II",
+    "cod_2023aj": "INF-134",
+    "nombre_2023aj": "Estadística II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-151",
+    "nombre_1998": "SISTEMAS OPERATIVOS",
+    "cod_2023aj": "TIC-246",
+    "nombre_2023aj": "Sistemas Operativos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-152",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL",
+    "cod_2023aj": "TIC-316",
+    "nombre_2023aj": "Comunicaciones por Satélite",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-153",
+    "nombre_1998": "ASSEMBLER",
+    "cod_2023aj": "INF-317",
+    "nombre_2023aj": "Internet de las Cosas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-154",
+    "nombre_1998": "LENGUAJES FORMALES Y AUTOMATAS",
+    "cod_2023aj": "TIC-319",
+    "nombre_2023aj": "Sistemas Avanzados de Comunicación",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "EST-155",
+    "nombre_1998": "INVESTIGACIÓN DE OPERACIONES I",
+    "cod_2023aj": "INF-243",
+    "nombre_2023aj": "Investigación Operativa I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "MAT-156",
+    "nombre_1998": "ANALISIS NUMERICO",
+    "cod_2023aj": "INF-321",
+    "nombre_2023aj": "CALCULO III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-161",
+    "nombre_1998": "DISEÑO Y ADMINISTRACIÓN DE BASE DE DATOS",
+    "cod_2023aj": "INF-132",
+    "nombre_2023aj": "Base de datos I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-162",
+    "nombre_1998": "ANALISIS Y DISEÑO DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-241",
+    "nombre_2023aj": "Análisis y diseño de sistemas I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-163",
+    "nombre_1998": "INGENIERIA DE SOFTWARE",
+    "cod_2023aj": "TIC-371",
+    "nombre_2023aj": "Ingeniería de software I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-164",
+    "nombre_1998": "TEORIA DE LA INFORMACION Y CODIFICACION",
+    "cod_2023aj": "TRC-251",
+    "nombre_2023aj": "Teoría de la información y la codificación",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "EST-165",
+    "nombre_1998": "INVESTIGACION DE OPERACIONES II",
+    "cod_2023aj": "TIC-322",
+    "nombre_2023aj": "Ingeniería de Sistemas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-166",
+    "nombre_1998": "INFORMATICA Y SOCIEDAD",
+    "cod_2023aj": "TRA-256",
+    "nombre_2023aj": "Legislación Informática y Etica",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-271",
+    "nombre_1998": "TEORIA DE SISTEMAS Y MODELOS",
+    "cod_2023aj": "TIC-323",
+    "nombre_2023aj": "Servicios en la Nube",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-272",
+    "nombre_1998": "TALLER DE BASE DE DATOS",
+    "cod_2023aj": "INF-244",
+    "nombre_2023aj": "Base de datos II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-273",
+    "nombre_1998": "TELEMATICA",
+    "cod_2023aj": "INF-242",
+    "nombre_2023aj": "Redes I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "LAB-273",
+    "nombre_1998": "LABORATORIO DE INF-273",
+    "cod_2023aj": "TIC-247",
+    "nombre_2023aj": "Laboratorio de redes",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-281",
+    "nombre_1998": "TALLER DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-266",
+    "nombre_2023aj": "Taller de Proyecto",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-282",
+    "nombre_1998": "ESPECIFICACIONES FORMALES Y VERIFICACION",
+    "cod_2023aj": "INF-337",
+    "nombre_2023aj": "Emprendimiento e Innovación Tecnológica",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-391",
+    "nombre_1998": "SIMULACION DE SISTEMAS",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-398",
+    "nombre_1998": "TALLER DE LICENCIATURA I",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-399",
+    "nombre_1998": "TALLER DE LICENCIATURA II",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "MAT-144",
+    "nombre_1998": "ESTADISTICA DESCRIPTIVA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "CPA-201",
+    "nombre_1998": "SISTEMAS CONTABLES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "MAT-223",
+    "nombre_1998": "SISTEMAS DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "MAT-236",
+    "nombre_1998": "ESTRUCTURA DE LA INFORMACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "ECO-241",
+    "nombre_1998": "SISTEMAS ECONOMICOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-312",
+    "nombre_1998": "ADMINISTRACION DE UNIDADES DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-314",
+    "nombre_1998": "AUDITORIA INFORMATICA",
+    "cod_2023aj": "INF-320",
+    "nombre_2023aj": "Auditoría de sistemas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-315",
+    "nombre_1998": "PLANIFICACION Y SEGURIDAD DE LOS SISTEMAS",
+    "cod_2023aj": "INF-265",
+    "nombre_2023aj": "Seguridad de la información",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-316",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL II",
+    "cod_2023aj": "TIC-253",
+    "nombre_2023aj": "Dirección de proyectos informáticos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-320",
+    "nombre_1998": "PROGRAMACION LOGICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-323",
+    "nombre_1998": "PROGRAMACION GRAFICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-324",
+    "nombre_1998": "PROGRAMACION MULTIMEDIAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-325",
+    "nombre_1998": "PROGRAMACION VIRTUAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-327",
+    "nombre_1998": "SISTEMAS DE CONTROL AUTOMATICO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-328",
+    "nombre_1998": "COMPARACION DE LENGUAJES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-329",
+    "nombre_1998": "IDIOMAS II",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-330",
+    "nombre_1998": "HARDWARE I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-331",
+    "nombre_1998": "ORGANIZACION Y METODOS DE INFORMACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-332",
+    "nombre_1998": "ECONOMIA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-333",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS I",
+    "cod_2023aj": "INF-315",
+    "nombre_2023aj": "Preparación y evaluación de proyectos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-335",
+    "nombre_1998": "MUESTREO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-336",
+    "nombre_1998": "TEORIA GENERAL DE SISTEMAS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-338",
+    "nombre_1998": "MICROPROCESADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-351",
+    "nombre_1998": "SISTEMAS EXPERTOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-354",
+    "nombre_1998": "INTELIGENCIA ARTIFICIAL",
+    "cod_2023aj": "COM-252",
+    "nombre_2023aj": "Inteligencia Artificial",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-359",
+    "nombre_1998": "COMPILADORES Y TRADUCTORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-360",
+    "nombre_1998": "COMPUTABILIDAD Y COMPLEJIDAD ALGORITMICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-363",
+    "nombre_1998": "MODELOS LINEALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-364",
+    "nombre_1998": "DISENO EXPERIMENTAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-365",
+    "nombre_1998": "SIMULACION Y MODELAJE",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-367",
+    "nombre_1998": "INVESTIGACION OPERATIVA III",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-369",
+    "nombre_1998": "PROCESOS ESTOCASTICOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-317",
+    "nombre_1998": "SISTEMAS EN TIEMPO REAL Y DISTRIBUIDO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-340",
+    "nombre_1998": "ARQUITECTURA DE COMPUTADORAS Y PROCESAMIENTO EN PARALELO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-319",
+    "nombre_1998": "PROGRAMACION FUNCIONAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "MAT-391",
+    "nombre_1998": "SEMINARIO II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-355",
+    "nombre_1998": "LENGUAJES NATURALES Y FORMALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-361",
+    "nombre_1998": "DISEÑO Y ANALISIS DE ALGORITMOS I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-334",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-311",
+    "nombre_1998": "PROTOCOLOS DE COMUNICACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "MAT-398",
+    "nombre_1998": "DISEÑO DECOMPILADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-357",
+    "nombre_1998": "ROBÓTICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-322",
+    "nombre_1998": "PROGRAMACION DISTRIBUIDA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-358",
+    "nombre_1998": "TEORIA DEL CAOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "LAB-111",
+    "nombre_1998": "LABORATORIO DE INF-111",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-112",
+    "nombre_1998": "ORGANIZACION DE COMPUTADORAS",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-113",
+    "nombre_1998": "LABORATORIO DE COMPUTACION",
+    "cod_2023aj": "INF-113",
+    "nombre_2023aj": "Programacíon Web I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "MAT-114",
+    "nombre_1998": "MATEMATICA DISCRETA I",
+    "cod_2023aj": "INF-114",
+    "nombre_2023aj": "Álgebra",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "MAT-115",
+    "nombre_1998": "ANALISIS MATEMATICO I",
+    "cod_2023aj": "INF-115",
+    "nombre_2023aj": "Calculo I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "LIN-116",
+    "nombre_1998": "GRAMATICA ESPAÑOLA",
+    "cod_2023aj": "TRA-136",
+    "nombre_2023aj": "Metodología de la investigación",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-121",
+    "nombre_1998": "ALGORITMOS Y PROGRAMACION",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "LAB-121",
+    "nombre_1998": "LABORATORIO DE INF-121",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "FIS-122",
+    "nombre_1998": "FISICA I",
+    "cod_2023aj": "INF-116",
+    "nombre_2023aj": "Física",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "LAB-122",
+    "nombre_1998": "LABORATORIO DE FISICA I",
+    "cod_2023aj": "INF-116",
+    "nombre_2023aj": "Física",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "MAT-123",
+    "nombre_1998": "MATEMATICA DISCRETA II",
+    "cod_2023aj": "SEG-311",
+    "nombre_2023aj": "Redes de Comunicación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "MAT-124",
+    "nombre_1998": "ALGEBRA LINEAL",
+    "cod_2023aj": "INF-125",
+    "nombre_2023aj": "Álgebra Lineal",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "MAT-125",
+    "nombre_1998": "ANALISIS MATEMATICO II",
+    "cod_2023aj": "INF-126",
+    "nombre_2023aj": "Calculo II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-131",
+    "nombre_1998": "ESTRUCTURA DE DATOS Y ALGORITMOS",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "LAB-131",
+    "nombre_1998": "LABORATORIO DE INF-131",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "FIS-132",
+    "nombre_1998": "FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "LAB-132",
+    "nombre_1998": "LABORATORIO FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "EST-133",
+    "nombre_1998": "ESTADISTICA I",
+    "cod_2023aj": "INF-124",
+    "nombre_2023aj": "Estadística I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "MAT-134",
+    "nombre_1998": "ANALISIS MATEMATICO III",
+    "cod_2023aj": "SEG-313",
+    "nombre_2023aj": "Arquitectura Orientada a Servicios",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "LIN-135",
+    "nombre_1998": "IDIOMA I",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-141",
+    "nombre_1998": "SISTEMAS DE GESTIÓN",
+    "cod_2023aj": "SEG-316",
+    "nombre_2023aj": "Hacking Etico II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-142",
+    "nombre_1998": "FUNDAMENTOS DIGITALES",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-143",
+    "nombre_1998": "TALLER DE PROGRAMACION",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-144",
+    "nombre_1998": "LOGICA PARA LA CIENCIA DE LA COMPUTACION",
+    "cod_2023aj": "SEG-317",
+    "nombre_2023aj": "Administración de Centros de Operaciones de Red",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "EST-145",
+    "nombre_1998": "ESTADISTICA II",
+    "cod_2023aj": "INF-144",
+    "nombre_2023aj": "Estadística II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-151",
+    "nombre_1998": "SISTEMAS OPERATIVOS",
+    "cod_2023aj": "INF-135",
+    "nombre_2023aj": "Sistemas Operativos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-152",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL",
+    "cod_2023aj": "SEG-318",
+    "nombre_2023aj": "Gobierno y Gestión de Seguridad de la Información",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-153",
+    "nombre_1998": "ASSEMBLER",
+    "cod_2023aj": "INF-325",
+    "nombre_2023aj": "Derecho Informático",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-154",
+    "nombre_1998": "LENGUAJES FORMALES Y AUTOMATAS",
+    "cod_2023aj": "INF-335",
+    "nombre_2023aj": "Inteligencia Artificial",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "EST-155",
+    "nombre_1998": "INVESTIGACIÓN DE OPERACIONES I",
+    "cod_2023aj": "INF-243",
+    "nombre_2023aj": "Investigación Operativa I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "MAT-156",
+    "nombre_1998": "ANALISIS NUMERICO",
+    "cod_2023aj": "INF-323",
+    "nombre_2023aj": "Aprendizajre Automático (Maching Learning)",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-161",
+    "nombre_1998": "DISEÑO Y ADMINISTRACIÓN DE BASE DE DATOS",
+    "cod_2023aj": "INF-132",
+    "nombre_2023aj": "Base de datos I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-162",
+    "nombre_1998": "ANALISIS Y DISEÑO DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-241",
+    "nombre_2023aj": "Análisis y diseño de sistemas I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-163",
+    "nombre_1998": "INGENIERIA DE SOFTWARE",
+    "cod_2023aj": "INF-251",
+    "nombre_2023aj": "Ingeniería de software I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-164",
+    "nombre_1998": "TEORIA DE LA INFORMACION Y CODIFICACION",
+    "cod_2023aj": "SEG-312",
+    "nombre_2023aj": "Redes de Comunicación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "EST-165",
+    "nombre_1998": "INVESTIGACION DE OPERACIONES II",
+    "cod_2023aj": "INF-315",
+    "nombre_2023aj": "Preparacion y Evaluación de Proyectos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-166",
+    "nombre_1998": "INFORMATICA Y SOCIEDAD",
+    "cod_2023aj": "TRA-256",
+    "nombre_2023aj": "Legislación Informática y ética",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-271",
+    "nombre_1998": "TEORIA DE SISTEMAS Y MODELOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-272",
+    "nombre_1998": "TALLER DE BASE DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-273",
+    "nombre_1998": "TELEMATICA",
+    "cod_2023aj": "INF-242",
+    "nombre_2023aj": "Redes I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "LAB-273",
+    "nombre_1998": "LABORATORIO DE INF-273",
+    "cod_2023aj": "INF-242",
+    "nombre_2023aj": "Redes I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-281",
+    "nombre_1998": "TALLER DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-266",
+    "nombre_2023aj": "Taller de Proyecto",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-282",
+    "nombre_1998": "ESPECIFICACIONES FORMALES Y VERIFICACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-391",
+    "nombre_1998": "SIMULACION DE SISTEMAS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-398",
+    "nombre_1998": "TALLER DE LICENCIATURA I",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-399",
+    "nombre_1998": "TALLER DE LICENCIATURA II",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "MAT-144",
+    "nombre_1998": "ESTADISTICA DESCRIPTIVA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "CPA-201",
+    "nombre_1998": "SISTEMAS CONTABLES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "MAT-223",
+    "nombre_1998": "SISTEMAS DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "MAT-236",
+    "nombre_1998": "ESTRUCTURA DE LA INFORMACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "ECO-241",
+    "nombre_1998": "SISTEMAS ECONOMICOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-312",
+    "nombre_1998": "ADMINISTRACION DE UNIDADES DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-314",
+    "nombre_1998": "AUDITORIA INFORMATICA",
+    "cod_2023aj": "SIS-382",
+    "nombre_2023aj": "Auditoría de sistemas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-315",
+    "nombre_1998": "PLANIFICACION Y SEGURIDAD DE LOS SISTEMAS",
+    "cod_2023aj": "SEG-244",
+    "nombre_2023aj": "Seguridad de la información",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-316",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-320",
+    "nombre_1998": "PROGRAMACION LOGICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-323",
+    "nombre_1998": "PROGRAMACION GRAFICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-324",
+    "nombre_1998": "PROGRAMACION MULTIMEDIAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-325",
+    "nombre_1998": "PROGRAMACION VIRTUAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-327",
+    "nombre_1998": "SISTEMAS DE CONTROL AUTOMATICO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-328",
+    "nombre_1998": "COMPARACION DE LENGUAJES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-329",
+    "nombre_1998": "IDIOMAS II",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-330",
+    "nombre_1998": "HARDWARE I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-331",
+    "nombre_1998": "ORGANIZACION Y METODOS DE INFORMACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-332",
+    "nombre_1998": "ECONOMIA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-333",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS I",
+    "cod_2023aj": "INF-315",
+    "nombre_2023aj": "Preparación y evaluación de proyectos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-335",
+    "nombre_1998": "MUESTREO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-336",
+    "nombre_1998": "TEORIA GENERAL DE SISTEMAS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-338",
+    "nombre_1998": "MICROPROCESADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-351",
+    "nombre_1998": "SISTEMAS EXPERTOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-354",
+    "nombre_1998": "INTELIGENCIA ARTIFICIAL",
+    "cod_2023aj": "INF-335",
+    "nombre_2023aj": "Inteligencia Artificial",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-359",
+    "nombre_1998": "COMPILADORES Y TRADUCTORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-360",
+    "nombre_1998": "COMPUTABILIDAD Y COMPLEJIDAD ALGORITMICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-363",
+    "nombre_1998": "MODELOS LINEALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-364",
+    "nombre_1998": "DISENO EXPERIMENTAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-365",
+    "nombre_1998": "SIMULACION Y MODELAJE",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-367",
+    "nombre_1998": "INVESTIGACION OPERATIVA III",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-369",
+    "nombre_1998": "PROCESOS ESTOCASTICOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-317",
+    "nombre_1998": "SISTEMAS EN TIEMPO REAL Y DISTRIBUIDO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-340",
+    "nombre_1998": "ARQUITECTURA DE COMPUTADORAS Y PROCESAMIENTO EN PARALELO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-319",
+    "nombre_1998": "PROGRAMACION FUNCIONAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "MAT-391",
+    "nombre_1998": "SEMINARIO II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-355",
+    "nombre_1998": "LENGUAJES NATURALES Y FORMALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-361",
+    "nombre_1998": "DISEÑO Y ANALISIS DE ALGORITMOS I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-334",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-311",
+    "nombre_1998": "PROTOCOLOS DE COMUNICACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "MAT-398",
+    "nombre_1998": "DISEÑO DECOMPILADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-357",
+    "nombre_1998": "ROBÓTICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-322",
+    "nombre_1998": "PROGRAMACION DISTRIBUIDA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-358",
+    "nombre_1998": "TEORIA DEL CAOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-111",
+    "nombre_1998": "INTRODUCCION A LA INFORMATICA",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "LAB-111",
+    "nombre_1998": "LABORATORIO DE INF-111",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-112",
+    "nombre_1998": "ORGANIZACION DE COMPUTADORAS",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-113",
+    "nombre_1998": "LABORATORIO DE COMPUTACION",
+    "cod_2023aj": "INF-113",
+    "nombre_2023aj": "Programación Web I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "MAT-114",
+    "nombre_1998": "MATEMATICA DISCRETA I",
+    "cod_2023aj": "INF-114",
+    "nombre_2023aj": "Álgebra",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "MAT-115",
+    "nombre_1998": "ANALISIS MATEMATICO I",
+    "cod_2023aj": "INF-115",
+    "nombre_2023aj": "Cálculo I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "LIN-116",
+    "nombre_1998": "GRAMATICA ESPAÑOLA",
+    "cod_2023aj": "TRA-136",
+    "nombre_2023aj": "Metodología de la investigación",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-121",
+    "nombre_1998": "ALGORITMOS Y PROGRAMACION",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "LAB-121",
+    "nombre_1998": "LABORATORIO DE INF-121",
+    "cod_2023aj": "INF-121",
+    "nombre_2023aj": "Programación II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "FIS-122",
+    "nombre_1998": "FISICA I",
+    "cod_2023aj": "COM-316",
+    "nombre_2023aj": "Procesamiento del Lenguaje Natural",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "LAB-122",
+    "nombre_1998": "LABORATORIO DE FISICA I",
+    "cod_2023aj": "COM-317",
+    "nombre_2023aj": "Geometría Computacional",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "MAT-123",
+    "nombre_1998": "MATEMATICA DISCRETA II",
+    "cod_2023aj": "INF-117",
+    "nombre_2023aj": "Matemática discreta",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "MAT-124",
+    "nombre_1998": "ALGEBRA LINEAL",
+    "cod_2023aj": "INF-125",
+    "nombre_2023aj": "Álgebra Lineal",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "MAT-125",
+    "nombre_1998": "ANALISIS MATEMATICO II",
+    "cod_2023aj": "INF-126",
+    "nombre_2023aj": "Cálculo II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-131",
+    "nombre_1998": "ESTRUCTURA DE DATOS Y ALGORITMOS",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "LAB-131",
+    "nombre_1998": "LABORATORIO DE INF-131",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "FIS-132",
+    "nombre_1998": "FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "LAB-132",
+    "nombre_1998": "LABORATORIO FISICA II",
+    "cod_2023aj": "INF-123",
+    "nombre_2023aj": "Electrónica general I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "EST-133",
+    "nombre_1998": "ESTADISTICA I",
+    "cod_2023aj": "INF-124",
+    "nombre_2023aj": "Estadística I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "MAT-134",
+    "nombre_1998": "ANALISIS MATEMATICO III",
+    "cod_2023aj": "INF-247",
+    "nombre_2023aj": "Cálculo III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "LIN-135",
+    "nombre_1998": "IDIOMA I",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-141",
+    "nombre_1998": "SISTEMAS DE GESTIÓN",
+    "cod_2023aj": "COM-321",
+    "nombre_2023aj": "Sistemas Inteligentes",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-142",
+    "nombre_1998": "FUNDAMENTOS DIGITALES",
+    "cod_2023aj": "INF-112",
+    "nombre_2023aj": "Fundamentos digitales",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-143",
+    "nombre_1998": "TALLER DE PROGRAMACION",
+    "cod_2023aj": "INF-131",
+    "nombre_2023aj": "Programación III",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-144",
+    "nombre_1998": "LOGICA PARA LA CIENCIA DE LA COMPUTACION",
+    "cod_2023aj": "COM-245",
+    "nombre_2023aj": "Lógica para la ciencia de la computación",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "EST-145",
+    "nombre_1998": "ESTADISTICA II",
+    "cod_2023aj": "INF-134",
+    "nombre_2023aj": "Estadística II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-151",
+    "nombre_1998": "SISTEMAS OPERATIVOS",
+    "cod_2023aj": "INF-135",
+    "nombre_2023aj": "Sistemas Operativos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-152",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL",
+    "cod_2023aj": "COM-323",
+    "nombre_2023aj": "Computabilidad y Complejidad Algorítmica",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-153",
+    "nombre_1998": "ASSEMBLER",
+    "cod_2023aj": "INF-336",
+    "nombre_2023aj": "Visión Artificial y Manejo de Imágenes",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-154",
+    "nombre_1998": "LENGUAJES FORMALES Y AUTOMATAS",
+    "cod_2023aj": "COM-261",
+    "nombre_2023aj": "Leng. formales y autómatas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "EST-155",
+    "nombre_1998": "INVESTIGACION DE OPERACIONES I",
+    "cod_2023aj": "INF-243",
+    "nombre_2023aj": "Investigación Operativa I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "MAT-156",
+    "nombre_1998": "ANALISIS NUMERICO",
+    "cod_2023aj": "COM-254",
+    "nombre_2023aj": "Métodos numéricos I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-161",
+    "nombre_1998": "DISEÑO Y ADMINISTRACIÓN DE BASE DE DATOS",
+    "cod_2023aj": "INF-132",
+    "nombre_2023aj": "Base de datos I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-162",
+    "nombre_1998": "ANALISIS Y DISEÑO DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-241",
+    "nombre_2023aj": "Análisis y diseño de sistemas I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-163",
+    "nombre_1998": "INGENIERIA DE SOFTWARE",
+    "cod_2023aj": "INF-251",
+    "nombre_2023aj": "Ingeniería de software I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-164",
+    "nombre_1998": "TEORIA DE LA INFORMACION Y CODIFICACION",
+    "cod_2023aj": "COM-311",
+    "nombre_2023aj": "Sistemas Estocásticos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "EST-165",
+    "nombre_1998": "INVESTIGACION DE OPERACIONES II",
+    "cod_2023aj": "INF-331",
+    "nombre_2023aj": "Investigación Operativa II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-166",
+    "nombre_1998": "INFORMATICA Y SOCIEDAD",
+    "cod_2023aj": "TRA-256",
+    "nombre_2023aj": "Legislación Informática y ética",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-271",
+    "nombre_1998": "TEORIA DE SISTEMAS Y MODELOS",
+    "cod_2023aj": "COM-320",
+    "nombre_2023aj": "Especificación Formal y Verificación",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-272",
+    "nombre_1998": "TALLER DE BASE DE DATOS",
+    "cod_2023aj": "COM-322",
+    "nombre_2023aj": "Base de datos II",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-273",
+    "nombre_1998": "TELEMATICA",
+    "cod_2023aj": "INF-242",
+    "nombre_2023aj": "Redes I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "LAB-273",
+    "nombre_1998": "LABORATORIO DE INF-273",
+    "cod_2023aj": "INF-242",
+    "nombre_2023aj": "Redes I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-281",
+    "nombre_1998": "TALLER DE SISTEMAS DE INFORMACION",
+    "cod_2023aj": "INF-266",
+    "nombre_2023aj": "Taller de Proyecto",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-282",
+    "nombre_1998": "ESPECIFICACIONES FORMALES Y VERIFICACION",
+    "cod_2023aj": "INF-324",
+    "nombre_2023aj": "Aprendizaje Profundo (Deep Learning)",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-391",
+    "nombre_1998": "SIMULACION DE SISTEMAS",
+    "cod_2023aj": "COM-371",
+    "nombre_2023aj": "Simulación de sistemas",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-398",
+    "nombre_1998": "TALLER DE LICENCIATURA I",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-399",
+    "nombre_1998": "TALLER DE LICENCIATURA II",
+    "cod_2023aj": null,
+    "nombre_2023aj": null,
+    "tipo": "no_convalida"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "MAT-144",
+    "nombre_1998": "ESTADISTICA DESCRIPTIVA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "CPA-201",
+    "nombre_1998": "SISTEMAS CONTABLES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "MAT-223",
+    "nombre_1998": "SISTEMAS DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "MAT-236",
+    "nombre_1998": "ESTRUCTURA DE LA INFORMACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "ECO-241",
+    "nombre_1998": "SISTEMAS ECONOMICOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-312",
+    "nombre_1998": "ADMINISTRACION DE UNIDADES DE PROCESAMIENTO DE DATOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-314",
+    "nombre_1998": "AUDITORIA INFORMATICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-315",
+    "nombre_1998": "PLANIFICACION Y SEGURIDAD DE LOS SISTEMAS",
+    "cod_2023aj": "INF-265",
+    "nombre_2023aj": "Seguridad de la información",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-316",
+    "nombre_1998": "SISTEMAS DE INFORMACION GERENCIAL II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-320",
+    "nombre_1998": "PROGRAMACION LOGICA",
+    "cod_2023aj": "COM-312",
+    "nombre_2023aj": "Programación Lógica",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-323",
+    "nombre_1998": "PROGRAMACION GRAFICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-324",
+    "nombre_1998": "PROGRAMACION MULTIMEDIAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-325",
+    "nombre_1998": "PROGRAMACION VIRTUAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-327",
+    "nombre_1998": "SISTEMAS DE CONTROL AUTOMATICO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-328",
+    "nombre_1998": "COMPARACION DE LENGUAJES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-329",
+    "nombre_1998": "IDIOMAS II",
+    "cod_2023aj": "INF-314",
+    "nombre_2023aj": "Inglés técnico",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-330",
+    "nombre_1998": "HARDWARE I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-331",
+    "nombre_1998": "ORGANIZACION Y METODOS DE INFORMACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-332",
+    "nombre_1998": "ECONOMIA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-333",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS I",
+    "cod_2023aj": "INF-315",
+    "nombre_2023aj": "Preparación y evaluación de proyectos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-335",
+    "nombre_1998": "MUESTREO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-336",
+    "nombre_1998": "TEORIA GENERAL DE SISTEMAS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-338",
+    "nombre_1998": "MICROPROCESADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-351",
+    "nombre_1998": "SISTEMAS EXPERTOS",
+    "cod_2023aj": "COM-313",
+    "nombre_2023aj": "Sistemas expertos",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-354",
+    "nombre_1998": "INTELIGENCIA ARTIFICIAL",
+    "cod_2023aj": "COM-252",
+    "nombre_2023aj": "Inteligencia Artificial",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-359",
+    "nombre_1998": "COMPILADORES Y TRADUCTORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-360",
+    "nombre_1998": "COMPUTABILIDAD Y COMPLEJIDAD ALGORITMICA",
+    "cod_2023aj": "COM-323",
+    "nombre_2023aj": "Computab. y complejidad algoritmica",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-363",
+    "nombre_1998": "MODELOS LINEALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-364",
+    "nombre_1998": "DISENO EXPERIMENTAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-365",
+    "nombre_1998": "SIMULACION Y MODELAJE",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-367",
+    "nombre_1998": "INVESTIGACION OPERATIVA III",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-369",
+    "nombre_1998": "PROCESOS ESTOCASTICOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-317",
+    "nombre_1998": "SISTEMAS EN TIEMPO REAL Y DISTRIBUIDO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-340",
+    "nombre_1998": "ARQUITECTURA DE COMPUTADORAS Y PROCESAMIENTO EN PARALELO",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-319",
+    "nombre_1998": "PROGRAMACION FUNCIONAL",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "MAT-391",
+    "nombre_1998": "SEMINARIO II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-355",
+    "nombre_1998": "LENGUAJES NATURALES Y FORMALES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-361",
+    "nombre_1998": "DISEÑO Y ANALISIS DE ALGORITMOS I",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-334",
+    "nombre_1998": "PREPARACION Y EVALUACION DE PROYECTOS II",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-311",
+    "nombre_1998": "PROTOCOLOS DE COMUNICACION",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "MAT-398",
+    "nombre_1998": "DISEÑO DECOMPILADORES",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-357",
+    "nombre_1998": "ROBÓTICA",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-322",
+    "nombre_1998": "PROGRAMACION DISTRIBUIDA",
+    "cod_2023aj": "COM-263",
+    "nombre_2023aj": "Computación Paralela",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "cod_1998": "INF-358",
+    "nombre_1998": "TEORIA DEL CAOS",
+    "cod_2023aj": "ELECTIVA",
+    "nombre_2023aj": "ELECTIVA",
+    "tipo": "electiva"
+  },
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "cod_1998": "INF-111",
+    "nombre_1998": "INTRODUCCION A LA INFORMATICA",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "cod_1998": "INF-111",
+    "nombre_1998": "INTRODUCCION A LA INFORMATICA",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "cod_1998": "INF-111",
+    "nombre_1998": "INTRODUCCION A LA INFORMATICA",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "cod_1998": "INF-111",
+    "nombre_1998": "INTRODUCCION A LA INFORMATICA",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "cod_1998": "INF-111",
+    "nombre_1998": "INTRODUCCION A LA INFORMATICA",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "cod_1998": "INF-111",
+    "nombre_1998": "INTRODUCCION A LA INFORMATICA",
+    "cod_2023aj": "INF-111",
+    "nombre_2023aj": "Programación I",
+    "tipo": "directa"
+  }
+]
