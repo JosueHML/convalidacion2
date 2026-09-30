@@ -1,5 +1,5 @@
 // ============================================================
-// LECTOR DE ARCHIVOS + OCR — VERSIÓN CON ANÁLISIS POR CONTEXTO
+// LECTOR DE ARCHIVOS + OCR — VERSIÓN FINAL
 // ============================================================
 
 const PALABRAS_RECHAZO = [
@@ -19,12 +19,63 @@ const PALABRAS_APROBACION = [
   'CNV.PROV', 'CONV.PROV', 'APROB.'
 ];
 
-const NOTA_MINIMA_APROBACION = 51;
 const PREFIJOS_VALIDOS = [
   'INF', 'LAB', 'MAT', 'FIS', 'EST', 'LIN', 'TRA', 'COM', 'SIS', 'IID',
   'TIC', 'TVD', 'TAW', 'TIE', 'TAM', 'DAT', 'SEG', 'TSI', 'TCS', 'TCP',
   'TSS', 'TAR', 'TRC', 'TAT', 'CPA', 'ECO', 'TIOT'
 ];
+
+// Códigos del plan 2023 puro (no se convalidan desde 1998)
+const CODIGOS_2023_PURO = new Set([
+  'INF-114', 'INF-115', 'INF-116', 'INF-117',
+  'INF-122', 'INF-123', 'INF-124', 'INF-125', 'INF-126',
+  'INF-132', 'INF-133', 'INF-134', 'INF-135',
+  'INF-241', 'INF-242', 'INF-243', 'INF-244', 'INF-245', 'INF-246', 'INF-247',
+  'INF-251', 'INF-252', 'INF-253', 'INF-254',
+  'INF-261', 'INF-262', 'INF-263', 'INF-264', 'INF-265', 'INF-266',
+  'INF-311', 'INF-312', 'INF-313', 'INF-314', 'INF-315', 'INF-316', 'INF-317', 'INF-318', 'INF-319',
+  'INF-320', 'INF-321', 'INF-322', 'INF-323', 'INF-324', 'INF-325', 'INF-326', 'INF-327', 'INF-328', 'INF-329',
+  'INF-330', 'INF-331', 'INF-332', 'INF-333', 'INF-334', 'INF-335', 'INF-336', 'INF-337',
+  'COM-244', 'COM-245', 'COM-252', 'COM-253', 'COM-254', 'COM-261', 'COM-262', 'COM-263',
+  'COM-311', 'COM-312', 'COM-313', 'COM-316', 'COM-317', 'COM-320', 'COM-321', 'COM-322', 'COM-323',
+  'COM-371', 'COM-372', 'COM-381', 'COM-382',
+  'DAT-135', 'DAT-241', 'DAT-242', 'DAT-245', 'DAT-246', 'DAT-251', 'DAT-252', 'DAT-253', 'DAT-254', 'DAT-255',
+  'DAT-261', 'DAT-262', 'DAT-263', 'DAT-264',
+  'DAT-311', 'DAT-312', 'DAT-313', 'DAT-318', 'DAT-319', 'DAT-321',
+  'SIS-245', 'SIS-246', 'SIS-251', 'SIS-252', 'SIS-253', 'SIS-254', 'SIS-255',
+  'SIS-261', 'SIS-262', 'SIS-263', 'SIS-264',
+  'SIS-313', 'SIS-315', 'SIS-318', 'SIS-320', 'SIS-324', 'SIS-325', 'SIS-328',
+  'SIS-371', 'SIS-372', 'SIS-373', 'SIS-381', 'SIS-382',
+  'TIC-135', 'TIC-241', 'TIC-242', 'TIC-243', 'TIC-244', 'TIC-245', 'TIC-246', 'TIC-247',
+  'TIC-251', 'TIC-252', 'TIC-253', 'TIC-254', 'TIC-255',
+  'TIC-261', 'TIC-262', 'TIC-263', 'TIC-264',
+  'TIC-311', 'TIC-312', 'TIC-313', 'TIC-314', 'TIC-315', 'TIC-316', 'TIC-317', 'TIC-318', 'TIC-319',
+  'TIC-320', 'TIC-321', 'TIC-322', 'TIC-323', 'TIC-324',
+  'TIC-371', 'TIC-372', 'TIC-373', 'TIC-381', 'TIC-382', 'TIC-383',
+  'IID-135', 'IID-241', 'IID-242', 'IID-243', 'IID-244', 'IID-245', 'IID-246', 'IID-247',
+  'IID-251', 'IID-252', 'IID-253', 'IID-254',
+  'IID-261', 'IID-262', 'IID-263', 'IID-264', 'IID-265',
+  'IID-311', 'IID-312', 'IID-313', 'IID-316', 'IID-317', 'IID-319', 'IID-320',
+  'IID-371', 'IID-372', 'IID-381', 'IID-382',
+  'SEG-241', 'SEG-242', 'SEG-243', 'SEG-244', 'SEG-245', 'SEG-246',
+  'SEG-251', 'SEG-252', 'SEG-253', 'SEG-254',
+  'SEG-261', 'SEG-262', 'SEG-263', 'SEG-264',
+  'SEG-311', 'SEG-312', 'SEG-313', 'SEG-316', 'SEG-317', 'SEG-318',
+  'SEG-371', 'SEG-372', 'SEG-373', 'SEG-381', 'SEG-382', 'SEG-383',
+  'TRA-374', 'TRA-136',
+  'TRC-251', 'TRC-261', 'TRC-262',
+  'TVD-251', 'TVD-261', 'TVD-262',
+  'TAW-251', 'TAW-261', 'TAW-262',
+  'TIE-251', 'TIE-261', 'TIE-262',
+  'TAM-251', 'TAM-261', 'TAM-262',
+  'TAR-251', 'TAR-261', 'TAR-262',
+  'TSS-251', 'TSS-261', 'TSS-262',
+  'TCP-251', 'TCP-261', 'TCP-262',
+  'TSI-251', 'TSI-261', 'TSI-262',
+  'TCS-251', 'TCS-261', 'TCS-262',
+  'TAT-251', 'TAT-261', 'TAT-262',
+  'TIOT-251', 'TIOT-261', 'TIOT-262'
+]);
 
 async function extraerTexto(file, onProgress) {
   const ext = file.name.toLowerCase().split('.').pop();
@@ -116,6 +167,7 @@ async function leerImagen(file, onProgress) {
 
 function corregirOCR(texto) {
   const reemplazos = [
+    // ─── INF ───
     [/\bNF[\s\.\-]?(\d{3})/g, 'INF-$1'],
     [/\b1NF[\s\.\-]?(\d{3})/g, 'INF-$1'],
     [/\bTNF[\s\.\-]?(\d{3})/g, 'INF-$1'],
@@ -125,15 +177,29 @@ function corregirOCR(texto) {
     [/\bWF[\s\.\-]?(\d{3})/g, 'INF-$1'],
     [/\bIF[\s\.\-]?(\d{3})/g, 'INF-$1'],
     [/\bMF[\s\.\-]?(\d{3})/g, 'INF-$1'],
+    [/\bIN[-F\s]+(\d{3})/g, 'INF-$1'],
+
+    // ─── LAB (del texto "LABORATORIO DE INF-XXX") ───
+    [/\bLABORATORIO\s+DE\s+INF[\s\.\-]?(\d{3})/gi, 'LAB-$1'],
+    [/\bABORATORIO\s+DE\s+INF[\s\.\-]?(\d{3})/gi, 'LAB-$1'],
+    [/\bLABORATORIO\s+INF[\s\.\-]?(\d{3})/gi, 'LAB-$1'],
+    [/\bLABORATORIO\s+DE\s+FIS[\s\.\-]?(\d{3})/gi, 'LAB-$1'],
+    [/\bABORATORIO\s+DE\s+FIS[\s\.\-]?(\d{3})/gi, 'LAB-$1'],
+    [/\bLAB[\s\.\-]?(\d{3})/g, 'LAB-$1'],
+    [/\bL4B[\s\.\-]?(\d{3})/g, 'LAB-$1'],
+    [/\bLA8[\s\.\-]?(\d{3})/g, 'LAB-$1'],
+    [/\b1AB[\s\.\-]?(\d{3})/g, 'LAB-$1'],
+
+    // ─── Romanos ───
     [/\bll\b/g, 'II'],
-    [/\blll\b/g, 'III'],
+    [/\blll\b/g, 'III']
   ];
   for (const [regex, rep] of reemplazos) texto = texto.replace(regex, rep);
   return texto;
 }
 
 // ═══════════════════════════════════════════════════════════
-// ANÁLISIS PRINCIPAL
+// ANÁLISIS POR CONTEXTO
 // ═══════════════════════════════════════════════════════════
 function analizarTexto(texto) {
   const patronCodigo = new RegExp(
@@ -158,40 +224,61 @@ function analizarTexto(texto) {
   const detalles = {};
 
   ocurrencias.forEach((ocurrencia, idx) => {
-    const inicioCtx = idx > 0 ? ocurrencias[idx - 1].fin : Math.max(0, ocurrencia.inicio - 150);
-    const finCtx = idx < ocurrencias.length - 1 ? ocurrencias[idx + 1].inicio : Math.min(textoNorm.length, ocurrencia.fin + 150);
+    const inicioCtx = ocurrencia.inicio;
+    const finCtx = idx < ocurrencias.length - 1
+      ? ocurrencias[idx + 1].inicio
+      : Math.min(textoNorm.length, ocurrencia.fin + 100);
     const contexto = textoNorm.substring(inicioCtx, finCtx);
 
     let rechazado = false;
-    for (const p of PALABRAS_RECHAZO) { if (contexto.includes(p)) { rechazado = true; break; } }
+    for (const p of PALABRAS_RECHAZO) {
+      if (contexto.includes(p)) { rechazado = true; break; }
+    }
 
     let aprobado = false;
-    for (const p of PALABRAS_APROBACION) { if (contexto.includes(p)) { aprobado = true; break; } }
+    for (const p of PALABRAS_APROBACION) {
+      if (contexto.includes(p)) { aprobado = true; break; }
+    }
 
-    const nums = (contexto.match(/\b\d{1,3}\b/g) || [])
-      .map(n => parseInt(n, 10))
-      .filter(n => n >= 0 && n <= 100);
-    const nota = nums.length > 0 ? Math.max(...nums) : null;
+    let nota = null;
+    const numMatches = contexto.match(/\b(\d{1,3})\b/g) || [];
+    for (const numStr of numMatches) {
+      const n = parseInt(numStr, 10);
+      if (n >= 1990 && n <= 2030) continue;
+      if (n >= 0 && n <= 100) {
+        if (nota === null || n > nota) nota = n;
+      }
+    }
 
-    const añoMatch = contexto.match(/\b(19|20)\d{2}\b/);
-    const año = añoMatch ? parseInt(añoMatch[0], 10) : null;
+    let año = null;
+    const añoMatches = contexto.match(/\b(19[9]\d|20[0-2]\d)\b/g) || [];
+    for (const a of añoMatches) {
+      const num = parseInt(a, 10);
+      if (num >= 1990 && num <= 2022) { año = num; break; }
+    }
 
-    if (rechazado && !aprobado) {
-      reprobados.set(ocurrencia.codigo, (reprobados.get(ocurrencia.codigo) || 0) + 1);
-    } else if (aprobado || (nota !== null && nota >= NOTA_MINIMA_APROBACION)) {
+    if (aprobado) {
       aprobados.set(ocurrencia.codigo, (aprobados.get(ocurrencia.codigo) || 0) + 1);
       if (!detalles[ocurrencia.codigo]) {
         detalles[ocurrencia.codigo] = { nota, año };
       }
+    } else if (rechazado) {
+      reprobados.set(ocurrencia.codigo, (reprobados.get(ocurrencia.codigo) || 0) + 1);
     }
   });
 
   const aprobadosFinal = new Set();
   const reprobadosFinal = new Set();
 
-  for (const [codigo, veces] of aprobados) aprobadosFinal.add(codigo);
-  for (const [codigo, veces] of reprobados) {
-    if (!aprobadosFinal.has(codigo)) reprobadosFinal.add(codigo);
+  for (const [codigo] of aprobados) {
+    if (!CODIGOS_2023_PURO.has(codigo)) {
+      aprobadosFinal.add(codigo);
+    }
+  }
+  for (const [codigo] of reprobados) {
+    if (!aprobadosFinal.has(codigo) && !CODIGOS_2023_PURO.has(codigo)) {
+      reprobadosFinal.add(codigo);
+    }
   }
 
   return {
@@ -232,17 +319,3 @@ function extraerNombre(texto) {
   }
   return null;
 }
-// ============================================================
-// EXPONER FUNCIONES GLOBALMENTE (para que app.js las use)
-// ============================================================
-window.extraerTexto = extraerTexto;
-window.leerPDF = leerPDF;
-window.leerDOCX = leerDOCX;
-window.leerExcel = leerExcel;
-window.leerImagen = leerImagen;
-window.corregirOCR = corregirOCR;
-window.analizarTexto = analizarTexto;
-window.extraerCodigos = extraerCodigos;
-window.extraerMateriasConEstado = extraerMateriasConEstado;
-window.extraerCedula = extraerCedula;
-window.extraerNombre = extraerNombre;

@@ -42,6 +42,7 @@
 
   .anim-fade-up { animation: fadeInUp 0.5s ease-out both; }
   .anim-fade { animation: fadeIn 0.4s ease-out both; }
+  .anim-pop { animation: pop 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) both; }
   .anim-float { animation: float 3s ease-in-out infinite; }
 
   .header-gradient {
@@ -140,10 +141,8 @@
   .badge-info { background: linear-gradient(135deg, #e0e7ff, #c7d2fe); color: #3730a3; }
 
   .row-materia { transition: all 0.2s ease; border-left: 3px solid transparent; }
-  .row-materia:hover { background: linear-gradient(90deg, #f8fafc 0%, #eef2ff 100%); border-left-color: var(--indigo); }
-  .dark .row-materia:hover { background: linear-gradient(90deg, #1e293b 0%, #1e1b4b 100%); }
-  .row-materia.selected { background: linear-gradient(90deg, #eef2ff 0%, #e0e7ff 100%); border-left-color: var(--indigo); }
-  .dark .row-materia.selected { background: linear-gradient(90deg, #1e1b4b 0%, #312e81 100%); }
+  .row-materia:hover { border-left-color: var(--indigo); }
+  .row-materia.selected { border-left-color: var(--indigo); }
 
   .checkbox-materia {
     appearance: none; width: 22px; height: 22px;
@@ -188,6 +187,49 @@
   .blob-1 { top: -100px; right: -100px; width: 400px; height: 400px; background: linear-gradient(135deg, #a5b4fc, #c4b5fd); }
   .blob-2 { bottom: -150px; left: -100px; width: 500px; height: 500px; background: linear-gradient(135deg, #c7d2fe, #ddd6fe); }
   .blob-3 { top: 40%; left: 40%; width: 300px; height: 300px; background: linear-gradient(135deg, #f0abfc, #e0e7ff); }
+
+  /* Chips de códigos detectados (tamaño fijo uniforme) */
+  .chip-codigo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 8px 12px;
+    border-radius: 9999px;
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    font-size: 13px;
+    width: 110px;
+    transition: all 0.2s ease;
+    border: 1px solid #c7d2fe;
+  }
+  .chip-codigo:hover {
+    background: #c7d2fe;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px -2px rgba(67, 56, 202, 0.3);
+  }
+  .chip-codigo button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(67, 56, 202, 0.15);
+    color: #3730a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+  }
+  .chip-codigo button:hover {
+    background: #4338ca;
+    color: white;
+    transform: rotate(90deg);
+  }
 </style>
 </head>
 <body class="min-h-screen text-slate-800 dark:text-slate-100">
@@ -196,6 +238,7 @@
 <div class="bg-blob blob-2"></div>
 <div class="bg-blob blob-3"></div>
 
+<!-- HEADER -->
 <header class="header-gradient text-white shadow-2xl sticky top-0 z-40">
   <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-3">
     <img src="logos/umsa.jpeg" alt="UMSA" class="w-16 h-16 rounded-2xl bg-white/95 p-1.5 object-contain shadow-xl anim-float" onerror="this.style.display='none'">
@@ -208,6 +251,7 @@
   </div>
 </header>
 
+<!-- BARRA ESTADÍSTICAS -->
 <div class="bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border-b border-white/40 dark:border-slate-700/50 shadow-sm">
   <div class="max-w-7xl mx-auto px-4 py-4 grid grid-cols-3 gap-3">
     <div class="stat-card text-center py-3">
@@ -225,6 +269,7 @@
   </div>
 </div>
 
+<!-- TABS -->
 <nav class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm border-b border-slate-200/50 dark:border-slate-700/50">
   <div class="max-w-7xl mx-auto flex overflow-x-auto">
     <button data-tab="estudiante" class="tab-btn px-6 py-4 text-slate-600 dark:text-slate-300 whitespace-nowrap">📄 Datos del Estudiante</button>
@@ -236,7 +281,7 @@
 
 <section id="tab-estudiante" class="tab-content anim-fade">
 
-  <!-- CARD 1 -->
+  <!-- CARD 1: DATOS ESTUDIANTE -->
   <div class="card bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm shadow-xl p-6 mb-6 border border-white/60 dark:border-slate-700/60 anim-fade-up">
     <div class="flex items-center gap-3 mb-6">
       <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-black text-lg shadow-lg">01</div>
@@ -245,32 +290,40 @@
         <h2 class="text-2xl font-black text-slate-800 dark:text-white">Prepara tu consulta</h2>
       </div>
     </div>
+
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
       <div>
         <label class="block text-sm font-bold mb-2 text-slate-700 dark:text-slate-300">👤 Nombre completo</label>
-        <input type="text" id="nombre-estudiante" placeholder="Ej: Juan Pérez Mamani" class="w-full border-2 border-slate-200 rounded-xl p-3.5 dark:bg-slate-700/50 dark:border-slate-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:outline-none transition-all">
+        <input type="text" id="nombre-estudiante" placeholder="Ej: Juan Pérez Mamani"
+               class="w-full border-2 border-slate-200 rounded-xl p-3.5 dark:bg-slate-700/50 dark:border-slate-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:outline-none transition-all">
       </div>
       <div>
         <label class="block text-sm font-bold mb-2 text-slate-700 dark:text-slate-300">🆔 Cédula</label>
-        <input type="text" id="cedula-estudiante" placeholder="Ej: 1234567 LP" class="w-full border-2 border-slate-200 rounded-xl p-3.5 dark:bg-slate-700/50 dark:border-slate-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:outline-none transition-all">
+        <input type="text" id="cedula-estudiante" placeholder="Ej: 1234567 LP"
+               class="w-full border-2 border-slate-200 rounded-xl p-3.5 dark:bg-slate-700/50 dark:border-slate-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:outline-none transition-all">
       </div>
     </div>
+
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
       <div>
         <label class="block text-sm font-bold text-indigo-800 dark:text-indigo-300 mb-2">🎓 Mención 1998 (plan antiguo)</label>
-        <select id="mencion-1998" class="w-full border-2 border-indigo-300 bg-indigo-50/50 rounded-xl p-3.5 font-semibold dark:bg-slate-700/50 dark:border-indigo-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:outline-none transition-all"></select>
+        <select id="mencion-1998"
+                class="w-full border-2 border-indigo-300 bg-indigo-50/50 rounded-xl p-3.5 font-semibold dark:bg-slate-700/50 dark:border-indigo-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:outline-none transition-all"></select>
       </div>
       <div>
         <label class="block text-sm font-bold text-emerald-800 dark:text-emerald-300 mb-2">🎯 Mención 2023 Ajustado (plan nuevo)</label>
-        <select id="mencion-2023" class="w-full border-2 border-emerald-300 bg-emerald-50/50 rounded-xl p-3.5 font-semibold dark:bg-slate-700/50 dark:border-emerald-600 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100 dark:focus:ring-emerald-900/50 focus:outline-none transition-all"></select>
+        <select id="mencion-2023"
+                class="w-full border-2 border-emerald-300 bg-emerald-50/50 rounded-xl p-3.5 font-semibold dark:bg-slate-700/50 dark:border-emerald-600 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100 dark:focus:ring-emerald-900/50 focus:outline-none transition-all"></select>
       </div>
     </div>
+
     <div class="mt-6 flex justify-end">
-      <button id="btn-nueva-consulta" class="text-sm text-rose-600 hover:text-rose-800 font-bold transition-all hover:scale-105">🗑️ Limpiar todo / Nueva consulta</button>
+      <button id="btn-nueva-consulta"
+              class="text-sm text-rose-600 hover:text-rose-800 font-bold transition-all hover:scale-105">🗑️ Limpiar todo / Nueva consulta</button>
     </div>
   </div>
 
-  <!-- CARD 2 -->
+  <!-- CARD 2: MÉTODO -->
   <div class="card bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm shadow-xl p-6 mb-6 border border-white/60 dark:border-slate-700/60 anim-fade-up" style="animation-delay: 0.1s">
     <div class="flex items-center gap-3 mb-6">
       <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white font-black text-lg shadow-lg">02</div>
@@ -279,13 +332,16 @@
         <h2 class="text-2xl font-black text-slate-800 dark:text-white">¿Cómo quieres cargar tus materias?</h2>
       </div>
     </div>
+
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div id="metodo-archivo" class="metodo-btn border-2 border-slate-200 dark:border-slate-600 bg-white/50 dark:bg-slate-700/30 p-6 cursor-pointer relative z-10">
+      <div id="metodo-archivo"
+           class="metodo-btn border-2 border-slate-200 dark:border-slate-600 bg-white/50 dark:bg-slate-700/30 p-6 cursor-pointer relative z-10">
         <div class="text-4xl mb-3">📤</div>
         <div class="font-black text-lg text-slate-800 dark:text-white">Subir archivo</div>
         <div class="text-sm text-slate-500 dark:text-slate-400 mt-2">PDF, Word, Excel o imagen (OCR en navegador)</div>
       </div>
-      <div id="metodo-manual" class="metodo-btn border-2 border-slate-200 dark:border-slate-600 bg-white/50 dark:bg-slate-700/30 p-6 cursor-pointer relative z-10">
+      <div id="metodo-manual"
+           class="metodo-btn border-2 border-slate-200 dark:border-slate-600 bg-white/50 dark:bg-slate-700/30 p-6 cursor-pointer relative z-10">
         <div class="text-4xl mb-3">☑️</div>
         <div class="font-black text-lg text-slate-800 dark:text-white">Marcar manualmente</div>
         <div class="text-sm text-slate-500 dark:text-slate-400 mt-2">Selecciona tus materias aprobadas</div>
@@ -303,77 +359,52 @@
       <input type="file" id="file-input" class="hidden" accept=".pdf,.docx,.xlsx,.xls,.png,.jpg,.jpeg">
     </div>
     <div id="file-name" class="mt-4 text-sm font-semibold text-slate-700 dark:text-slate-300"></div>
-    <button id="btn-procesar-archivo" class="btn-primary mt-4 w-full text-white px-6 py-4 rounded-xl font-bold shadow-lg disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+    <button id="btn-procesar-archivo"
+            class="btn-primary mt-4 w-full text-white px-6 py-4 rounded-xl font-bold shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled>
       <span id="spinner-archivo" class="spinner hidden"></span> ▶ Procesar archivo
     </button>
     <div id="progreso" class="mt-4 hidden text-sm text-slate-700 dark:text-slate-300 bg-indigo-50 dark:bg-slate-900 rounded-xl p-4 border border-indigo-100 dark:border-slate-700 font-mono"></div>
   </div>
 
-  <!-- ══════════════ PANEL DIAGNÓSTICO ══════════════ -->
-  <div id="panel-diagnostico" class="card bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm shadow-xl p-6 mb-6 border-2 border-purple-300 dark:border-purple-600 hidden anim-fade-up">
-    <div class="flex items-center justify-between mb-4">
-      <div class="flex items-center gap-3">
-        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white font-black text-lg shadow-lg">🔍</div>
-        <div>
-          <div class="text-xs font-bold text-purple-700 dark:text-purple-400 uppercase tracking-[0.15em]">Diagnóstico</div>
-          <h2 class="text-xl font-black text-slate-800 dark:text-white">Análisis del archivo</h2>
-        </div>
+  <!-- ══════════════ PANEL DE CÓDIGOS DETECTADOS ══════════════ -->
+  <div id="panel-codigos" class="card bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm shadow-xl p-6 mb-6 border-2 border-indigo-300 dark:border-indigo-600 hidden anim-fade-up">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-black text-lg shadow-lg">🔍</div>
+      <div>
+        <div class="text-xs font-bold text-indigo-700 dark:text-indigo-400 uppercase tracking-[0.15em]">Códigos detectados</div>
+        <h2 class="text-xl font-black text-slate-800 dark:text-white">Verifica y ajusta tus materias</h2>
+        <p class="text-sm text-slate-500">Elimina las que no correspondan o agrega las que falten.</p>
       </div>
-      <button id="btn-toggle-diag" class="text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 text-2xl font-bold w-8 h-8">−</button>
     </div>
 
-    <div id="diag-contenido" class="space-y-4">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div class="bg-purple-50 dark:bg-purple-900/30 border border-purple-200 dark:border-purple-700 rounded-xl p-3 text-center">
-          <div id="diag-total-bruto" class="text-2xl font-black text-purple-700 dark:text-purple-300">0</div>
-          <div class="text-[10px] uppercase tracking-wider text-slate-500 font-semibold">Encontrados</div>
-        </div>
-        <div class="bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-700 rounded-xl p-3 text-center">
-          <div id="diag-total-aprobados" class="text-2xl font-black text-green-700 dark:text-green-300">0</div>
-          <div class="text-[10px] uppercase tracking-wider text-slate-500 font-semibold">Aprobados</div>
-        </div>
-        <div class="bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-700 rounded-xl p-3 text-center">
-          <div id="diag-total-reprobados" class="text-2xl font-black text-red-700 dark:text-red-300">0</div>
-          <div class="text-[10px] uppercase tracking-wider text-slate-500 font-semibold">Rechazados</div>
-        </div>
-        <div class="bg-indigo-50 dark:bg-indigo-900/30 border border-indigo-200 dark:border-indigo-700 rounded-xl p-3 text-center">
-          <div id="diag-total-convalidadas" class="text-2xl font-black text-indigo-700 dark:text-indigo-300">0</div>
-          <div class="text-[10px] uppercase tracking-wider text-slate-500 font-semibold">Convalidadas</div>
-        </div>
-      </div>
+    <!-- Chips de códigos detectados -->
+    <div id="panel-codigos-lista" class="flex flex-wrap gap-2 mb-4 p-4 bg-slate-50 dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-700 min-h-[60px]">
+      <!-- Se llenan dinámicamente -->
+    </div>
 
-      <div class="bg-indigo-50 dark:bg-indigo-900/20 rounded-xl p-4 border border-indigo-100 dark:border-indigo-700">
-        <div class="text-xs font-bold text-indigo-800 dark:text-indigo-300 uppercase tracking-widest mb-2">Plan detectado</div>
-        <div id="diag-plan" class="text-sm text-slate-700 dark:text-slate-300 font-mono"></div>
-      </div>
+    <!-- Input para agregar manualmente -->
+    <div class="flex gap-2 mb-4 flex-wrap sm:flex-nowrap">
+      <input type="text" id="input-nuevo-codigo" placeholder="Ej: INF-111" maxlength="10"
+             class="flex-1 min-w-[150px] border-2 border-slate-200 rounded-xl p-3 dark:bg-slate-700/50 dark:border-slate-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:outline-none transition-all font-mono uppercase">
+      <button id="btn-agregar-codigo"
+              class="btn-primary text-white px-6 py-3 rounded-xl font-bold shadow-lg whitespace-nowrap">
+        + Agregar
+      </button>
+    </div>
 
-      <div>
-        <div class="text-xs font-bold text-green-800 dark:text-green-400 uppercase tracking-widest mb-2">✅ Códigos APROBADOS detectados</div>
-        <div id="diag-lista-aprobados" class="bg-green-50 dark:bg-green-900/20 rounded-xl p-3 border border-green-200 dark:border-green-700 text-xs font-mono max-h-40 overflow-auto break-words"></div>
-      </div>
-
-      <div>
-        <div class="text-xs font-bold text-red-800 dark:text-red-400 uppercase tracking-widest mb-2">❌ Códigos RECHAZADOS (ignorados)</div>
-        <div id="diag-lista-reprobados" class="bg-red-50 dark:bg-red-900/20 rounded-xl p-3 border border-red-200 dark:border-red-700 text-xs font-mono max-h-40 overflow-auto break-words"></div>
-      </div>
-
-      <div>
-        <div class="text-xs font-bold text-purple-800 dark:text-purple-400 uppercase tracking-widest mb-2">📋 Detalle (año y nota)</div>
-        <div id="diag-detalle" class="bg-slate-50 dark:bg-slate-900 rounded-xl p-3 border border-slate-200 dark:border-slate-700 text-xs font-mono max-h-60 overflow-auto whitespace-pre-wrap"></div>
-      </div>
-
-      <div>
-        <div class="text-xs font-bold text-indigo-800 dark:text-indigo-400 uppercase tracking-widest mb-2">🎯 Análisis del motor</div>
-        <div id="diag-motor" class="bg-indigo-50 dark:bg-indigo-900/20 rounded-xl p-3 border border-indigo-200 dark:border-indigo-700 text-xs font-mono max-h-80 overflow-auto whitespace-pre-wrap"></div>
-      </div>
-
-      <button id="btn-copiar-diag" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-4 py-3 rounded-xl font-bold shadow-lg transition-all hover:-translate-y-0.5">
-        📋 Copiar TODO el diagnóstico
+    <!-- Botones de acción -->
+    <div class="flex gap-2 flex-wrap">
+      <button id="btn-reprocesar" class="btn-primary text-white px-5 py-2.5 rounded-xl font-bold shadow-lg">
+        🔄 Reprocesar
+      </button>
+      <button id="btn-limpiar-codigos" class="bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-5 py-2.5 rounded-xl font-bold shadow transition-all hover:-translate-y-0.5">
+        🗑️ Limpiar todos
       </button>
     </div>
   </div>
 
-  <!-- PANEL MATERIAS -->
+  <!-- ══════════════ PANEL MATERIAS ══════════════ -->
   <div id="panel-materias" class="card bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm shadow-xl overflow-hidden mb-6 border border-white/60 dark:border-slate-700/60 anim-fade-up" style="animation-delay: 0.2s">
     <div class="p-6 border-b border-slate-100 dark:border-slate-700">
       <div class="flex items-center gap-3 mb-4">
@@ -384,6 +415,7 @@
           <p class="text-sm text-slate-500 mt-1">Las columnas se llenan automáticamente.</p>
         </div>
       </div>
+
       <div class="flex gap-3 mb-4">
         <div class="stat-card px-5 py-3 text-center flex-1">
           <div id="contador-seleccionadas" class="text-3xl font-black bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">0</div>
@@ -394,20 +426,34 @@
           <div class="text-[10px] uppercase tracking-widest text-slate-500 font-semibold">convalidadas</div>
         </div>
       </div>
+
       <div class="flex justify-between items-center flex-wrap gap-3">
-        <input type="text" id="buscador" placeholder="🔍 Buscar por código o nombre..." class="w-full md:w-2/3 border-2 border-slate-200 rounded-xl p-3.5 dark:bg-slate-700/50 dark:border-slate-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:outline-none transition-all">
-        <button id="btn-limpiar" class="text-indigo-700 dark:text-indigo-400 font-bold hover:underline px-3 py-2 transition-all hover:scale-105">Limpiar selección</button>
+        <input type="text" id="buscador" placeholder="🔍 Buscar por código o nombre..."
+               class="w-full md:w-2/3 border-2 border-slate-200 rounded-xl p-3.5 dark:bg-slate-700/50 dark:border-slate-600 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50 focus:outline-none transition-all">
+        <button id="btn-limpiar"
+                class="text-indigo-700 dark:text-indigo-400 font-bold hover:underline px-3 py-2 transition-all hover:scale-105">Limpiar selección</button>
       </div>
     </div>
+
     <div class="grid grid-cols-3 sticky-header">
-      <div class="col-1998 p-4"><div class="text-[10px] uppercase opacity-90 tracking-widest font-semibold">Plan</div><div class="text-xl font-black">1998</div></div>
-      <div class="col-2023 p-4"><div class="text-[10px] uppercase opacity-90 tracking-widest font-semibold">Plan</div><div class="text-xl font-black">2023</div></div>
-      <div class="col-2025 p-4"><div class="text-[10px] uppercase opacity-90 tracking-widest font-semibold">Plan</div><div class="text-xl font-black">2023 Ajustado</div></div>
+      <div class="col-1998 p-4">
+        <div class="text-[10px] uppercase opacity-90 tracking-widest font-semibold">Plan</div>
+        <div class="text-xl font-black">1998</div>
+      </div>
+      <div class="col-2023 p-4">
+        <div class="text-[10px] uppercase opacity-90 tracking-widest font-semibold">Plan</div>
+        <div class="text-xl font-black">2023</div>
+      </div>
+      <div class="col-2025 p-4">
+        <div class="text-[10px] uppercase opacity-90 tracking-widest font-semibold">Plan</div>
+        <div class="text-xl font-black">2023 Ajustado</div>
+      </div>
     </div>
+
     <div id="lista-materias" class="divide-y divide-slate-100 dark:divide-slate-700 max-h-[700px] overflow-auto"></div>
   </div>
 
-  <!-- PANEL ELECTIVAS -->
+  <!-- ══════════════ PANEL ELECTIVAS ══════════════ -->
   <div id="panel-electivas" class="card bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 shadow-xl p-6 mb-6 border-2 border-amber-300 dark:border-amber-700 hidden anim-fade-up">
     <div class="flex items-center gap-3 mb-4">
       <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-white font-black text-lg shadow-lg">04</div>
@@ -419,12 +465,14 @@
     <div id="lista-electivas" class="space-y-3"></div>
   </div>
 
+  <!-- BOTONES EXPORTACIÓN -->
   <div class="flex gap-3 mb-6 flex-wrap">
     <button id="btn-pdf-completo" class="btn-primary text-white px-6 py-3.5 rounded-xl font-bold shadow-lg hidden">📥 PDF completo</button>
     <button id="btn-excel-completo" class="btn-success text-white px-6 py-3.5 rounded-xl font-bold shadow-lg hidden">📊 Excel completo</button>
   </div>
 </section>
 
+<!-- TAB CONVALIDADAS -->
 <section id="tab-convalidadas" class="tab-content hidden">
   <div id="info-estudiante-convalidadas"></div>
   <div class="flex gap-3 mb-6 flex-wrap">

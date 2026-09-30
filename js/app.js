@@ -8,6 +8,7 @@ let ultimoResultado = null;
 let electivasElegidas = {};
 let timeoutProcesar = null;
 let materiasConEstado = {};
+let codigosDetectados = [];
 
 // TABS
 document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -57,10 +58,12 @@ async function init() {
 
   sel98.addEventListener('change', () => {
     materiasSeleccionadas.clear();
+    codigosDetectados = [];
     ultimoResultado = null;
     electivasElegidas = {};
     materiasConEstado = {};
     renderListaMaterias();
+    renderCodigosDetectados();
     ocultarBotones();
     actualizarContadores();
   });
@@ -69,13 +72,16 @@ async function init() {
     ultimoResultado = null;
     electivasElegidas = {};
     renderListaMaterias();
+    renderCodigosDetectados();
     ocultarBotones();
     actualizarContadores();
   });
   renderListaMaterias();
 }
 
-// RENDER LISTA
+// ═══════════════════════════════════════════════════════════
+// RENDER LISTA MATERIAS — con agrupación de duplicadas
+// ═══════════════════════════════════════════════════════════
 function renderListaMaterias() {
   const cont = document.getElementById('lista-materias');
   const mencion98 = document.getElementById('mencion-1998').value;
@@ -88,22 +94,135 @@ function renderListaMaterias() {
   const filtroRaw = (document.getElementById('buscador').value || '');
   const filtro = filtroRaw.toUpperCase().replace(/[\s\-\.]/g, '');
 
+  // Mapa de destinos → grupos de códigos
+  const mapaDestinos = {};
+  if (ultimoResultado) {
+    ultimoResultado.detalle.forEach(d => {
+      const destino = d.cod_2023aj || d.cod_2023;
+      if (!destino || destino === 'ELECTIVA') return;
+
+      if (!mapaDestinos[destino]) mapaDestinos[destino] = [];
+
+      mapaDestinos[destino].push({
+        cod_1998: d.cod_1998,
+        nombre_1998: d.nombre_1998,
+        estado: d.estado,
+        observacion: d.observacion,
+        es_principal: true
+      });
+
+      if (d.origenes_adicionales) {
+        d.origenes_adicionales.forEach(extra => {
+          mapaDestinos[destino].push({
+            cod_1998: extra.cod_1998,
+            nombre_1998: extra.nombre_1998,
+            estado: 'duplicada',
+            es_principal: false
+          });
+        });
+      }
+    });
+  }
+
+  // Reverse lookup
+  const codigosAgrupados = {};
+  Object.keys(mapaDestinos).forEach(destino => {
+    mapaDestinos[destino].forEach(o => {
+      codigosAgrupados[o.cod_1998] = { destino, grupo: mapaDestinos[destino], es_principal: o.es_principal };
+    });
+  });
+
   cont.innerHTML = '';
   let visibles = 0;
+  const yaRenderizados = new Set();
 
   materias.forEach(m => {
     const codNorm = (m.codigo || '').toUpperCase().replace(/[\s\-\.]/g, '');
     const nomNorm = (m.nombre || '').toUpperCase();
     if (filtro && !codNorm.includes(filtro) && !nomNorm.includes(filtro)) return;
+
+    if (yaRenderizados.has(m.codigo)) return;
     visibles++;
 
+    const grupoInfo = codigosAgrupados[m.codigo];
+
+    // ═══ FILA AGRUPADA (duplicadas al mismo destino) ═══
+    if (grupoInfo && grupoInfo.grupo.length > 1 && grupoInfo.es_principal) {
+      const grupo = grupoInfo.grupo;
+      const destino = grupoInfo.destino;
+      const principal = grupo.find(o => o.es_principal) || grupo[0];
+
+      let col1998HTML = '';
+      grupo.forEach((o, idx) => {
+        const esDup = !o.es_principal;
+        const bgColor = esDup ? '#fef3c7' : '#d1fae5';
+        const textColor = esDup ? '#92400e' : '#065f46';
+        col1998HTML += `
+          <div class="p-3" style="background: ${bgColor}; ${idx > 0 ? 'border-top: 2px solid #047857;' : ''}">
+            <div class="badge ${esDup ? 'badge-warn' : 'badge-success'} mb-1.5" style="background: rgba(255,255,255,0.7); color: ${textColor};">
+              ${o.cod_1998}
+            </div>
+            <div class="text-xs font-semibold" style="color: ${textColor};">${o.nombre_1998}</div>
+          </div>
+        `;
+        yaRenderizados.add(o.cod_1998);
+      });
+
+      const infoMalla = DATA.malla2023.find(x => normCodigo(x.codigo) === normCodigo(destino));
+      const nombreDestino = infoMalla ? infoMalla.nombre : (principal.nombre_2023 || '');
+      const totalCodigos = grupo.length;
+
+      cont.innerHTML += `
+        <div class="row-materia border-t border-slate-100 dark:border-slate-700 py-2">
+          <div class="grid grid-cols-3 divide-x divide-slate-100 dark:divide-slate-700"
+               style="border: 3px solid #047857; border-radius: 12px; overflow: hidden;">
+            <div class="flex flex-col">${col1998HTML}</div>
+            <div class="p-3 flex flex-col justify-center" style="background: #a7f3d0;">
+              <div class="text-xs uppercase opacity-80 font-bold mb-1" style="color: #065f46;">→ Destino</div>
+              <div class="text-lg font-black" style="color: #065f46;">${destino}</div>
+              <div class="text-sm font-semibold mt-1" style="color: #065f46;">${nombreDestino}</div>
+            </div>
+            <div class="p-3 h-full flex flex-col justify-center" style="background: #d1fae5;">
+              <span class="badge badge-success">✅ Convalidada</span>
+              <div class="text-xs mt-2 font-mono font-bold text-green-700">${destino}</div>
+              <div class="text-sm font-semibold text-green-900">${nombreDestino}</div>
+            </div>
+          </div>
+          <div class="text-[10px] mt-1 mb-1 ml-2 text-emerald-700 font-bold">
+            ⚡ ${totalCodigos} códigos del plan 1998 convalidan a este destino
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    // ═══ FILA SIMPLE ═══
     const sel = materiasSeleccionadas.has(m.codigo);
     let col2023 = '<div class="text-slate-400 text-sm">—</div>';
     let col2025 = '<div class="text-slate-400 text-sm">—</div>';
+    let det = null;
 
     if (ultimoResultado) {
       const codBuscar = normCodigo(m.codigo);
-      const det = ultimoResultado.detalle.find(d => normCodigo(d.cod_1998) === codBuscar);
+      det = ultimoResultado.detalle.find(d => normCodigo(d.cod_1998) === codBuscar);
+      if (!det) {
+        for (const d of ultimoResultado.detalle) {
+          const extra = d.origenes_adicionales.find(o => normCodigo(o.cod_1998) === codBuscar);
+          if (extra) {
+            det = {
+              cod_1998: extra.cod_1998,
+              nombre_1998: extra.nombre_1998,
+              cod_2023: d.cod_2023,
+              nombre_2023: d.nombre_2023,
+              cod_2023aj: d.cod_2023aj,
+              nombre_2023aj: d.nombre_2023aj,
+              estado: 'duplicada'
+            };
+            break;
+          }
+        }
+      }
+
       if (det) {
         if (det.cod_2023 && det.cod_2023 !== 'ELECTIVA') {
           col2023 = `<span class="badge badge-info">${det.cod_2023}</span><div class="text-sm mt-1">${det.nombre_2023 || ''}</div>`;
@@ -112,8 +231,11 @@ function renderListaMaterias() {
         } else {
           col2023 = '<div class="text-red-700 text-sm">❌ No convalida</div>';
         }
+
         if (det.estado === 'convalidada') {
           col2025 = `<span class="badge badge-success">✅ Convalidada</span><div class="text-xs mt-1 font-mono">${det.cod_2023}</div><div class="text-sm">${det.nombre_2023 || ''}</div>`;
+        } else if (det.estado === 'duplicada') {
+          col2025 = `<div class="text-xs mt-1 font-mono text-amber-700">${det.cod_2023}</div><div class="text-sm text-amber-800">${det.nombre_2023 || ''}</div>`;
         } else if (det.estado === 'electiva_pendiente') {
           col2025 = '<div class="bg-yellow-50 border border-yellow-300 rounded-lg p-2 text-xs text-yellow-800">⚠️ Elige en el panel de electivas</div>';
         } else if (det.estado === 'no_convalida' || det.estado === 'no_encontrada') {
@@ -125,8 +247,18 @@ function renderListaMaterias() {
       col2025 = '<div class="text-slate-400 text-sm">...</div>';
     }
 
+    let rowStyle = '';
+    if (det) {
+      if (det.estado === 'convalidada') rowStyle = 'background: linear-gradient(90deg, #d1fae5 0%, #a7f3d0 100%);';
+      else if (det.estado === 'duplicada') rowStyle = 'background: linear-gradient(90deg, #fef3c7 0%, #fde68a 100%);';
+      else if (det.estado === 'electiva_pendiente') rowStyle = 'background: linear-gradient(90deg, #fef3c7 0%, #fde68a 100%);';
+      else if (det.estado === 'no_convalida' || det.estado === 'no_encontrada') rowStyle = 'background: linear-gradient(90deg, #fee2e2 0%, #fecaca 100%);';
+    } else if (sel) {
+      rowStyle = 'background: linear-gradient(90deg, #eef2ff 0%, #e0e7ff 100%);';
+    }
+
     cont.innerHTML += `
-      <div class="row-materia grid grid-cols-3 divide-x divide-slate-100 dark:divide-slate-700 border-t border-slate-100 dark:border-slate-700 ${sel ? 'selected' : ''}">
+      <div class="row-materia grid grid-cols-3 divide-x divide-slate-100 dark:divide-slate-700 border-t border-slate-100 dark:border-slate-700" style="${rowStyle}">
         <div class="p-3 flex items-start gap-2">
           <input type="checkbox" class="mt-1 checkbox-materia" data-codigo="${m.codigo}" ${sel ? 'checked' : ''}>
           <div>
@@ -140,13 +272,21 @@ function renderListaMaterias() {
     `;
   });
 
-  if (visibles === 0) cont.innerHTML = '<div class="p-6 text-center text-slate-500">No se encontraron materias.</div>';
+  if (visibles === 0) {
+    cont.innerHTML = '<div class="p-6 text-center text-slate-500">No se encontraron materias.</div>';
+  }
 
   document.querySelectorAll('.checkbox-materia').forEach(cb => {
     cb.addEventListener('change', e => {
       const cod = e.target.dataset.codigo;
-      if (e.target.checked) materiasSeleccionadas.add(cod);
-      else materiasSeleccionadas.delete(cod);
+      if (e.target.checked) {
+        materiasSeleccionadas.add(cod);
+        if (!codigosDetectados.includes(cod)) codigosDetectados.push(cod);
+      } else {
+        materiasSeleccionadas.delete(cod);
+        codigosDetectados = codigosDetectados.filter(c => c !== cod);
+      }
+      renderCodigosDetectados();
       actualizarContadores();
       clearTimeout(timeoutProcesar);
       timeoutProcesar = setTimeout(procesar, 300);
@@ -178,15 +318,102 @@ function procesar() {
   mostrarBotones();
 }
 
-// ELECTIVAS
+// ═══════════════════════════════════════════════════════════
+// PANEL DE CÓDIGOS DETECTADOS (chips editables)
+// ═══════════════════════════════════════════════════════════
+function renderCodigosDetectados() {
+  const panel = document.getElementById('panel-codigos');
+  const lista = document.getElementById('panel-codigos-lista');
+  if (!panel || !lista) return;
+
+  if (codigosDetectados.length === 0) {
+    panel.classList.add('hidden');
+    return;
+  }
+
+  panel.classList.remove('hidden');
+
+  const ordenados = [...codigosDetectados].sort();
+  lista.innerHTML = ordenados.map(cod => `
+    <span class="chip-codigo anim-pop">
+      ${cod}
+      <button class="quitar-codigo" data-codigo="${cod}" title="Quitar">×</button>
+    </span>
+  `).join('');
+
+  document.querySelectorAll('.quitar-codigo').forEach(btn => {
+    btn.addEventListener('click', e => {
+      const cod = e.target.dataset.codigo;
+      codigosDetectados = codigosDetectados.filter(c => c !== cod);
+      materiasSeleccionadas.delete(cod);
+      for (const m of Array.from(materiasSeleccionadas)) {
+        if (normCodigo(m) === normCodigo(cod)) {
+          materiasSeleccionadas.delete(m);
+        }
+      }
+      renderCodigosDetectados();
+      renderListaMaterias();
+      procesar();
+    });
+  });
+}
+
+// Agregar código manualmente
+function agregarCodigoManual() {
+  const input = document.getElementById('input-nuevo-codigo');
+  const val = (input.value || '').trim().toUpperCase();
+  if (!val) return;
+
+  const codNorm = normCodigo(val);
+  if (!codNorm || !/^[A-Z]+-\d+$/.test(codNorm)) {
+    alert('Formato inválido. Usa algo como INF-111, MAT-114, etc.');
+    return;
+  }
+
+  if (!codigosDetectados.includes(codNorm)) {
+    codigosDetectados.push(codNorm);
+    materiasSeleccionadas.add(codNorm);
+  }
+
+  input.value = '';
+  renderCodigosDetectados();
+  renderListaMaterias();
+  procesar();
+}
+
+document.getElementById('btn-agregar-codigo')?.addEventListener('click', agregarCodigoManual);
+document.getElementById('input-nuevo-codigo')?.addEventListener('keypress', e => {
+  if (e.key === 'Enter') agregarCodigoManual();
+});
+
+document.getElementById('btn-reprocesar')?.addEventListener('click', () => {
+  procesar();
+});
+
+document.getElementById('btn-limpiar-codigos')?.addEventListener('click', () => {
+  if (!confirm('¿Quitar todos los códigos detectados?')) return;
+  codigosDetectados = [];
+  materiasSeleccionadas.clear();
+  ultimoResultado = null;
+  renderCodigosDetectados();
+  renderListaMaterias();
+  ocultarBotones();
+  actualizarContadores();
+});
+
+// ═══════════════════════════════════════════════════════════
+// PANEL DE ELECTIVAS
+// ═══════════════════════════════════════════════════════════
 function renderPanelElectivas() {
   const panel = document.getElementById('panel-electivas');
   const cont = document.getElementById('lista-electivas');
   if (!panel || !cont) return;
+
   if (!ultimoResultado) { panel.classList.add('hidden'); return; }
 
   const pendientes = ultimoResultado.detalle.filter(d => d.estado === 'electiva_pendiente');
   if (pendientes.length === 0) { panel.classList.add('hidden'); return; }
+
   panel.classList.remove('hidden');
 
   const mencion23 = document.getElementById('mencion-2023').value;
@@ -271,9 +498,9 @@ function renderConvalidadas() {
     html += `<div class="mb-6"><div class="bg-green-100 border-l-4 border-green-600 px-4 py-2 rounded mb-3"><h4 class="font-bold text-green-800">📚 Semestre ${sem === 99 ? 'Sin asignar' : sem} — ${totalFilas} convalidadas</h4></div>`;
     html += `<table class="w-full text-sm border-collapse"><thead><tr class="bg-slate-100"><th class="px-3 py-2 border text-left">Cód 1998</th><th class="px-3 py-2 border text-left">Materia 1998</th><th class="px-3 py-2 border text-left">Cód 2023</th><th class="px-3 py-2 border text-left">Materia 2023</th><th class="px-3 py-2 border text-center">Estado</th></tr></thead><tbody>`;
     arr.forEach(d => {
-      html += `<tr><td class="px-3 py-2 border font-mono text-xs font-bold">${d.cod_1998}</td><td class="px-3 py-2 border">${d.nombre_1998}</td><td class="px-3 py-2 border font-mono text-xs font-bold text-green-700">${d.cod_2023}</td><td class="px-3 py-2 border">${d.nombre_2023}</td><td class="px-3 py-2 border text-center"><span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">✅</span></td></tr>`;
+      html += `<tr class="bg-green-50"><td class="px-3 py-2 border font-mono text-xs font-bold">${d.cod_1998}</td><td class="px-3 py-2 border">${d.nombre_1998}</td><td class="px-3 py-2 border font-mono text-xs font-bold text-green-700">${d.cod_2023}</td><td class="px-3 py-2 border">${d.nombre_2023}</td><td class="px-3 py-2 border text-center"><span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">✅</span></td></tr>`;
       d.origenes_adicionales.forEach(extra => {
-        html += `<tr class="bg-yellow-50"><td class="px-3 py-2 border font-mono text-xs font-bold text-yellow-700">${extra.cod_1998}</td><td class="px-3 py-2 border text-yellow-800">${extra.nombre_1998}</td><td class="px-3 py-2 border font-mono text-xs text-yellow-700">${d.cod_2023}</td><td class="px-3 py-2 border text-yellow-800">${d.nombre_2023}</td><td class="px-3 py-2 border text-center"><span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">⚠️ Dup</span></td></tr>`;
+        html += `<tr class="bg-amber-50"><td class="px-3 py-2 border font-mono text-xs font-bold text-amber-700">${extra.cod_1998}</td><td class="px-3 py-2 border text-amber-800">${extra.nombre_1998}</td><td class="px-3 py-2 border font-mono text-xs text-amber-700">${d.cod_2023}</td><td class="px-3 py-2 border text-amber-800">${d.nombre_2023}</td><td class="px-3 py-2 border text-center"><span class="bg-amber-100 text-amber-800 px-2 py-1 rounded text-xs">⚠️ Dup</span></td></tr>`;
       });
     });
     html += `</tbody></table></div>`;
@@ -305,7 +532,6 @@ function ocultarBotones() {
   document.getElementById('vista-convalidadas')?.classList.add('hidden');
   document.getElementById('resumen-convalidadas')?.classList.add('hidden');
   document.getElementById('panel-electivas')?.classList.add('hidden');
-  document.getElementById('panel-diagnostico')?.classList.add('hidden');
 }
 
 // LISTENERS GENERALES
@@ -313,10 +539,12 @@ document.getElementById('buscador').addEventListener('input', renderListaMateria
 
 document.getElementById('btn-limpiar').addEventListener('click', () => {
   materiasSeleccionadas.clear();
+  codigosDetectados = [];
   ultimoResultado = null;
   electivasElegidas = {};
   materiasConEstado = {};
   renderListaMaterias();
+  renderCodigosDetectados();
   ocultarBotones();
   actualizarContadores();
 });
@@ -368,10 +596,13 @@ document.getElementById('btn-procesar-archivo').addEventListener('click', async 
     if (ced) document.getElementById('cedula-estudiante').value = ced;
     if (nom) document.getElementById('nombre-estudiante').value = nom;
 
+    codigosDetectados = [...codigos];
+    materiasSeleccionadas.clear();
     codigos.forEach(c => materiasSeleccionadas.add(c));
+
     prog.textContent = `✅ Detectados ${codigos.length} códigos aprobados`;
     procesar();
-    mostrarDiagnostico(analisis, texto);
+    renderCodigosDetectados();
   } catch (e) {
     alert('Error: ' + e.message);
     prog.textContent = '❌ ' + e.message;
@@ -379,104 +610,6 @@ document.getElementById('btn-procesar-archivo').addEventListener('click', async 
     btn.disabled = false;
     document.getElementById('spinner-archivo').classList.add('hidden');
   }
-});
-
-// DIAGNÓSTICO
-function mostrarDiagnostico(analisis, texto) {
-  const panel = document.getElementById('panel-diagnostico');
-  if (!panel) return;
-  panel.classList.remove('hidden');
-
-  document.getElementById('diag-total-bruto').textContent = analisis.aprobados.length + analisis.reprobados.length;
-  document.getElementById('diag-total-aprobados').textContent = analisis.aprobados.length;
-  document.getElementById('diag-total-reprobados').textContent = analisis.reprobados.length;
-  document.getElementById('diag-total-convalidadas').textContent = ultimoResultado ? ultimoResultado.resumen.convalidadas : 0;
-
-  const mencion98 = document.getElementById('mencion-1998').value || '—';
-  const mencion23 = document.getElementById('mencion-2023').value || '—';
-  const esDel1998 = normMencion(mencion98) && normMencion(mencion98) !== 'NINGUNA';
-  document.getElementById('diag-plan').innerHTML =
-    `Mención 1998: <b>${mencion98}</b><br>` +
-    `Mención 2023: <b>${mencion23}</b><br>` +
-    `¿Es del plan 1998?: <b class="${esDel1998 ? 'text-green-600' : 'text-red-600'}">${esDel1998 ? 'SÍ ✅' : 'NO ❌'}</b>`;
-
-  document.getElementById('diag-lista-aprobados').textContent = analisis.aprobados.length > 0 ? analisis.aprobados.join(', ') : '(ninguno)';
-  document.getElementById('diag-lista-reprobados').textContent = analisis.reprobados.length > 0 ? analisis.reprobados.join(', ') : '(ninguno)';
-
-  const detalles = analisis.detalles || {};
-  let detalleHTML = '';
-  Object.keys(detalles).sort().forEach(cod => {
-    const d = detalles[cod];
-    detalleHTML += `${cod}: nota=${d.nota ?? '—'}, año=${d.año ?? '—'}\n`;
-  });
-  document.getElementById('diag-detalle').textContent = detalleHTML || '(sin detalles)';
-
-  const motor = document.getElementById('diag-motor');
-  if (ultimoResultado) {
-    const d = ultimoResultado.detalle;
-    const r = ultimoResultado.resumen;
-    let motorTxt = `Convalidadas: ${r.convalidadas}\nElectivas pendientes: ${r.electivas}\nDuplicadas: ${r.duplicadas}\nNo convalidan: ${r.no_convalidan}\nTotal procesadas: ${r.total_aprobadas}\n\nDETALLE:\n`;
-    d.forEach(x => {
-      motorTxt += `  ${x.cod_1998} → ${x.cod_2023aj || x.cod_2023 || '—'} [${x.estado}]`;
-      if (x.observacion) motorTxt += ` (${x.observacion})`;
-      motorTxt += `\n`;
-    });
-    motor.textContent = motorTxt;
-  } else {
-    motor.textContent = '(sin análisis del motor)';
-  }
-
-  panel.dataset.analisisTexto = generarTextoDiagnostico(analisis);
-}
-
-function generarTextoDiagnostico(analisis) {
-  let out = '═══════════════════════════════════════════\n   DIAGNÓSTICO DEL ARCHIVO\n═══════════════════════════════════════════\n\n';
-  out += `Mención 1998: ${document.getElementById('mencion-1998').value}\n`;
-  out += `Mención 2023: ${document.getElementById('mencion-2023').value}\n\n`;
-  out += `Encontrados en bruto: ${analisis.aprobados.length + analisis.reprobados.length}\n`;
-  out += `Aprobados: ${analisis.aprobados.length}\nRechazados: ${analisis.reprobados.length}\n\n`;
-  out += '── APROBADOS ──\n' + analisis.aprobados.join(', ') + '\n\n';
-  out += '── RECHAZADOS ──\n' + analisis.reprobados.join(', ') + '\n\n';
-  out += '── DETALLE ──\n';
-  const detalles = analisis.detalles || {};
-  Object.keys(detalles).sort().forEach(cod => {
-    const d = detalles[cod];
-    out += `${cod}: nota=${d.nota ?? '—'}, año=${d.año ?? '—'}\n`;
-  });
-  if (ultimoResultado) {
-    out += '\n── RESULTADO DEL MOTOR ──\n';
-    out += `Convalidadas: ${ultimoResultado.resumen.convalidadas}\n`;
-    out += `Electivas: ${ultimoResultado.resumen.electivas}\n`;
-    out += `Duplicadas: ${ultimoResultado.resumen.duplicadas}\n`;
-    out += `No convalidan: ${ultimoResultado.resumen.no_convalidan}\n`;
-    out += `Total procesadas: ${ultimoResultado.resumen.total_aprobadas}\n\nDETALLE COMPLETO:\n`;
-    ultimoResultado.detalle.forEach(x => {
-      out += `  ${x.cod_1998.padEnd(10)} → ${(x.cod_2023aj || x.cod_2023 || '—').padEnd(10)} [${x.estado}]\n`;
-    });
-  }
-  return out;
-}
-
-document.getElementById('btn-toggle-diag')?.addEventListener('click', () => {
-  const cont = document.getElementById('diag-contenido');
-  const btn = document.getElementById('btn-toggle-diag');
-  if (cont.classList.contains('hidden')) {
-    cont.classList.remove('hidden'); btn.textContent = '−';
-  } else {
-    cont.classList.add('hidden'); btn.textContent = '+';
-  }
-});
-
-document.getElementById('btn-copiar-diag')?.addEventListener('click', () => {
-  const panel = document.getElementById('panel-diagnostico');
-  const textoDiag = panel?.dataset.analisisTexto || '';
-  if (!textoDiag) { alert('No hay diagnóstico para copiar.'); return; }
-  navigator.clipboard.writeText(textoDiag).then(() => {
-    const btn = document.getElementById('btn-copiar-diag');
-    const orig = btn.textContent;
-    btn.textContent = '✅ ¡Copiado! Pégalo en el chat';
-    setTimeout(() => { btn.textContent = orig; }, 2500);
-  }).catch(() => alert('No se pudo copiar.'));
 });
 
 // EXPORTAR
