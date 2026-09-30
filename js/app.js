@@ -7,11 +7,9 @@ let materiasSeleccionadas = new Set();
 let ultimoResultado = null;
 let electivasElegidas = {};
 let timeoutProcesar = null;
-let materiasConEstado = {};  // { codigo: { estado, nota, año } }
+let materiasConEstado = {};
 
-// ============================================================
 // TABS
-// ============================================================
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('tab-active'));
@@ -19,16 +17,12 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     document.querySelectorAll('.tab-content').forEach(s => s.classList.add('hidden'));
     const tab = document.getElementById(`tab-${btn.dataset.tab}`);
     if (tab) tab.classList.remove('hidden');
-    if (btn.dataset.tab === 'convalidadas' && ultimoResultado) {
-      renderConvalidadas();
-    }
+    if (btn.dataset.tab === 'convalidadas' && ultimoResultado) renderConvalidadas();
   });
 });
 document.querySelector('[data-tab="estudiante"]')?.classList.add('tab-active');
 
-// ============================================================
-// MÉTODOS DE INGRESO
-// ============================================================
+// MÉTODOS
 const metodoArchivo = document.getElementById('metodo-archivo');
 const metodoManual = document.getElementById('metodo-manual');
 const zonaArchivo = document.getElementById('zona-archivo');
@@ -38,7 +32,6 @@ metodoArchivo?.addEventListener('click', () => {
   metodoManual?.classList.remove('border-indigo-500', 'bg-indigo-50');
   zonaArchivo?.classList.remove('hidden');
 });
-
 metodoManual?.addEventListener('click', () => {
   metodoManual.classList.add('border-indigo-500', 'bg-indigo-50');
   metodoArchivo?.classList.remove('border-indigo-500', 'bg-indigo-50');
@@ -46,12 +39,9 @@ metodoManual?.addEventListener('click', () => {
 });
 metodoManual?.click();
 
-// ============================================================
-// INICIALIZAR
-// ============================================================
+// INIT
 async function init() {
   await cargarDatos();
-
   const menciones98 = getMenciones1998();
   const menciones23 = getMenciones2023();
 
@@ -74,7 +64,6 @@ async function init() {
     ocultarBotones();
     actualizarContadores();
   });
-
   sel23.addEventListener('change', () => {
     materiasSeleccionadas.clear();
     ultimoResultado = null;
@@ -83,13 +72,10 @@ async function init() {
     ocultarBotones();
     actualizarContadores();
   });
-
   renderListaMaterias();
 }
 
-// ============================================================
-// RENDER LISTA MATERIAS
-// ============================================================
+// RENDER LISTA
 function renderListaMaterias() {
   const cont = document.getElementById('lista-materias');
   const mencion98 = document.getElementById('mencion-1998').value;
@@ -126,7 +112,6 @@ function renderListaMaterias() {
         } else {
           col2023 = '<div class="text-red-700 text-sm">❌ No convalida</div>';
         }
-
         if (det.estado === 'convalidada') {
           col2025 = `<span class="badge badge-success">✅ Convalidada</span><div class="text-xs mt-1 font-mono">${det.cod_2023}</div><div class="text-sm">${det.nombre_2023 || ''}</div>`;
         } else if (det.estado === 'electiva_pendiente') {
@@ -155,9 +140,7 @@ function renderListaMaterias() {
     `;
   });
 
-  if (visibles === 0) {
-    cont.innerHTML = '<div class="p-6 text-center text-slate-500">No se encontraron materias.</div>';
-  }
+  if (visibles === 0) cont.innerHTML = '<div class="p-6 text-center text-slate-500">No se encontraron materias.</div>';
 
   document.querySelectorAll('.checkbox-materia').forEach(cb => {
     cb.addEventListener('change', e => {
@@ -173,15 +156,12 @@ function renderListaMaterias() {
   actualizarContadores();
 }
 
-// ============================================================
-// PROCESAR CONVALIDACIÓN
-// ============================================================
+// PROCESAR
 function procesar() {
   const cedula = document.getElementById('cedula-estudiante').value || 'SIN-CEDULA';
   const nombre = document.getElementById('nombre-estudiante').value || 'SIN-NOMBRE';
   const mencion98 = document.getElementById('mencion-1998').value;
   const mencion23 = document.getElementById('mencion-2023').value;
-
   if (!mencion98 || !mencion23 || materiasSeleccionadas.size === 0) return;
 
   ultimoResultado = convalidar(
@@ -198,24 +178,19 @@ function procesar() {
   mostrarBotones();
 }
 
-// ============================================================
-// PANEL DE ELECTIVAS
-// ============================================================
+// ELECTIVAS
 function renderPanelElectivas() {
   const panel = document.getElementById('panel-electivas');
   const cont = document.getElementById('lista-electivas');
   if (!panel || !cont) return;
-
   if (!ultimoResultado) { panel.classList.add('hidden'); return; }
 
   const pendientes = ultimoResultado.detalle.filter(d => d.estado === 'electiva_pendiente');
   if (pendientes.length === 0) { panel.classList.add('hidden'); return; }
-
   panel.classList.remove('hidden');
 
   const mencion23 = document.getElementById('mencion-2023').value;
   const mallaMencion = getElectivasDisponibles(mencion23);
-  console.log(`🎯 Electivas disponibles para "${mencion23}": ${mallaMencion.length}`);
 
   cont.innerHTML = '';
   pendientes.forEach((det, i) => {
@@ -253,14 +228,11 @@ function renderPanelElectivas() {
   });
 }
 
-// ============================================================
 // RENDER CONVALIDADAS
-// ============================================================
 function renderConvalidadas() {
   if (!ultimoResultado) return;
   const det = ultimoResultado.detalle;
   const r = ultimoResultado.resumen;
-
   const nombre = document.getElementById('nombre-estudiante').value || 'SIN NOMBRE';
   const cedula = document.getElementById('cedula-estudiante').value || 'SIN CÉDULA';
   const mencion = document.getElementById('mencion-2023').value;
@@ -311,9 +283,7 @@ function renderConvalidadas() {
   document.getElementById('vista-convalidadas').classList.remove('hidden');
 }
 
-// ============================================================
-// CONTADORES Y BOTONES
-// ============================================================
+// CONTADORES
 function actualizarContadores() {
   document.getElementById('contador-seleccionadas').textContent = materiasSeleccionadas.size;
   document.getElementById('contador-convalidadas').textContent = ultimoResultado ? ultimoResultado.resumen.convalidadas : 0;
@@ -335,11 +305,10 @@ function ocultarBotones() {
   document.getElementById('vista-convalidadas')?.classList.add('hidden');
   document.getElementById('resumen-convalidadas')?.classList.add('hidden');
   document.getElementById('panel-electivas')?.classList.add('hidden');
+  document.getElementById('panel-diagnostico')?.classList.add('hidden');
 }
 
-// ============================================================
 // LISTENERS GENERALES
-// ============================================================
 document.getElementById('buscador').addEventListener('input', renderListaMaterias);
 
 document.getElementById('btn-limpiar').addEventListener('click', () => {
@@ -357,9 +326,7 @@ document.getElementById('btn-nueva-consulta').addEventListener('click', () => {
   location.reload();
 });
 
-// ============================================================
 // DROP ZONE
-// ============================================================
 const dropZone = document.getElementById('drop-zone');
 const fileInput = document.getElementById('file-input');
 
@@ -379,9 +346,7 @@ function setArchivo(f) {
   document.getElementById('btn-procesar-archivo').disabled = false;
 }
 
-// ============================================================
 // PROCESAR ARCHIVO
-// ============================================================
 document.getElementById('btn-procesar-archivo').addEventListener('click', async () => {
   if (!archivoSeleccionado) return;
   const btn = document.getElementById('btn-procesar-archivo');
@@ -393,13 +358,12 @@ document.getElementById('btn-procesar-archivo').addEventListener('click', async 
 
   try {
     const texto = await extraerTexto(archivoSeleccionado, msg => prog.textContent = msg);
-    const codigos = extraerCodigos(texto);
+    const analisis = analizarTexto(texto);
+    const codigos = analisis.aprobados;
     const ced = extraerCedula(texto);
     const nom = extraerNombre(texto);
 
-    // Extraer materias con estado y año (para regla 64h)
     materiasConEstado = extraerMateriasConEstado(texto);
-    console.log('📋 Materias con estado:', materiasConEstado);
 
     if (ced) document.getElementById('cedula-estudiante').value = ced;
     if (nom) document.getElementById('nombre-estudiante').value = nom;
@@ -407,6 +371,7 @@ document.getElementById('btn-procesar-archivo').addEventListener('click', async 
     codigos.forEach(c => materiasSeleccionadas.add(c));
     prog.textContent = `✅ Detectados ${codigos.length} códigos aprobados`;
     procesar();
+    mostrarDiagnostico(analisis, texto);
   } catch (e) {
     alert('Error: ' + e.message);
     prog.textContent = '❌ ' + e.message;
@@ -416,71 +381,105 @@ document.getElementById('btn-procesar-archivo').addEventListener('click', async 
   }
 });
 
-// ============================================================
-// EXTRAER MATERIAS CON ESTADO Y AÑO (para regla 64h)
-// ============================================================
-function extraerMateriasConEstado(texto) {
-  const resultado = {};
-  const prefijosValidos = [
-    'INF', 'LAB', 'MAT', 'FIS', 'EST', 'LIN', 'TRA', 'COM', 'SIS', 'IID',
-    'TIC', 'TVD', 'TAW', 'TIE', 'TAM', 'DAT', 'SEG', 'TSI', 'TCS', 'TCP',
-    'TSS', 'TAR', 'TRC', 'TAT', 'CPA', 'ECO', 'TIOT'
-  ];
-  const patronCodigo = new RegExp(
-    `\\b(${prefijosValidos.join('|')})[\\s\\.\\-]?(\\d{3,4})\\b`,
-    'g'
-  );
+// DIAGNÓSTICO
+function mostrarDiagnostico(analisis, texto) {
+  const panel = document.getElementById('panel-diagnostico');
+  if (!panel) return;
+  panel.classList.remove('hidden');
 
-  const lineas = texto.split(/\r?\n/);
-  let añoActual = null;
+  document.getElementById('diag-total-bruto').textContent = analisis.aprobados.length + analisis.reprobados.length;
+  document.getElementById('diag-total-aprobados').textContent = analisis.aprobados.length;
+  document.getElementById('diag-total-reprobados').textContent = analisis.reprobados.length;
+  document.getElementById('diag-total-convalidadas').textContent = ultimoResultado ? ultimoResultado.resumen.convalidadas : 0;
 
-  lineas.forEach(linea => {
-    const lineaUp = linea.toUpperCase();
+  const mencion98 = document.getElementById('mencion-1998').value || '—';
+  const mencion23 = document.getElementById('mencion-2023').value || '—';
+  const esDel1998 = normMencion(mencion98) && normMencion(mencion98) !== 'NINGUNA';
+  document.getElementById('diag-plan').innerHTML =
+    `Mención 1998: <b>${mencion98}</b><br>` +
+    `Mención 2023: <b>${mencion23}</b><br>` +
+    `¿Es del plan 1998?: <b class="${esDel1998 ? 'text-green-600' : 'text-red-600'}">${esDel1998 ? 'SÍ ✅' : 'NO ❌'}</b>`;
 
-    // Detectar año en la línea
-    const añoMatch = lineaUp.match(/\b(19|20)\d{2}\b/);
-    if (añoMatch) {
-      const año = parseInt(añoMatch[0], 10);
-      if (año >= 1990 && año <= 2100) {
-        añoActual = año;
-      }
-    }
+  document.getElementById('diag-lista-aprobados').textContent = analisis.aprobados.length > 0 ? analisis.aprobados.join(', ') : '(ninguno)';
+  document.getElementById('diag-lista-reprobados').textContent = analisis.reprobados.length > 0 ? analisis.reprobados.join(', ') : '(ninguno)';
 
-    // Buscar códigos en la línea
-    const regex = new RegExp(patronCodigo.source, 'g');
-    let m;
-    while ((m = regex.exec(lineaUp)) !== null) {
-      const cod = `${m[1]}-${m[2]}`;
-
-      // Detectar estado en el contexto de esta línea
-      let estado = 'aprobado';
-      if (/REPROBADO|REPROBÓ|DESAPROBADO|ABANDONO|ABANDONÓ|RETIRADO/i.test(lineaUp)) {
-        estado = 'reprobado';
-      }
-
-      // Detectar nota (número entre 0-100 en la línea)
-      const nums = (lineaUp.match(/\b\d{1,3}\b/g) || [])
-        .map(n => parseInt(n, 10))
-        .filter(n => n >= 0 && n <= 100);
-      const nota = nums.length > 0 ? Math.max(...nums) : null;
-
-      // Si ya existe, preferir el APROBADO
-      if (resultado[cod]) {
-        if (estado === 'aprobado' && resultado[cod].estado !== 'aprobado') {
-          resultado[cod] = { estado, nota, año: añoActual };
-        }
-      } else {
-        resultado[cod] = { estado, nota, año: añoActual };
-      }
-    }
+  const detalles = analisis.detalles || {};
+  let detalleHTML = '';
+  Object.keys(detalles).sort().forEach(cod => {
+    const d = detalles[cod];
+    detalleHTML += `${cod}: nota=${d.nota ?? '—'}, año=${d.año ?? '—'}\n`;
   });
+  document.getElementById('diag-detalle').textContent = detalleHTML || '(sin detalles)';
 
-  return resultado;
+  const motor = document.getElementById('diag-motor');
+  if (ultimoResultado) {
+    const d = ultimoResultado.detalle;
+    const r = ultimoResultado.resumen;
+    let motorTxt = `Convalidadas: ${r.convalidadas}\nElectivas pendientes: ${r.electivas}\nDuplicadas: ${r.duplicadas}\nNo convalidan: ${r.no_convalidan}\nTotal procesadas: ${r.total_aprobadas}\n\nDETALLE:\n`;
+    d.forEach(x => {
+      motorTxt += `  ${x.cod_1998} → ${x.cod_2023aj || x.cod_2023 || '—'} [${x.estado}]`;
+      if (x.observacion) motorTxt += ` (${x.observacion})`;
+      motorTxt += `\n`;
+    });
+    motor.textContent = motorTxt;
+  } else {
+    motor.textContent = '(sin análisis del motor)';
+  }
+
+  panel.dataset.analisisTexto = generarTextoDiagnostico(analisis);
 }
 
-// ============================================================
-// EXPORTACIÓN PDF/EXCEL
-// ============================================================
+function generarTextoDiagnostico(analisis) {
+  let out = '═══════════════════════════════════════════\n   DIAGNÓSTICO DEL ARCHIVO\n═══════════════════════════════════════════\n\n';
+  out += `Mención 1998: ${document.getElementById('mencion-1998').value}\n`;
+  out += `Mención 2023: ${document.getElementById('mencion-2023').value}\n\n`;
+  out += `Encontrados en bruto: ${analisis.aprobados.length + analisis.reprobados.length}\n`;
+  out += `Aprobados: ${analisis.aprobados.length}\nRechazados: ${analisis.reprobados.length}\n\n`;
+  out += '── APROBADOS ──\n' + analisis.aprobados.join(', ') + '\n\n';
+  out += '── RECHAZADOS ──\n' + analisis.reprobados.join(', ') + '\n\n';
+  out += '── DETALLE ──\n';
+  const detalles = analisis.detalles || {};
+  Object.keys(detalles).sort().forEach(cod => {
+    const d = detalles[cod];
+    out += `${cod}: nota=${d.nota ?? '—'}, año=${d.año ?? '—'}\n`;
+  });
+  if (ultimoResultado) {
+    out += '\n── RESULTADO DEL MOTOR ──\n';
+    out += `Convalidadas: ${ultimoResultado.resumen.convalidadas}\n`;
+    out += `Electivas: ${ultimoResultado.resumen.electivas}\n`;
+    out += `Duplicadas: ${ultimoResultado.resumen.duplicadas}\n`;
+    out += `No convalidan: ${ultimoResultado.resumen.no_convalidan}\n`;
+    out += `Total procesadas: ${ultimoResultado.resumen.total_aprobadas}\n\nDETALLE COMPLETO:\n`;
+    ultimoResultado.detalle.forEach(x => {
+      out += `  ${x.cod_1998.padEnd(10)} → ${(x.cod_2023aj || x.cod_2023 || '—').padEnd(10)} [${x.estado}]\n`;
+    });
+  }
+  return out;
+}
+
+document.getElementById('btn-toggle-diag')?.addEventListener('click', () => {
+  const cont = document.getElementById('diag-contenido');
+  const btn = document.getElementById('btn-toggle-diag');
+  if (cont.classList.contains('hidden')) {
+    cont.classList.remove('hidden'); btn.textContent = '−';
+  } else {
+    cont.classList.add('hidden'); btn.textContent = '+';
+  }
+});
+
+document.getElementById('btn-copiar-diag')?.addEventListener('click', () => {
+  const panel = document.getElementById('panel-diagnostico');
+  const textoDiag = panel?.dataset.analisisTexto || '';
+  if (!textoDiag) { alert('No hay diagnóstico para copiar.'); return; }
+  navigator.clipboard.writeText(textoDiag).then(() => {
+    const btn = document.getElementById('btn-copiar-diag');
+    const orig = btn.textContent;
+    btn.textContent = '✅ ¡Copiado! Pégalo en el chat';
+    setTimeout(() => { btn.textContent = orig; }, 2500);
+  }).catch(() => alert('No se pudo copiar.'));
+});
+
+// EXPORTAR
 document.getElementById('btn-pdf-completo').addEventListener('click', () => {
   if (!ultimoResultado) return;
   generarPDFCompleto({
@@ -517,7 +516,4 @@ document.getElementById('btn-excel').addEventListener('click', () => {
   }, ultimoResultado);
 });
 
-// ============================================================
-// INICIAR APP
-// ============================================================
 init();

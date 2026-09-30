@@ -1,6 +1,5 @@
 // ============================================================
-// LECTOR DE ARCHIVOS + OCR (100% navegador)
-// VERSIÓN CORREGIDA: análisis por contexto de código individual
+// LECTOR DE ARCHIVOS + OCR — VERSIÓN CON ANÁLISIS POR CONTEXTO
 // ============================================================
 
 const PALABRAS_RECHAZO = [
@@ -21,7 +20,11 @@ const PALABRAS_APROBACION = [
 ];
 
 const NOTA_MINIMA_APROBACION = 51;
-
+const PREFIJOS_VALIDOS = [
+  'INF', 'LAB', 'MAT', 'FIS', 'EST', 'LIN', 'TRA', 'COM', 'SIS', 'IID',
+  'TIC', 'TVD', 'TAW', 'TIE', 'TAM', 'DAT', 'SEG', 'TSI', 'TCS', 'TCP',
+  'TSS', 'TAR', 'TRC', 'TAT', 'CPA', 'ECO', 'TIOT'
+];
 
 async function extraerTexto(file, onProgress) {
   const ext = file.name.toLowerCase().split('.').pop();
@@ -36,12 +39,10 @@ async function leerPDF(file, onProgress) {
   const arrayBuffer = await file.arrayBuffer();
   const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
   let texto = '';
+
   for (let i = 1; i <= pdf.numPages; i++) {
     const page = await pdf.getPage(i);
     const content = await page.getTextContent();
-    // ⚠️ CAMBIO CLAVE: unir items respetando los saltos de línea
-    // Cada item tiene coordenada Y (transform[5]). Si cambia mucho,
-    // es una línea nueva.
     let ultimaY = null;
     let lineaActual = '';
     for (const item of content.items) {
@@ -57,8 +58,8 @@ async function leerPDF(file, onProgress) {
     if (lineaActual.trim()) texto += lineaActual.trim() + '\n';
     texto += '\n';
   }
-  if (texto.trim().length < 100) {
-    console.log('PDF escaneado → OCR');
+
+  if (texto.trim().length < 500) {
     texto = await ocrPDF(pdf, onProgress);
   }
   return corregirOCR(texto);
@@ -68,7 +69,7 @@ async function ocrPDF(pdf, onProgress) {
   let texto = '';
   for (let i = 1; i <= pdf.numPages; i++) {
     const page = await pdf.getPage(i);
-    const viewport = page.getViewport({ scale: 2 });
+    const viewport = page.getViewport({ scale: 3 });
     const canvas = document.createElement('canvas');
     canvas.width = viewport.width;
     canvas.height = viewport.height;
@@ -80,7 +81,7 @@ async function ocrPDF(pdf, onProgress) {
         }
       }
     });
-    texto += text + '\n';
+    texto += text + '\n\n';
   }
   return texto;
 }
@@ -113,150 +114,110 @@ async function leerImagen(file, onProgress) {
   return corregirOCR(text);
 }
 
-
-// ============================================================
-// CORRECCIÓN DE OCR
-// ============================================================
 function corregirOCR(texto) {
   const reemplazos = [
     [/\bNF[\s\.\-]?(\d{3})/g, 'INF-$1'],
     [/\b1NF[\s\.\-]?(\d{3})/g, 'INF-$1'],
     [/\bTNF[\s\.\-]?(\d{3})/g, 'INF-$1'],
-    [/\bLAB[\s\.\-]?(\d{3})/g, 'LAB-$1'],
-    [/\bMAT[\s\.\-]?(\d{3})/g, 'MAT-$1'],
-    [/\bFIS[\s\.\-]?(\d{3})/g, 'FIS-$1'],
-    [/\bEST[\s\.\-]?(\d{3})/g, 'EST-$1'],
-    [/\bLIN[\s\.\-]?(\d{3})/g, 'LIN-$1'],
-    [/\bTRA[\s\.\-]?(\d{3})/g, 'TRA-$1'],
-    [/\bINF[\s\.\-]?(\d{3})/g, 'INF-$1'],
+    [/\bJNF[\s\.\-]?(\d{3})/g, 'INF-$1'],
+    [/\bIMF[\s\.\-]?(\d{3})/g, 'INF-$1'],
+    [/\bANF[\s\.\-]?(\d{3})/g, 'INF-$1'],
+    [/\bWF[\s\.\-]?(\d{3})/g, 'INF-$1'],
+    [/\bIF[\s\.\-]?(\d{3})/g, 'INF-$1'],
+    [/\bMF[\s\.\-]?(\d{3})/g, 'INF-$1'],
     [/\bll\b/g, 'II'],
     [/\blll\b/g, 'III'],
-    [/\s+/g, ' '],
   ];
   for (const [regex, rep] of reemplazos) texto = texto.replace(regex, rep);
   return texto;
 }
 
-
-// ============================================================
-// DETECCIÓN DE ESTADO POR CONTEXTO
-// ============================================================
-function estadoEnContexto(contexto) {
-  const up = contexto.toUpperCase();
-  const unida = up.replace(/\s+/g, ' ').trim();
-
-  // 1. Buscar palabras de RECHAZO
-  for (const palabra of PALABRAS_RECHAZO) {
-    if (unida.includes(palabra)) return 'rechazado';
-  }
-
-  // 2. Buscar palabras de APROBACIÓN
-  for (const palabra of PALABRAS_APROBACION) {
-    if (unida.includes(palabra)) return 'aprobado';
-  }
-
-  // 3. Analizar notas numéricas (0-100), excluyendo códigos
-  //    Buscamos todos los números de 1-3 dígitos
-  const nums = (unida.match(/\b\d{1,3}\b/g) || [])
-    .map(n => parseInt(n, 10))
-    .filter(n => n >= 0 && n <= 100);
-
-  if (nums.length > 0) {
-    const maxNota = Math.max(...nums);
-    if (maxNota >= NOTA_MINIMA_APROBACION) return 'aprobado';
-    return 'rechazado';
-  }
-
-  // 4. Si no hay info → desconocido (conservador: no convalidar)
-  return 'desconocido';
-}
-
-
-// ============================================================
-// EXTRACCIÓN DE CÓDIGOS — ANÁLISIS POR CONTEXTO
-// ============================================================
-function extraerCodigos(texto) {
-  const prefijosValidos = [
-    'INF', 'LAB', 'MAT', 'FIS', 'EST', 'LIN', 'TRA', 'COM', 'SIS', 'IID',
-    'TIC', 'TVD', 'TAW', 'TIE', 'TAM', 'DAT', 'SEG', 'TSI', 'TCS', 'TCP',
-    'TSS', 'TAR', 'TRC', 'TAT', 'CPA', 'ECO', 'TIOT'
-  ];
+// ═══════════════════════════════════════════════════════════
+// ANÁLISIS PRINCIPAL
+// ═══════════════════════════════════════════════════════════
+function analizarTexto(texto) {
   const patronCodigo = new RegExp(
-    `\\b(${prefijosValidos.join('|')})[\\s\\.\\-]?(\\d{3,4})\\b`,
+    `\\b(${PREFIJOS_VALIDOS.join('|')})[\\s\\.\\-]?(\\d{3,4})\\b`,
     'g'
   );
 
-  // Normalizar el texto: solo espacios simples
   const textoNorm = texto.toUpperCase().replace(/\s+/g, ' ');
-
-  // Encontrar TODAS las posiciones de códigos
-  const matches = [];
+  const ocurrencias = [];
   let m;
   const regex = new RegExp(patronCodigo.source, 'g');
   while ((m = regex.exec(textoNorm)) !== null) {
-    matches.push({
+    ocurrencias.push({
       codigo: `${m[1]}-${m[2]}`,
       inicio: m.index,
       fin: m.index + m[0].length
     });
   }
 
-  console.log(`🔍 Códigos encontrados en bruto: ${matches.length}`);
+  const aprobados = new Map();
+  const reprobados = new Map();
+  const detalles = {};
 
-  // Analizar cada código por separado, con ventana de contexto
-  const aprobados = new Map();   // codigo → conteo de aprobaciones
-  const rechazados = new Map();  // codigo → conteo de rechazos
+  ocurrencias.forEach((ocurrencia, idx) => {
+    const inicioCtx = idx > 0 ? ocurrencias[idx - 1].fin : Math.max(0, ocurrencia.inicio - 150);
+    const finCtx = idx < ocurrencias.length - 1 ? ocurrencias[idx + 1].inicio : Math.min(textoNorm.length, ocurrencia.fin + 150);
+    const contexto = textoNorm.substring(inicioCtx, finCtx);
 
-  matches.forEach((match, idx) => {
-    // Ventana de contexto: desde el código ANTERIOR hasta el SIGUIENTE
-    // Si no hay anterior/siguiente, usar ±200 caracteres
-    const inicioContexto = idx > 0
-      ? matches[idx - 1].fin
-      : Math.max(0, match.inicio - 200);
-    const finContexto = idx < matches.length - 1
-      ? matches[idx + 1].inicio
-      : Math.min(textoNorm.length, match.fin + 200);
+    let rechazado = false;
+    for (const p of PALABRAS_RECHAZO) { if (contexto.includes(p)) { rechazado = true; break; } }
 
-    const contexto = textoNorm.substring(inicioContexto, finContexto);
-    const estado = estadoEnContexto(contexto);
+    let aprobado = false;
+    for (const p of PALABRAS_APROBACION) { if (contexto.includes(p)) { aprobado = true; break; } }
 
-    if (estado === 'aprobado') {
-      aprobados.set(match.codigo, (aprobados.get(match.codigo) || 0) + 1);
-    } else if (estado === 'rechazado') {
-      rechazados.set(match.codigo, (rechazados.get(match.codigo) || 0) + 1);
+    const nums = (contexto.match(/\b\d{1,3}\b/g) || [])
+      .map(n => parseInt(n, 10))
+      .filter(n => n >= 0 && n <= 100);
+    const nota = nums.length > 0 ? Math.max(...nums) : null;
+
+    const añoMatch = contexto.match(/\b(19|20)\d{2}\b/);
+    const año = añoMatch ? parseInt(añoMatch[0], 10) : null;
+
+    if (rechazado && !aprobado) {
+      reprobados.set(ocurrencia.codigo, (reprobados.get(ocurrencia.codigo) || 0) + 1);
+    } else if (aprobado || (nota !== null && nota >= NOTA_MINIMA_APROBACION)) {
+      aprobados.set(ocurrencia.codigo, (aprobados.get(ocurrencia.codigo) || 0) + 1);
+      if (!detalles[ocurrencia.codigo]) {
+        detalles[ocurrencia.codigo] = { nota, año };
+      }
     }
-    // 'desconocido' → no cuenta ni a favor ni en contra
   });
 
-  // Decidir el estado final por código:
-  // Si tiene AL MENOS UNA aprobación y ninguna posterior rechazada → APROBADO
-  // (en historial UMSA, si aprobó una vez, ya la tiene)
   const aprobadosFinal = new Set();
-  const rechazadosFinal = new Set();
+  const reprobadosFinal = new Set();
 
-  for (const [codigo, numAprob] of aprobados.entries()) {
-    const numRech = rechazados.get(codigo) || 0;
-    if (numAprob > 0) {
-      aprobadosFinal.add(codigo);
-    }
+  for (const [codigo, veces] of aprobados) aprobadosFinal.add(codigo);
+  for (const [codigo, veces] of reprobados) {
+    if (!aprobadosFinal.has(codigo)) reprobadosFinal.add(codigo);
   }
 
-  for (const [codigo, numRech] of rechazados.entries()) {
-    if (!aprobadosFinal.has(codigo)) {
-      rechazadosFinal.add(codigo);
-    }
-  }
-
-  console.log('✅ APROBADOS:', Array.from(aprobadosFinal).sort());
-  console.log('❌ RECHAZADOS:', Array.from(rechazadosFinal).sort());
-
-  return Array.from(aprobadosFinal).sort();
+  return {
+    aprobados: Array.from(aprobadosFinal).sort(),
+    reprobados: Array.from(reprobadosFinal).sort(),
+    detalles
+  };
 }
 
+function extraerCodigos(texto) {
+  return analizarTexto(texto).aprobados;
+}
 
-// ============================================================
-// EXTRACCIÓN DE CÉDULA Y NOMBRE
-// ============================================================
+function extraerMateriasConEstado(texto) {
+  const result = analizarTexto(texto);
+  const out = {};
+  result.aprobados.forEach(cod => {
+    out[cod] = {
+      estado: 'aprobado',
+      nota: result.detalles[cod]?.nota || null,
+      año: result.detalles[cod]?.año || null
+    };
+  });
+  return out;
+}
+
 function extraerCedula(texto) {
   const m = texto.match(/(?:C\.?I\.?|CEDULA|CÉDULA|CI)[\s:.\-]*(\d{6,10})/i);
   return m ? m[1] : null;
@@ -271,3 +232,17 @@ function extraerNombre(texto) {
   }
   return null;
 }
+// ============================================================
+// EXPONER FUNCIONES GLOBALMENTE (para que app.js las use)
+// ============================================================
+window.extraerTexto = extraerTexto;
+window.leerPDF = leerPDF;
+window.leerDOCX = leerDOCX;
+window.leerExcel = leerExcel;
+window.leerImagen = leerImagen;
+window.corregirOCR = corregirOCR;
+window.analizarTexto = analizarTexto;
+window.extraerCodigos = extraerCodigos;
+window.extraerMateriasConEstado = extraerMateriasConEstado;
+window.extraerCedula = extraerCedula;
+window.extraerNombre = extraerNombre;
