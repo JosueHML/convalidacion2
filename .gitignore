@@ -1,11 +1,21 @@
+# Python
 __pycache__/
 *.pyc
 *.pyo
 .venv/
 venv/
+
+# VSCode
 .vscode/
+
+# Sistema
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Excel temporales
 ~$*.xlsx
 ~$*.xls
+
+# Planes (opcional, si quieres que no suban)
+# planes_excel/

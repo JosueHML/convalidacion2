@@ -7,6 +7,7 @@ let materiasSeleccionadas = new Set();
 let ultimoResultado = null;
 let electivasElegidas = {};
 let timeoutProcesar = null;
+let materiasConEstado = {};  // { codigo: { estado, nota, año } }
 
 // ============================================================
 // TABS
@@ -68,6 +69,7 @@ async function init() {
     materiasSeleccionadas.clear();
     ultimoResultado = null;
     electivasElegidas = {};
+    materiasConEstado = {};
     renderListaMaterias();
     ocultarBotones();
     actualizarContadores();
@@ -97,13 +99,16 @@ function renderListaMaterias() {
   }
 
   const materias = getMaterias1998(mencion98);
-  const filtro = (document.getElementById('buscador').value || '').toUpperCase();
+  const filtroRaw = (document.getElementById('buscador').value || '');
+  const filtro = filtroRaw.toUpperCase().replace(/[\s\-\.]/g, '');
 
   cont.innerHTML = '';
   let visibles = 0;
 
   materias.forEach(m => {
-    if (filtro && !m.codigo.includes(filtro) && !m.nombre.toUpperCase().includes(filtro)) return;
+    const codNorm = (m.codigo || '').toUpperCase().replace(/[\s\-\.]/g, '');
+    const nomNorm = (m.nombre || '').toUpperCase();
+    if (filtro && !codNorm.includes(filtro) && !nomNorm.includes(filtro)) return;
     visibles++;
 
     const sel = materiasSeleccionadas.has(m.codigo);
@@ -111,22 +116,23 @@ function renderListaMaterias() {
     let col2025 = '<div class="text-slate-400 text-sm">—</div>';
 
     if (ultimoResultado) {
-      const det = ultimoResultado.detalle.find(d => d.cod_1998 === m.codigo);
+      const codBuscar = normCodigo(m.codigo);
+      const det = ultimoResultado.detalle.find(d => normCodigo(d.cod_1998) === codBuscar);
       if (det) {
         if (det.cod_2023 && det.cod_2023 !== 'ELECTIVA') {
-          col2023 = `<span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-xs font-semibold">${det.cod_2023}</span><div class="text-sm mt-1">${det.nombre_2023 || ''}</div>`;
+          col2023 = `<span class="badge badge-info">${det.cod_2023}</span><div class="text-sm mt-1">${det.nombre_2023 || ''}</div>`;
         } else if (det.cod_2023 === 'ELECTIVA') {
-          col2023 = '<span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-semibold">ELECTIVA</span>';
+          col2023 = '<span class="badge badge-warn">ELECTIVA</span>';
         } else {
           col2023 = '<div class="text-red-700 text-sm">❌ No convalida</div>';
         }
 
         if (det.estado === 'convalidada') {
-          col2025 = `<span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">✅ Convalidada</span><div class="text-xs mt-1 font-mono">${det.cod_2023}</div><div class="text-sm">${det.nombre_2023 || ''}</div>`;
+          col2025 = `<span class="badge badge-success">✅ Convalidada</span><div class="text-xs mt-1 font-mono">${det.cod_2023}</div><div class="text-sm">${det.nombre_2023 || ''}</div>`;
         } else if (det.estado === 'electiva_pendiente') {
           col2025 = '<div class="bg-yellow-50 border border-yellow-300 rounded-lg p-2 text-xs text-yellow-800">⚠️ Elige en el panel de electivas</div>';
         } else if (det.estado === 'no_convalida' || det.estado === 'no_encontrada') {
-          col2025 = '<div class="text-red-700 text-sm">❌ No convalida</div>';
+          col2025 = `<div class="text-red-700 text-sm">❌ ${det.observacion || 'No convalida'}</div>`;
         }
       }
     } else if (sel) {
@@ -134,12 +140,12 @@ function renderListaMaterias() {
       col2025 = '<div class="text-slate-400 text-sm">...</div>';
     }
 
-          cont.innerHTML += `
-            <div class="row-materia grid grid-cols-3 divide-x divide-slate-100 dark:divide-slate-700 border-t border-slate-100 dark:border-slate-700 ${sel ? 'selected' : ''}">
-             <div class="p-3 flex items-start gap-2">
-             <input type="checkbox" class="mt-1 w-5 h-5 checkbox-materia" data-codigo="${m.codigo}" ${sel ? 'checked' : ''}>
-            <div>
-            <div class="inline-block bg-indigo-100 text-indigo-800 text-xs font-bold px-2 py-1 rounded mb-1">${m.codigo}</div>
+    cont.innerHTML += `
+      <div class="row-materia grid grid-cols-3 divide-x divide-slate-100 dark:divide-slate-700 border-t border-slate-100 dark:border-slate-700 ${sel ? 'selected' : ''}">
+        <div class="p-3 flex items-start gap-2">
+          <input type="checkbox" class="mt-1 checkbox-materia" data-codigo="${m.codigo}" ${sel ? 'checked' : ''}>
+          <div>
+            <div class="badge badge-info mb-1.5">${m.codigo}</div>
             <div class="font-semibold text-sm">${m.nombre}</div>
           </div>
         </div>
@@ -181,7 +187,8 @@ function procesar() {
   ultimoResultado = convalidar(
     cedula, nombre, mencion98, mencion23,
     Array.from(materiasSeleccionadas),
-    electivasElegidas
+    electivasElegidas,
+    materiasConEstado
   );
 
   renderListaMaterias();
@@ -339,6 +346,7 @@ document.getElementById('btn-limpiar').addEventListener('click', () => {
   materiasSeleccionadas.clear();
   ultimoResultado = null;
   electivasElegidas = {};
+  materiasConEstado = {};
   renderListaMaterias();
   ocultarBotones();
   actualizarContadores();
@@ -389,11 +397,15 @@ document.getElementById('btn-procesar-archivo').addEventListener('click', async 
     const ced = extraerCedula(texto);
     const nom = extraerNombre(texto);
 
+    // Extraer materias con estado y año (para regla 64h)
+    materiasConEstado = extraerMateriasConEstado(texto);
+    console.log('📋 Materias con estado:', materiasConEstado);
+
     if (ced) document.getElementById('cedula-estudiante').value = ced;
     if (nom) document.getElementById('nombre-estudiante').value = nom;
 
     codigos.forEach(c => materiasSeleccionadas.add(c));
-    prog.textContent = `✅ Detectados ${codigos.length} códigos`;
+    prog.textContent = `✅ Detectados ${codigos.length} códigos aprobados`;
     procesar();
   } catch (e) {
     alert('Error: ' + e.message);
@@ -403,6 +415,68 @@ document.getElementById('btn-procesar-archivo').addEventListener('click', async 
     document.getElementById('spinner-archivo').classList.add('hidden');
   }
 });
+
+// ============================================================
+// EXTRAER MATERIAS CON ESTADO Y AÑO (para regla 64h)
+// ============================================================
+function extraerMateriasConEstado(texto) {
+  const resultado = {};
+  const prefijosValidos = [
+    'INF', 'LAB', 'MAT', 'FIS', 'EST', 'LIN', 'TRA', 'COM', 'SIS', 'IID',
+    'TIC', 'TVD', 'TAW', 'TIE', 'TAM', 'DAT', 'SEG', 'TSI', 'TCS', 'TCP',
+    'TSS', 'TAR', 'TRC', 'TAT', 'CPA', 'ECO', 'TIOT'
+  ];
+  const patronCodigo = new RegExp(
+    `\\b(${prefijosValidos.join('|')})[\\s\\.\\-]?(\\d{3,4})\\b`,
+    'g'
+  );
+
+  const lineas = texto.split(/\r?\n/);
+  let añoActual = null;
+
+  lineas.forEach(linea => {
+    const lineaUp = linea.toUpperCase();
+
+    // Detectar año en la línea
+    const añoMatch = lineaUp.match(/\b(19|20)\d{2}\b/);
+    if (añoMatch) {
+      const año = parseInt(añoMatch[0], 10);
+      if (año >= 1990 && año <= 2100) {
+        añoActual = año;
+      }
+    }
+
+    // Buscar códigos en la línea
+    const regex = new RegExp(patronCodigo.source, 'g');
+    let m;
+    while ((m = regex.exec(lineaUp)) !== null) {
+      const cod = `${m[1]}-${m[2]}`;
+
+      // Detectar estado en el contexto de esta línea
+      let estado = 'aprobado';
+      if (/REPROBADO|REPROBÓ|DESAPROBADO|ABANDONO|ABANDONÓ|RETIRADO/i.test(lineaUp)) {
+        estado = 'reprobado';
+      }
+
+      // Detectar nota (número entre 0-100 en la línea)
+      const nums = (lineaUp.match(/\b\d{1,3}\b/g) || [])
+        .map(n => parseInt(n, 10))
+        .filter(n => n >= 0 && n <= 100);
+      const nota = nums.length > 0 ? Math.max(...nums) : null;
+
+      // Si ya existe, preferir el APROBADO
+      if (resultado[cod]) {
+        if (estado === 'aprobado' && resultado[cod].estado !== 'aprobado') {
+          resultado[cod] = { estado, nota, año: añoActual };
+        }
+      } else {
+        resultado[cod] = { estado, nota, año: añoActual };
+      }
+    }
+  });
+
+  return resultado;
+}
 
 // ============================================================
 // EXPORTACIÓN PDF/EXCEL

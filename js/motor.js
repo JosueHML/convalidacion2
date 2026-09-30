@@ -1,8 +1,9 @@
 // ============================================================
 // MOTOR DE CONVALIDACIÓN (JavaScript)
+// VERSIÓN CON REGLA DE 64 HORAS CORREGIDA
 // ============================================================
 
-let DATA = { equivalencias: [], plan1998: [], malla2023: [] };
+let DATA = { equivalencias: [], plan1998: [], malla2023: [], equivalencias64h: [] };
 
 // ------------------------------------------------------------
 // NORMALIZACIÓN
@@ -23,13 +24,12 @@ function normCodigo(c) {
 }
 
 // ------------------------------------------------------------
-// CARGA DE DATOS (con cache-buster para desarrollo)
+// CARGA DE DATOS
 // ------------------------------------------------------------
 async function cargarDatos() {
   try {
-    // Cache-buster: agrega timestamp para forzar recarga
     const cb = '?v=' + Date.now();
-    const [eq, p98, m23] = await Promise.all([
+    const [eq, p98, m23, eq64] = await Promise.all([
       fetch('./data/equivalencias.json' + cb).then(r => {
         if (!r.ok) throw new Error(`equivalencias.json: HTTP ${r.status}`);
         return r.json();
@@ -41,17 +41,17 @@ async function cargarDatos() {
       fetch('./data/malla_2023.json' + cb).then(r => {
         if (!r.ok) throw new Error(`malla_2023.json: HTTP ${r.status}`);
         return r.json();
+      }),
+      fetch('./data/equivalencias_64h.json' + cb).then(r => {
+        if (!r.ok) throw new Error(`equivalencias_64h.json: HTTP ${r.status}`);
+        return r.json();
       })
     ]);
     DATA.equivalencias = eq;
     DATA.plan1998 = p98;
     DATA.malla2023 = m23;
-    console.log(`✅ Datos: ${eq.length} eq, ${p98.length} plan98, ${m23.length} malla23`);
-
-    // Diagnóstico automático INF-111
-    const inf111 = eq.filter(e => e.cod_1998 === 'INF-111');
-    console.log(`🔍 INF-111 encontrados: ${inf111.length}`);
-    inf111.forEach(e => console.log(`   - ${e.mencion} → ${e.cod_2023aj}`));
+    DATA.equivalencias64h = eq64;
+    console.log(`✅ Datos: ${eq.length} eq, ${p98.length} plan98, ${m23.length} malla23, ${eq64.length} eq64h`);
   } catch (e) {
     console.error('❌ Error cargando datos:', e);
     alert('Error al cargar los datos. Revisa la consola (F12).');
@@ -86,13 +86,18 @@ function getMaterias1998(mencion) {
 // ------------------------------------------------------------
 // MOTOR PRINCIPAL
 // ------------------------------------------------------------
-function convalidar(cedula, nombre, mencion1998, mencion2023, codigosAprobados, electivasElegidas = {}) {
+function convalidar(cedula, nombre, mencion1998, mencion2023, codigosAprobados, electivasElegidas = {}, materiasConEstado = {}) {
   const m1998Norm = normMencion(mencion1998);
   const m2023Norm = normMencion(mencion2023);
 
   console.log('🎯 Comparando menciones:');
   console.log('   1998:', mencion1998, '→', m1998Norm);
   console.log('   2023:', mencion2023, '→', m2023Norm);
+  console.log('📋 Materias con estado:', materiasConEstado);
+
+  // ¿Es del plan 1998? (si la mención 1998 tiene valor válido)
+  const esDelPlan1998 = m1998Norm && m1998Norm !== 'NINGUNA' && m1998Norm !== 'NINGUNO';
+  console.log('👤 ¿Es del plan 1998?', esDelPlan1998);
 
   const eqsMencion = DATA.equivalencias.filter(e => normMencion(e.mencion) === m2023Norm);
   console.log(`   Equivalencias encontradas: ${eqsMencion.length}`);
@@ -111,14 +116,96 @@ function convalidar(cedula, nombre, mencion1998, mencion2023, codigosAprobados, 
   const mapaMalla = {};
   mallaMencion.forEach(m => { mapaMalla[normCodigo(m.codigo)] = m; });
 
+  // Mapa 64h para la mención
+  const eq64Mencion = DATA.equivalencias64h.find(
+    e => normMencion(e.mencion) === m2023Norm
+  );
+  const mapa64h = eq64Mencion ? eq64Mencion.equivalencias : {};
+  console.log(`   Equivalencias 64h para esta mención:`, mapa64h);
+
   const detalle = [];
   const convalidadas = new Set();
   const aprobadas = new Set();
 
   codigosAprobados.forEach(codRaw => {
     const cod = normCodigo(codRaw);
-    const eq = mapaEq[cod];
     const sem1998 = semestres1998[cod] || 0;
+
+    // ═══════════════════════════════════════════════════════
+    // REGLA DE 64 HORAS
+    // Solo se aplica si:
+    //   1. NO es del plan 1998 (es del 2023 puro)
+    //   2. El código es INF-111, INF-121 o INF-131
+    //   3. El año de aprobación es 2023 o 2024
+    // ═══════════════════════════════════════════════════════
+    const esMateria64h = ['INF-111', 'INF-121', 'INF-131'].includes(cod);
+    const infoMateria = materiasConEstado[cod] || {};
+    const añoAprob = infoMateria.año;
+
+    if (!esDelPlan1998 && esMateria64h) {
+      // Es del plan 2023 puro
+      if (añoAprob === 2023 || añoAprob === 2024) {
+        const eq64 = mapa64h[cod];
+        if (eq64) {
+          const destino = normCodigo(eq64.codigo);
+          const info = mapaMalla[destino];
+          const semestre = info ? info.semestre : 99;
+          const nombre2023 = info ? info.nombre : eq64.nombre;
+
+          if (convalidadas.has(destino)) {
+            for (const d of detalle) {
+              if (d.cod_2023aj === destino && d.estado === 'convalidada') {
+                d.origenes_adicionales.push({
+                  cod_1998: cod,
+                  nombre_1998: `(2023 puro ${añoAprob}) ${cod}`,
+                  semestre_1998: sem1998
+                });
+                break;
+              }
+            }
+          } else {
+            convalidadas.add(destino);
+            aprobadas.add(destino);
+            detalle.push({
+              cod_1998: cod,
+              nombre_1998: `(2023 puro ${añoAprob}) ${cod}`,
+              cod_2023: destino,
+              nombre_2023: nombre2023,
+              cod_2023aj: destino,
+              nombre_2023aj: nombre2023,
+              semestre: semestre,
+              semestre_1998: sem1998,
+              estado: 'convalidada',
+              observacion: `Regla 64h (aprobó ${añoAprob})`,
+              origenes_adicionales: []
+            });
+          }
+          return;
+        }
+      } else if (añoAprob && añoAprob >= 2025) {
+        // Aprobó 2025 o después → NO convalida
+        detalle.push({
+          cod_1998: cod,
+          nombre_1998: `(2023 puro ${añoAprob}) ${cod}`,
+          cod_2023: null,
+          nombre_2023: null,
+          cod_2023aj: null,
+          nombre_2023aj: null,
+          semestre: 99,
+          semestre_1998: sem1998,
+          estado: 'no_convalida',
+          observacion: `No convalida (aprobó ${añoAprob}, ya es del 2023 Ajustado)`,
+          origenes_adicionales: []
+        });
+        return;
+      }
+      // Si no tiene año detectado, cae al flujo normal
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // FLUJO NORMAL (1998 → 2023 Ajustado)
+    // ═══════════════════════════════════════════════════════
+    const eq = mapaEq[cod];
 
     if (!eq) {
       detalle.push({
@@ -259,7 +346,7 @@ function convalidar(cedula, nombre, mencion1998, mencion2023, codigosAprobados, 
 }
 
 // ------------------------------------------------------------
-// FUNCIONES AUXILIARES PARA ELECTIVAS
+// FUNCIONES AUXILIARES
 // ------------------------------------------------------------
 function getElectivasDisponibles(mencion2023) {
   const n = normMencion(mencion2023);

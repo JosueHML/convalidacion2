@@ -1,0 +1,58 @@
+[
+  {
+    "mencion": "DESARROLLO DE SOFTWARE E INNOVACION TECNOLOGICA",
+    "equivalencias": {
+      "INF-111": { "codigo": "INF-319", "nombre": "Programación a bajo nivel" },
+      "INF-121": { "codigo": "INF-325", "nombre": "Derecho Informático" },
+      "INF-131": { "codigo": "INF-326", "nombre": "Negociaciones y Toma de Decisiones" }
+    }
+  },
+  {
+    "mencion": "INGENIERIA DE SISTEMAS",
+    "equivalencias": {
+      "INF-111": { "codigo": "INF-319", "nombre": "Programación a bajo nivel" },
+      "INF-121": { "codigo": "SIS-313", "nombre": "Datawarehouse" },
+      "INF-131": { "codigo": "INF-326", "nombre": "Negociaciones y Toma de Decisiones" }
+    }
+  },
+  {
+    "mencion": "INTELIGENCIA ARTIFICIAL Y CIENCIA DE DATOS",
+    "equivalencias": {
+      "INF-111": { "codigo": "DAT-312", "nombre": "Modelos Generativos" },
+      "INF-121": { "codigo": "INF-325", "nombre": "Derecho Informático" },
+      "INF-131": { "codigo": "INF-336", "nombre": "Visión Artificial y Manejo de Imágenes" }
+    }
+  },
+  {
+    "mencion": "REDES Y TECNOLOGIAS DE LA INFORMACION",
+    "equivalencias": {
+      "INF-111": { "codigo": "TIC-311", "nombre": "Sistemas Embebidos" },
+      "INF-121": { "codigo": "TIC-312", "nombre": "Administración de Servidores" },
+      "INF-131": { "codigo": "TIC-316", "nombre": "Comunicaciones por Satélite" }
+    }
+  },
+  {
+    "mencion": "SEGURIDAD DE LA INFORMACION",
+    "equivalencias": {
+      "INF-111": { "codigo": "SEG-316", "nombre": "Hacking Ético II" },
+      "INF-121": { "codigo": "INF-325", "nombre": "Derecho Informático" },
+      "INF-131": { "codigo": "SEG-317", "nombre": "Administración de Centros de Operaciones de Red" }
+    }
+  },
+  {
+    "mencion": "INFORMATICA INDUSTRIAL",
+    "equivalencias": {
+      "INF-111": { "codigo": "INF-319", "nombre": "Programación a bajo nivel" },
+      "INF-121": { "codigo": "IID-313", "nombre": "Sistemas Avanzados de Comunicaciones" },
+      "INF-131": { "codigo": "IID-312", "nombre": "Comunicaciones por Satélite" }
+    }
+  },
+  {
+    "mencion": "CIENCIAS DE LA COMPUTACION",
+    "equivalencias": {
+      "INF-111": { "codigo": "COM-323", "nombre": "Computabilidad y Complejidad Algorítmica" },
+      "INF-121": { "codigo": "COM-317", "nombre": "Geometría Computacional" },
+      "INF-131": { "codigo": "INF-336", "nombre": "Visión Artificial y Manejo de Imágenes" }
+    }
+  }
+]
